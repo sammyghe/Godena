@@ -338,6 +338,10 @@ SKILL_SYNONYMS = {
     "tourism":    ["hotel_lodging","travel_agency","safari","tourism","tour"],
     "bus":        ["transport","bus","matatu","coach","intercity","booking","ticket"],
     "scholarship":["scholarship_finder","scholarship","bursary","grant","fulbright","erasmus"],
+    "coffee":     ["restaurant","cafe","food","coffeeshop"],
+    "cafe":       ["restaurant","cafe","food","coffeeshop"],
+    "climate":    ["solar_energy","agriculture","clean tech","environment"],
+    "shop":       ["restaurant","retail","service","store"],
 
     # ── FOOD & HOSPITALITY ────────────────────────────────────────
     "food":       ["restaurant","food","catering","bakery","butchery","takeaway"],
