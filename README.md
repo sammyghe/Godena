@@ -40,7 +40,7 @@ Godena steps back — conversation is yours
 No middleman. No commission. No data sold.  
 Godena connects and leaves.
 
-## Fork for your city or niche
+## Fork for your city or niche marekt or service 
 
 Clone this. Change a few lines. Deploy your own Godena for your community.
 
