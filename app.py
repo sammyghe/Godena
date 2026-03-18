@@ -347,6 +347,28 @@ SKILL_SYNONYMS = {
     "food":       ["restaurant","food","catering","bakery","butchery","takeaway"],
     "restaurant": ["restaurant","food","catering","eatery","cafe","dining"],
     "catering":   ["restaurant","catering","events","food","buffet"],
+    "coffee":     ["restaurant","cafe","food","coffeeshop","drinks"],
+    "cafe":       ["restaurant","cafe","food","coffeeshop","drinks"],
+    "climate":    ["solar_energy","agriculture","clean tech","environment","carbon"],
+    "shop":       ["restaurant","retail","service","store","shop"],
+    "coworking":  ["education","coworking","office","workspace","desk"],
+    "accelerator":["finance","accelerator","startup","investor","incubator","yc"],
+    "pitch":      ["finance","startup","investor","pitch","accelerator"],
+    "angel":      ["finance","angel","investor","funding","seed"],
+    "founder":    ["finance","startup","founder","accelerator","community"],
+    "barber":     ["hair_beauty","barber","barbershop","haircut","grooming"],
+    "nail":       ["hair_beauty","nails","manicure","pedicure","beauty"],
+    "plumbing":   ["construction","plumbing","plumber","pipes","water","repair"],
+    "wiring":     ["construction","electrical","electrician","wiring","power"],
+    "dentist":    ["healthcare","dental","dentist","teeth","clinic"],
+    "mental":     ["healthcare","mental health","therapy","counseling","wellness"],
+    "grocery":    ["restaurant","grocery","supermarket","food","market"],
+    "market":     ["agriculture","market","prices","commodity","grocery"],
+    "wedding":    ["marketing","wedding","events","planner","venue","catering"],
+    "event":      ["marketing","events","wedding","conference","venue","catering"],
+    "moving":     ["logistics","moving","relocation","transport","courier"],
+    "rent":       ["real_estate","rental","housing","apartment","property"],
+    "apartment":  ["real_estate","apartment","housing","rental","accommodation"],
 
     # ── ENERGY ────────────────────────────────────────────────────
     "solar":      ["solar_energy","solar","renewable","off_grid","panels","battery"],
@@ -1027,7 +1049,13 @@ async def api_register(request: Request):
             "google_review_count": data.get("google_review_count") or None,
             "neighborhood":        data.get("neighborhood")        or None,
             "service_radius":      data.get("service_radius")      or None,
-        }).execute()
+        }).execute() # Optional federation — share to main Godena if fork opts in
+        federate_to = data.get("federate_to")
+        if federate_to:
+            try:
+                httpx.post(f"{federate_to}/api/register", json=data, timeout=5)
+            except:
+                pass
         return {"status": "live", "name": name, "findable_on": WHATSAPP_NUMBER}
     except Exception as e:
         return {"error": "name exists" if "duplicate" in str(e).lower() else str(e)}
