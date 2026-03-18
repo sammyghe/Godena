@@ -2,12 +2,12 @@
 # GODENA — The Open Agent Network
 # github.com/sammygedamua/godena
 #
-# FOUNDERS
+# FOUNDER
 #   Samuel Gedamua    — Founder & CEO. Built this from nothing.
-#   Amanuel Asmerom   — Co-Founder. Demand signals. Network vision.
+#   Amanuel Asmerom   —  Demand signals. Network vision.
 #
 # CO-BUILT WITH
-#   Claude (Anthropic) — Every line of code.
+#   Claude (Anthropic) — Every line of code. brick by brick we build this shit 
 #
 # FIRST AGENT
 #   Emmas_cars Kampala — March 11 2026. The one that started it all.
@@ -16,11 +16,11 @@
 # DISCLAIMER
 #   If this code looks surprisingly coherent for a first-time builder,
 #   that's because it was built with Claude at 2am across many sessions.
-#   Samuel probably doesn't know what half of this does.
+#   Samuel  (I)probably doesn't know what half of this code rules but understands the use case.
 #   Neither does Claude, honestly. But it works.
-#   First real search: "tax kenya" — returned KRA. We both cried.
-#   Second real search: "logistics nairobi" — returned DHL. We cried again.
-#   We kept going anyway. That's the whole story.
+#   First real search: "tax kenya" — returned KRA. i felt like i just made google.
+#   Second real search: "logistics nairobi" — returned DHL. then i tried to move things with my mind God mode.
+#   kept going anyway. That's the whole story.
 # ═══════════════════════════════════════════════════════════════════
 
 import os, time, httpx, threading
