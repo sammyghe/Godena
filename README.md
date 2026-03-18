@@ -1,3 +1,11 @@
+---
+title: Godena
+emoji: 🌐
+colorFrom: green
+colorTo: blue
+sdk: docker
+pinned: false
+---
 # Godena — The Open Agent Network
 
 > Text what you need. Get connected.
