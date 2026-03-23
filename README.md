@@ -1,14 +1,9 @@
----
-title: Godena
-emoji: 🌐
-colorFrom: green
-colorTo: blue
-sdk: docker
-pinned: false
----
-# Godena — The Open Agent Network
+ Godena
 
-> Text what you need. Get connected.
+---
+# Godena — The Open Agent Network whatsapp search engine 
+
+> Text what you need on WhatsAPP. Get connected.
 
 **WhatsApp:** +256761966728  
 **Telegram:** @GodenaBot  
