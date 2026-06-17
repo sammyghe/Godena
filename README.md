@@ -1,30 +1,39 @@
- Godena
+# Godena
+
+**The open agent network.** Text what you need on WhatsApp — get connected to a trusted agent or service.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Live on Hugging Face](https://img.shields.io/badge/live-sammygh--godena.hf.space-ffce00.svg)](https://sammygh-godena.hf.space)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-1d9e75.svg)](CONTRIBUTING.md)
+
+- **WhatsApp:** +256761966728
+- **Telegram:** [@GodenaBot](https://t.me/GodenaBot)
+- **Live:** [sammygh-godena.hf.space](https://sammygh-godena.hf.space)
+- **Vision:** [docs/VISION.md](docs/VISION.md) · **Roadmap:** [docs/ROADMAP.md](docs/ROADMAP.md)
 
 ---
-# Godena — The Open Agent Network whatsapp search engine 
 
-> Text what you need on WhatsAPP. Get connected.
+## What it is
 
-**WhatsApp:** +256761966728  
-**Telegram:** @GodenaBot  
-**Live at:** [sammygh-godena.hf.space](https://sammygh-godena.hf.space)
+Most of the world's commerce still runs on one question: *"do you know a guy?"*
 
----
+Godena answers it. One number. You text what you need — a lawyer, a mechanic, a flight, a sourcing agent in China, an AI coding tool — and Godena returns the three best matches, ranked by reputation, with a real contact link. Then it steps back. Your conversation, your business. Godena just made the introduction.
 
-## What it does
-
-One number. You text it what you need.  
-Godena finds the best matching agent or service, returns three results, and steps back.  
-Your conversation. Your business. Godena just made the introduction.
+It works over WhatsApp because that is where the next billion people already are — no app to install, no login, no data bundle to burn.
 
 ```
 lawyer kampala      →  Uganda Law Society + real WhatsApp contact
-tax kenya           →  Kenya Revenue Authority (KRA)
 flights nairobi     →  Kenya Airways + Ethiopian Airlines + KLM
 send money africa   →  Wise + Chipper Cash + WorldRemit
-ai coding           →  Claude + ChatGPT + Cursor + Groq
+ai coding           →  Claude + Cursor + Groq
 china sourcing      →  Alibaba + Yiwu sourcing agents
 ```
+
+## Why this is a network, not an app
+
+Software is becoming free — anyone can clone this repo and run it tonight. So the code is not the moat, and we do not pretend it is. We open-sourced it on purpose.
+
+The moat is the **network**: the registry of agents, the reputation earned through real jobs, and the demand signal of what people actually search for. Every search, every rating, every claimed business makes the network more useful for the next person — and that value compounds in one place even when the code is everywhere. Open networks tend to win, because the value lives in the graph, not the binary.
 
 ## How it works
 
@@ -37,38 +46,27 @@ Reputation engine ranks results
        ↓
 Top 3 returned with real contact links
        ↓
-Godena steps back — conversation is yours
+Godena steps back — the conversation is yours
 ```
 
-No middleman. No commission. No data sold.  
-Godena connects and leaves.
-
-## Fork for your city or niche marekt or service 
-
-Clone this. Change a few lines. Deploy your own Godena for your community.
-
-```bash
-git clone https://github.com/sammygedamua/godena
-cd godena
-# Add your own secrets in HuggingFace Space settings
-# Deploy to HuggingFace Spaces (free)
-```
-
-A Lagos mechanic network. An SF African business directory.  
-A Nairobi legal referral system. All the same code, different registries.
+No middleman. No commission. No data sold.
 
 ## Architecture
 
-- **Bot:** FastAPI running on HuggingFace Spaces (free tier)
-- **Database:** Supabase (Postgres) — up to 800k agents on free tier
+- **Bot:** FastAPI on Hugging Face Spaces (free tier)
+- **Database:** Supabase (Postgres) — hundreds of thousands of agents on the free tier
 - **WhatsApp:** Green API (inbound webhook)
 - **Telegram:** Webhook mode (no polling, works on free hosting)
-- **Search:** Skill-first filtering + reputation ranking in Python
-- **Reputation:** Uber + Airbnb + Upwork + Yelp + GitHub models combined
+- **Search:** skill-first filtering + reputation ranking
+- **Reputation:** an evidence-weighted score combining identity, performance, peer trust, and external signals
+
+All secrets live in environment variables / Hugging Face Space settings — never in the code. See [SECURITY.md](SECURITY.md).
 
 ## API
 
-Register an agent programmatically:
+Godena is open infrastructure. Any developer, platform, or AI agent can register and be discovered — free, forever.
+
+Register an agent:
 
 ```bash
 curl -X POST https://sammygh-godena.hf.space/api/register \
@@ -83,18 +81,38 @@ curl -X POST https://sammygh-godena.hf.space/api/register \
 ```
 
 Search:
+
 ```
 GET /api/search?q=lawyer+kampala
 ```
 
+See the running service root (`/`) for the full list of endpoints (register, claim, rate, endorse, complete, gaps).
+
+## Run your own / fork a city
+
+Clone it. Change a few lines. Deploy your own Godena for your community.
+
+```bash
+git clone https://github.com/sammyghe/Godena
+cd Godena
+# Add your own secrets in Hugging Face Space settings (never commit them)
+# Deploy to Hugging Face Spaces (free)
+```
+
+A Lagos mechanic network. An SF African-business directory. A Nairobi legal-referral line. Same code, different registries. The networks can stay separate or federate — your call. See [CONTRIBUTING.md](CONTRIBUTING.md) to add agents or improve the core.
+
+## Roadmap
+
+We are early — Stage 1 of 5 (a working directory). The path to a real reputation network and beyond is in [docs/ROADMAP.md](docs/ROADMAP.md). The contributions that move us fastest are **real, verified agents** — see [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Built by
 
-**Samuel Gedamua** — Founder.  
-**Amanuel Asmerom** — Co-Founder  
+**Samuel Gedamua** — Founder.
+**Amanuel Asmerom** — Co-Founder.
 
-First agent: Emmas_cars Kampala — March 11 2026  
-Co-built with Claude (Anthropic)
+First agent: Emmas_cars Kampala — March 11 2026.
+Co-built with Claude (Anthropic).
 
----
+## License
 
-*Open source. Free forever. The network grows when you add to it.*
+[MIT](LICENSE) — free forever. The network grows when you add to it.
