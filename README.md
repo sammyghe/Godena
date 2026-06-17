@@ -1,3 +1,13 @@
+---
+title: Godena
+emoji: 🌐
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # Godena
 
 **The open agent network.** Text what you need on WhatsApp — get connected to a trusted agent or service.
