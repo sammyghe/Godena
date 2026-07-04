@@ -23,8 +23,9 @@
 #   kept going anyway. That's the whole story.
 # ═══════════════════════════════════════════════════════════════════
 
-import os, time, httpx, threading
+import os, re, time, httpx, threading
 from fastapi import FastAPI, Request
+from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 from supabase import create_client
 
@@ -37,6 +38,15 @@ WHATSAPP_NUMBER   = os.environ.get("WHATSAPP_NUMBER", "+256761966728")
 
 sb  = create_client(SUPABASE_URL, SUPABASE_KEY)
 app = FastAPI()
+
+# CORS — lets browsers (godena web page, partner sites, other agents' UIs)
+# call the public API directly. The API is read-mostly and free by design.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["GET", "POST"],
+    allow_headers=["*"],
+)
 
 # ── DEDUP — prevents double-processing the same message ───────────
 seen_msgs = {}
@@ -730,6 +740,7 @@ def format_results(results, query):
     lines.append("─────────────────")
     lines.append("1 — Search again")
     lines.append("2 — Add your service free")
+    lines.append("RATE 1-5 — rate your top match after you connect")
     return "\n".join(lines)
 
 
@@ -910,6 +921,58 @@ def registration_step(state, text):
     return main_menu(), True
 
 
+# ── RATING FLYWHEEL ───────────────────────────────────────────────
+# Search → connect → RATE → reputation moves → better ranking.
+# Without this loop the reputation engine only ever sees seed points.
+last_results = {}   # uid -> [slugs shown in their most recent search]
+
+def record_rating(uid, rating, slug):
+    """Running-average rating update, same math as /api/rate. Fail-safe."""
+    try:
+        if is_burst_rating(uid):
+            return "⏳ Too many ratings too fast — try again in a few minutes."
+        res = sb.table("agents").select(
+            "name,avg_rating,interactions_count"
+        ).eq("slug", slug).execute()
+        if not res.data:
+            return "Couldn't find that agent — search again and then RATE 1-5."
+        agent   = res.data[0]
+        cur_avg = float(agent.get("avg_rating") or 0)
+        cur_n   = int(agent.get("interactions_count") or 0)
+        new_avg = round((cur_avg * cur_n + rating) / (cur_n + 1), 2) if cur_n > 0 else float(rating)
+        sb.table("agents").update({
+            "avg_rating":         new_avg,
+            "interactions_count": cur_n + 1,
+        }).eq("slug", slug).execute()
+        name = (agent.get("name") or slug).replace("_", " ")
+        return (
+            f"⭐ Thanks — {rating}/5 recorded for {name}.\n"
+            f"Ratings decide who ranks first on Godena.\n\n"
+            "1 — Search again"
+        )
+    except Exception as e:
+        print(f"rate error: {e}")
+        return "Couldn't save that rating right now — please try again later."
+
+def handle_rating_reply(uid, tl):
+    """Parses 'rate 5' (rates top result of user's last search) or 'rate <slug> 4'."""
+    parts = tl.split()
+    slugs = last_results.get(uid) or []
+    if len(parts) == 2 and parts[1].isdigit():
+        rating = int(parts[1])
+        if not 1 <= rating <= 5:
+            return "Rate from 1 to 5 — e.g. RATE 5"
+        if not slugs:
+            return "Search first, then reply RATE 1-5 to rate your top match."
+        return record_rating(uid, rating, slugs[0])
+    if len(parts) == 3 and parts[2].isdigit():
+        rating = int(parts[2])
+        if not 1 <= rating <= 5:
+            return "Rate from 1 to 5 — e.g. RATE emmas-cars 5"
+        return record_rating(uid, rating, parts[1])
+    return "To rate: RATE 5  (your top match)\nor: RATE agent-name 4"
+
+
 # ── CORE HANDLER ──────────────────────────────────────────────────
 def handle(state_d, ctx_d, uid, text, source):
     t  = text.strip()
@@ -948,9 +1011,16 @@ def handle(state_d, ctx_d, uid, text, source):
         slug = tl.replace("claim ", "").strip()
         return f"Claim '{slug}':\nContact t.me/godenabot\n\nOr reply 2 to register your own agent."
 
+    # Rating reply — closes the trust loop
+    if tl.startswith("rate"):
+        return handle_rating_reply(uid, tl)
+
     # Everything else → search
     ctx_d[uid] = "searching"
-    return format_results(search_agents(t), t)
+    results = search_agents(t)
+    if results:
+        last_results[uid] = [a.get("slug") for a in results if a.get("slug")]
+    return format_results(results, t)
 
 
 # ── WHATSAPP SENDER ───────────────────────────────────────────────
