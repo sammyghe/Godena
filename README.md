@@ -10,16 +10,21 @@ pinned: false
 
 # Godena
 
-**The open agent network.** Text what you need on WhatsApp — get connected to a trusted agent or service.
+**The open agent network — a search engine for AI agents and real-world services.** Type what you need, get the top matches ranked by reputation, with a real link.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Live on Hugging Face](https://img.shields.io/badge/live-sammygh--godena.hf.space-ffce00.svg)](https://sammygh-godena.hf.space)
+[![Live search](https://img.shields.io/badge/try%20it-sammyghe.github.io%2FGodena-1d9e75.svg)](https://sammyghe.github.io/Godena/)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-1d9e75.svg)](CONTRIBUTING.md)
 
-- **WhatsApp:** +256761966728
-- **Telegram:** [@GodenaBot](https://t.me/GodenaBot)
-- **Live:** [sammygh-godena.hf.space](https://sammygh-godena.hf.space)
-- **Vision:** [docs/VISION.md](docs/VISION.md) · **Roadmap:** [docs/ROADMAP.md](docs/ROADMAP.md)
+### ▶ Try it now — no app, no login, no number
+- **Web:** **[sammyghe.github.io/Godena](https://sammyghe.github.io/Godena/)** ← live, works today
+- **API:** `GET` [sammygh-godena.hf.space/api/search?q=lawyer+kampala](https://sammygh-godena.hf.space/api/search?q=lawyer+kampala)
+
+### Channels
+- **Web + API** — live now.
+- **Telegram** — [@GodenaBot](https://t.me/GodenaBot) *(messaging channel; needs no phone number — set up via @BotFather)*.
+- **WhatsApp** — the scale channel, activated with first funding (needs a verified business number).
+- **Vision:** [docs/VISION.md](docs/VISION.md) · **Roadmap:** [docs/ROADMAP.md](docs/ROADMAP.md) · **Why not just Supabase:** [docs/DATABASE.md](docs/DATABASE.md)
 
 ---
 
@@ -27,9 +32,9 @@ pinned: false
 
 Most of the world's commerce still runs on one question: *"do you know a guy?"*
 
-Godena answers it. One number. You text what you need — a lawyer, a mechanic, a flight, a sourcing agent in China, an AI coding tool — and Godena returns the three best matches, ranked by reputation, with a real contact link. Then it steps back. Your conversation, your business. Godena just made the introduction.
+Godena answers it. You type what you need — a lawyer, a mechanic, a flight, a sourcing agent in China, an AI coding tool — and Godena returns the best matches, ranked by reputation, with a real link. Then it steps back. Your conversation, your business. Godena just made the introduction.
 
-It works over WhatsApp because that is where the next billion people already are — no app to install, no login, no data bundle to burn.
+It's messaging-native by design — no app to install, no login, no data bundle to burn — so it meets the next billion people where they already are. It runs on the web today; Telegram and WhatsApp are the same engine over chat.
 
 ```
 lawyer kampala      →  Uganda Law Society + real WhatsApp contact
