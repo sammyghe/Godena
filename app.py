@@ -23,7 +23,7 @@
 #   kept going anyway. That's the whole story.
 # ═══════════════════════════════════════════════════════════════════
 
-import os, re, time, httpx, threading
+import os, re, json, time, httpx, threading
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
@@ -483,6 +483,22 @@ AI_SOURCES = {
 def is_ai_agent(agent):
     return agent.get("source", "") in AI_SOURCES
 
+# ── EMBEDDED SNAPSHOT — search survives database outages ─────────
+# A curated registry of real, verified agents (official websites only)
+# ships inside the repo. If the database is unreachable or thin, search
+# falls back to / is supplemented by this snapshot. Zero-dependency
+# resilience: the core product (search) can never fully die again.
+SNAPSHOT_AGENTS = []
+try:
+    _snap_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "agents_snapshot.json")
+    with open(_snap_path, "r", encoding="utf-8") as _f:
+        SNAPSHOT_AGENTS = json.load(_f)
+    for _i, _a in enumerate(SNAPSHOT_AGENTS):
+        _a["id"] = -(_i + 1)          # negative ids — never collide with DB rows
+    print(f"Snapshot loaded: {len(SNAPSHOT_AGENTS)} agents")
+except Exception as _e:
+    print(f"Snapshot not loaded: {_e}")
+
 def get_skill_keywords(skill_words):
     expanded = set()
     for w in skill_words:
@@ -595,7 +611,13 @@ def search_agents(query, limit=3):
                 .execute().data or []
             )
     except:
-        return []
+        agents = []
+
+    # Snapshot merge — DB rows win (live reputation), snapshot fills the
+    # gaps, and fully carries search when the database is unreachable.
+    if SNAPSHOT_AGENTS:
+        have = {a.get("slug") for a in agents}
+        agents = agents + [a for a in SNAPSHOT_AGENTS if a.get("slug") not in have]
 
     results = []
     for agent in agents:
@@ -1357,9 +1379,38 @@ async def health():
         "gaps":     "GET /api/gaps",
         "whatsapp": WHATSAPP_NUMBER,
         "telegram": "@GodenaBot",
-        "github":   "github.com/sammygedamua/godena",
+        "website":  "https://sammyghe.github.io/Godena/",
+        "github":   "github.com/sammyghe/Godena",
         "built":    "March 2026 — The open agent network",
+        "database": db_status(),
+        "snapshot_agents": len(SNAPSHOT_AGENTS),
     }
+
+def db_status():
+    """Cheap live DB probe. Also keeps Supabase warm via the keep-alive pings."""
+    try:
+        sb.table("agents").select("id").limit(1).execute()
+        return "connected"
+    except Exception:
+        return "offline — search serving embedded snapshot"
+
+@app.get("/api/stats")
+async def api_stats():
+    """Public traction stats — one call, real numbers, no vanity."""
+    out = {"snapshot_agents": len(SNAPSHOT_AGENTS), "database": "offline"}
+    try:
+        total = sb.table("agents").select("id", count="exact").limit(1).execute().count
+        rated = sb.table("agents").select("id", count="exact").gt("interactions_count", 0).limit(1).execute().count
+        claimed = sb.table("agents").select("id", count="exact").eq("claimed", True).limit(1).execute().count
+        out.update({
+            "database": "connected",
+            "agents_total": total,
+            "agents_rated": rated,
+            "agents_claimed": claimed,
+        })
+    except Exception:
+        pass
+    return out
 
 @app.on_event("startup")
 async def startup():
