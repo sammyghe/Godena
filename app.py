@@ -1412,6 +1412,76 @@ async def api_stats():
         pass
     return out
 
+# ── AGENT INTEROP — Godena is itself a discoverable agent ─────────
+# A2A-style agent card + llms.txt so other AI agents and assistants can
+# find and use Godena programmatically. The search engine for agents
+# must be discoverable BY agents.
+AGENT_CARD = {
+    "name": "Godena",
+    "description": (
+        "Open search engine for AI agents and real-world services. "
+        "Query a need in plain words (e.g. 'lawyer kampala', 'ai coding') "
+        "and get the top matches ranked by earned reputation, with a real "
+        "contact link. Free, open source (MIT), no commission."
+    ),
+    "url": "https://sammygh-godena.hf.space",
+    "provider": {"organization": "Godena", "url": "https://sammyghe.github.io/Godena/"},
+    "version": "1.0.0",
+    "capabilities": {"streaming": False, "pushNotifications": False},
+    "defaultInputModes": ["text"],
+    "defaultOutputModes": ["text", "application/json"],
+    "skills": [
+        {
+            "id": "search_agents",
+            "name": "Search agents & services",
+            "description": "Skill + location search over AI agents and human services, ranked by reputation.",
+            "examples": ["lawyer kampala", "ai coding", "flights nairobi", "china sourcing"],
+            "inputModes": ["text"],
+            "outputModes": ["application/json"],
+        },
+        {
+            "id": "register_agent",
+            "name": "Register an agent",
+            "description": "Any agent (AI or human business) registers free via POST /api/register.",
+            "inputModes": ["application/json"],
+            "outputModes": ["application/json"],
+        },
+    ],
+    "interfaces": {
+        "search":   "GET /api/search?q={query}&limit={n}",
+        "agent":    "GET /api/agent/{slug}",
+        "register": "POST /api/register",
+        "rate":     "POST /api/rate",
+        "stats":    "GET /api/stats",
+    },
+}
+
+@app.get("/.well-known/agent-card.json")
+@app.get("/.well-known/agent.json")
+async def agent_card():
+    return AGENT_CARD
+
+@app.get("/llms.txt")
+async def llms_txt():
+    from fastapi.responses import PlainTextResponse
+    return PlainTextResponse(
+        "# Godena — the open agent network\n\n"
+        "> Search engine for AI agents and real-world services, ranked by earned reputation.\n\n"
+        "## API (free, no key)\n"
+        "- Search: GET https://sammygh-godena.hf.space/api/search?q=lawyer+kampala&limit=3\n"
+        "- Agent detail: GET https://sammygh-godena.hf.space/api/agent/{slug}\n"
+        "- Register (free forever): POST https://sammygh-godena.hf.space/api/register "
+        "{name, skill, location, country, website|whatsapp|phone}\n"
+        "- Rate after a connection: POST https://sammygh-godena.hf.space/api/rate {slug, rating, rater_phone}\n"
+        "- Stats: GET https://sammygh-godena.hf.space/api/stats\n"
+        "- Agent card: GET https://sammygh-godena.hf.space/.well-known/agent-card.json\n\n"
+        "## Docs\n"
+        "- Website: https://sammyghe.github.io/Godena/\n"
+        "- Source (MIT): https://github.com/sammyghe/Godena\n"
+        "- Vision: https://github.com/sammyghe/Godena/blob/main/docs/VISION.md\n\n"
+        "Rules: results include only real, verifiable contacts. Never fabricate agents or ratings.\n"
+    )
+
 @app.on_event("startup")
 async def startup():
     print("=" * 55)

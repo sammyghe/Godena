@@ -62,11 +62,14 @@
   <div id="spin" class="spin">Searching the network…</div>
   <div id="out"></div>
 
+  <div id="stats" class="hints" style="margin-top:6px"></div>
+
   <div class="cta">
-    <a class="wa" href="https://wa.me/256761966728?text=hello" target="_blank" rel="noopener">💬 WhatsApp Godena</a>
-    <a class="tg" href="https://t.me/GodenaBot" target="_blank" rel="noopener">Telegram</a>
     <a class="gh" href="https://github.com/sammyghe/Godena" target="_blank" rel="noopener">GitHub — open source</a>
+    <a class="gh" href="https://sammygh-godena.hf.space/api/search?q=lawyer+kampala" target="_blank" rel="noopener">Free API</a>
+    <a class="gh" href="https://sammygh-godena.hf.space/.well-known/agent-card.json" target="_blank" rel="noopener">🤖 Agent card (A2A)</a>
   </div>
+  <p class="hints">Messaging channels (Telegram · WhatsApp) are rolling out — same engine, chat interface.</p>
 
   <section>
     <h2>What is this?</h2>
@@ -95,6 +98,10 @@ const API = "https://sammygh-godena.hf.space";
 const TIER = {0:"🌀 Wanderer",1:"✅ Verified",2:"⭐ Pro",3:"🔥 Elite"};
 function try_(s){document.getElementById('q').value=s;go();}
 document.getElementById('q').addEventListener('keydown',e=>{if(e.key==='Enter')go();});
+fetch(API+"/api/stats").then(r=>r.json()).then(s=>{
+  const n=(s.agents_total||0)>(s.snapshot_agents||0)?s.agents_total:s.snapshot_agents;
+  if(n)document.getElementById('stats').textContent=n+"+ agents indexed · ranked by earned reputation · no commission";
+}).catch(()=>{});
 async function go(){
   const q=document.getElementById('q').value.trim();
   if(!q)return;
@@ -105,7 +112,7 @@ async function go(){
     const d=await r.json();
     spin.style.display='none';
     if(!d.agents||!d.agents.length){
-      out.innerHTML='<div class="empty">Nothing found for “'+esc(q)+'” yet.<br>Try broader words — or add the service you know: reply <b>2</b> on WhatsApp.</div>';
+      out.innerHTML='<div class="empty">Nothing found for “'+esc(q)+'” yet.<br>Try broader words — or add the service you know free via the <a style="color:var(--green)" href="https://github.com/sammyghe/Godena#api">API</a>.</div>';
       return;
     }
     out.innerHTML=d.agents.map(a=>{
@@ -120,7 +127,7 @@ async function go(){
     }).join('');
   }catch(e){
     spin.style.display='none';
-    out.innerHTML='<div class="empty">Network is waking up — try again in a minute, or use <a style="color:var(--green)" href="https://wa.me/256761966728?text='+encodeURIComponent(q)+'">WhatsApp</a>.</div>';
+    out.innerHTML='<div class="empty">Network is waking up — try again in a minute.</div>';
   }
 }
 function contact(a){
@@ -129,7 +136,7 @@ function contact(a){
   if(ph){const d=ph.replace(/[^0-9]/g,'');if(d.length>7)return link('https://wa.me/'+d,'💬 wa.me/'+d);}
   if(web)return link(web,'🌐 '+web.slice(0,50));
   if(cl)return esc('📞 '+cl.slice(0,60));
-  return '<span style="color:var(--mut)">Unclaimed — text CLAIM '+esc(a.slug||'')+' on WhatsApp</span>';
+  return '<span style="color:var(--mut)">Unclaimed — claim via POST /api/claim ('+esc(a.slug||'')+')</span>';
 }
 function link(h,t){return '<a href="'+esc(h)+'" target="_blank" rel="noopener">'+esc(t)+'</a>';}
 function cap(s){return (s||'').replace(/\b\w/g,c=>c.toUpperCase());}

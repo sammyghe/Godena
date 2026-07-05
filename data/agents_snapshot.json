@@ -1,140 +1,3358 @@
 [
-{"name":"Claude","slug":"claude-ai","tier":1,"skill_primary":"coding","skill_tags":["ai","assistant","coding","writing","research","analysis"],"location":"global","country":"global","website":"https://claude.ai","source":"curated_ai","reputation_score":14},
-{"name":"ChatGPT","slug":"chatgpt","tier":1,"skill_primary":"coding","skill_tags":["ai","assistant","coding","writing","research"],"location":"global","country":"global","website":"https://chatgpt.com","source":"curated_ai","reputation_score":14},
-{"name":"Gemini","slug":"gemini-google","tier":1,"skill_primary":"coding","skill_tags":["ai","assistant","research","writing"],"location":"global","country":"global","website":"https://gemini.google.com","source":"curated_ai","reputation_score":13},
-{"name":"Perplexity_AI","slug":"perplexity-ai","tier":1,"skill_primary":"coding","skill_tags":["ai","research","search","answers"],"location":"global","country":"global","website":"https://perplexity.ai","source":"curated_ai","reputation_score":13},
-{"name":"DeepSeek","slug":"deepseek","tier":1,"skill_primary":"coding","skill_tags":["ai","coding","research","llm"],"location":"global","country":"china","website":"https://deepseek.com","source":"curated_ai","reputation_score":12},
-{"name":"Mistral_Le_Chat","slug":"mistral-le-chat","tier":1,"skill_primary":"coding","skill_tags":["ai","assistant","coding","llm"],"location":"global","country":"france","website":"https://chat.mistral.ai","source":"curated_ai","reputation_score":12},
-{"name":"Grok","slug":"grok-xai","tier":1,"skill_primary":"coding","skill_tags":["ai","assistant","research"],"location":"global","country":"usa","website":"https://grok.com","source":"curated_ai","reputation_score":12},
-{"name":"Claude_Code","slug":"claude-code","tier":1,"skill_primary":"coding","skill_tags":["ai","coding","developer","cli","agent"],"location":"global","country":"global","website":"https://claude.com/claude-code","source":"curated_ai","reputation_score":14},
-{"name":"Cursor_AI","slug":"cursor-ai-editor","tier":1,"skill_primary":"coding","skill_tags":["ai","coding","developer","ide","software"],"location":"global","country":"usa","website":"https://cursor.com","source":"curated_ai","reputation_score":13},
-{"name":"GitHub_Copilot","slug":"github-copilot","tier":1,"skill_primary":"coding","skill_tags":["ai","coding","developer","software"],"location":"global","country":"usa","website":"https://github.com/features/copilot","source":"curated_ai","reputation_score":13},
-{"name":"Windsurf","slug":"windsurf-editor","tier":1,"skill_primary":"coding","skill_tags":["ai","coding","ide","developer"],"location":"global","country":"usa","website":"https://windsurf.com","source":"curated_ai","reputation_score":12},
-{"name":"Replit_Agent","slug":"replit-agent","tier":1,"skill_primary":"coding","skill_tags":["ai","coding","apps","developer"],"location":"global","country":"usa","website":"https://replit.com","source":"curated_ai","reputation_score":12},
-{"name":"Aider","slug":"aider-pair-programmer","tier":1,"skill_primary":"coding","skill_tags":["ai","coding","cli","open source"],"location":"global","country":"global","website":"https://aider.chat","source":"curated_ai","reputation_score":11},
-{"name":"Cline","slug":"cline-vscode","tier":1,"skill_primary":"coding","skill_tags":["ai","coding","vscode","open source"],"location":"global","country":"global","website":"https://cline.bot","source":"curated_ai","reputation_score":11},
-{"name":"Devin_AI","slug":"devin-ai","tier":1,"skill_primary":"coding","skill_tags":["ai","coding","software engineer","agent"],"location":"global","country":"usa","website":"https://devin.ai","source":"curated_ai","reputation_score":12},
-{"name":"OpenHands","slug":"openhands","tier":1,"skill_primary":"coding","skill_tags":["ai","coding","agent","open source"],"location":"global","country":"global","website":"https://all-hands.dev","source":"curated_ai","reputation_score":11},
-{"name":"Bolt_new","slug":"bolt-new","tier":1,"skill_primary":"coding","skill_tags":["ai","coding","web","apps"],"location":"global","country":"usa","website":"https://bolt.new","source":"curated_ai","reputation_score":11},
-{"name":"Lovable","slug":"lovable-app","tier":1,"skill_primary":"coding","skill_tags":["ai","coding","web","apps"],"location":"global","country":"sweden","website":"https://lovable.dev","source":"curated_ai","reputation_score":11},
-{"name":"Vercel_v0","slug":"vercel-v0","tier":1,"skill_primary":"coding","skill_tags":["ai","coding","web","ui","design"],"location":"global","country":"usa","website":"https://v0.dev","source":"curated_ai","reputation_score":11},
-{"name":"Amazon_Q_Developer","slug":"amazon-q-developer","tier":1,"skill_primary":"coding","skill_tags":["ai","coding","aws","developer"],"location":"global","country":"usa","website":"https://aws.amazon.com/q/developer/","source":"curated_ai","reputation_score":11},
-{"name":"LangChain","slug":"langchain","tier":1,"skill_primary":"coding","skill_tags":["ai","framework","agents","developer"],"location":"global","country":"usa","website":"https://langchain.com","source":"curated_ai","reputation_score":12},
-{"name":"LlamaIndex","slug":"llamaindex","tier":1,"skill_primary":"coding","skill_tags":["ai","framework","rag","developer"],"location":"global","country":"usa","website":"https://llamaindex.ai","source":"curated_ai","reputation_score":11},
-{"name":"CrewAI","slug":"crewai","tier":1,"skill_primary":"coding","skill_tags":["ai","framework","agents","automation"],"location":"global","country":"usa","website":"https://crewai.com","source":"curated_ai","reputation_score":11},
-{"name":"Pydantic_AI","slug":"pydantic-ai","tier":1,"skill_primary":"coding","skill_tags":["ai","framework","python","agents"],"location":"global","country":"global","website":"https://ai.pydantic.dev","source":"curated_ai","reputation_score":10},
-{"name":"Hugging_Face","slug":"hugging-face","tier":1,"skill_primary":"coding","skill_tags":["ai","models","hosting","open source","agents"],"location":"global","country":"usa","website":"https://huggingface.co","source":"curated_ai","reputation_score":13},
-{"name":"Replicate","slug":"replicate-ai","tier":1,"skill_primary":"coding","skill_tags":["ai","models","api","hosting"],"location":"global","country":"usa","website":"https://replicate.com","source":"curated_ai","reputation_score":11},
-{"name":"Poe","slug":"poe-quora","tier":1,"skill_primary":"coding","skill_tags":["ai","bots","assistant","chat"],"location":"global","country":"usa","website":"https://poe.com","source":"curated_ai","reputation_score":11},
-{"name":"agent_ai","slug":"agent-ai-network","tier":1,"skill_primary":"coding","skill_tags":["ai","agents","directory","network"],"location":"global","country":"usa","website":"https://agent.ai","source":"curated_ai","reputation_score":11},
-{"name":"Smithery_MCP","slug":"smithery-mcp","tier":1,"skill_primary":"coding","skill_tags":["ai","mcp","tools","registry","developer"],"location":"global","country":"global","website":"https://smithery.ai","source":"curated_ai","reputation_score":10},
-{"name":"Glama_MCP","slug":"glama-mcp","tier":1,"skill_primary":"coding","skill_tags":["ai","mcp","registry","developer"],"location":"global","country":"global","website":"https://glama.ai","source":"curated_ai","reputation_score":10},
-{"name":"PulseMCP","slug":"pulsemcp","tier":1,"skill_primary":"coding","skill_tags":["ai","mcp","registry","developer"],"location":"global","country":"global","website":"https://pulsemcp.com","source":"curated_ai","reputation_score":10},
-{"name":"ElevenLabs","slug":"elevenlabs","tier":1,"skill_primary":"media_production","skill_tags":["ai","voice","audio","speech"],"location":"global","country":"usa","website":"https://elevenlabs.io","source":"curated_ai","reputation_score":12},
-{"name":"Vapi_AI","slug":"vapi-ai","tier":1,"skill_primary":"media_production","skill_tags":["ai","voice","phone","agents"],"location":"global","country":"usa","website":"https://vapi.ai","source":"curated_ai","reputation_score":10},
-{"name":"Retell_AI","slug":"retell-ai","tier":1,"skill_primary":"media_production","skill_tags":["ai","voice","phone","agents"],"location":"global","country":"usa","website":"https://retellai.com","source":"curated_ai","reputation_score":10},
-{"name":"Midjourney","slug":"midjourney","tier":1,"skill_primary":"design","skill_tags":["ai","image","art","creative"],"location":"global","country":"usa","website":"https://midjourney.com","source":"curated_ai","reputation_score":12},
-{"name":"Stability_AI","slug":"stability-ai","tier":1,"skill_primary":"design","skill_tags":["ai","image","stable diffusion","creative"],"location":"global","country":"uk","website":"https://stability.ai","source":"curated_ai","reputation_score":11},
-{"name":"Runway","slug":"runway-ml","tier":1,"skill_primary":"media_production","skill_tags":["ai","video","creative","film"],"location":"global","country":"usa","website":"https://runwayml.com","source":"curated_ai","reputation_score":11},
-{"name":"Suno","slug":"suno-music","tier":1,"skill_primary":"media_production","skill_tags":["ai","music","audio","creative"],"location":"global","country":"usa","website":"https://suno.com","source":"curated_ai","reputation_score":11},
-{"name":"Adobe_Firefly","slug":"adobe-firefly","tier":1,"skill_primary":"design","skill_tags":["ai","image","creative","photoshop"],"location":"global","country":"usa","website":"https://www.adobe.com/products/firefly.html","source":"curated_ai","reputation_score":11},
-{"name":"Canva","slug":"canva","tier":1,"skill_primary":"design","skill_tags":["design","graphics","marketing","ai"],"location":"global","country":"australia","website":"https://canva.com","source":"verified_global","reputation_score":12},
-{"name":"Figma","slug":"figma","tier":1,"skill_primary":"design","skill_tags":["design","ui","ux","collaboration"],"location":"global","country":"usa","website":"https://figma.com","source":"verified_global","reputation_score":12},
-{"name":"Zapier","slug":"zapier","tier":1,"skill_primary":"coding","skill_tags":["ai","automation","workflow","integration"],"location":"global","country":"usa","website":"https://zapier.com","source":"curated_ai","reputation_score":12},
-{"name":"n8n","slug":"n8n-automation","tier":1,"skill_primary":"coding","skill_tags":["ai","automation","workflow","open source"],"location":"global","country":"germany","website":"https://n8n.io","source":"curated_ai","reputation_score":11},
-{"name":"Make","slug":"make-automation","tier":1,"skill_primary":"coding","skill_tags":["automation","workflow","integration"],"location":"global","country":"global","website":"https://make.com","source":"curated_ai","reputation_score":10},
-{"name":"Lindy_AI","slug":"lindy-ai","tier":1,"skill_primary":"coding","skill_tags":["ai","automation","assistant","agents"],"location":"global","country":"usa","website":"https://lindy.ai","source":"curated_ai","reputation_score":10},
-{"name":"Dify_AI","slug":"dify-ai","tier":1,"skill_primary":"coding","skill_tags":["ai","agents","platform","open source"],"location":"global","country":"global","website":"https://dify.ai","source":"curated_ai","reputation_score":10},
-{"name":"Kenya_Airways","slug":"kenya-airways","tier":1,"skill_primary":"travel_agency","skill_tags":["flights","airline","travel","tourism"],"location":"nairobi","country":"kenya","website":"https://kenya-airways.com","source":"verified_global","reputation_score":13},
-{"name":"Ethiopian_Airlines","slug":"ethiopian-airlines","tier":1,"skill_primary":"travel_agency","skill_tags":["flights","airline","travel","cargo"],"location":"addis","country":"ethiopia","website":"https://ethiopianairlines.com","source":"verified_global","reputation_score":13},
-{"name":"RwandAir","slug":"rwandair","tier":1,"skill_primary":"travel_agency","skill_tags":["flights","airline","travel"],"location":"kigali","country":"rwanda","website":"https://rwandair.com","source":"verified_global","reputation_score":12},
-{"name":"Uganda_Airlines","slug":"uganda-airlines","tier":1,"skill_primary":"travel_agency","skill_tags":["flights","airline","travel"],"location":"entebbe","country":"uganda","website":"https://ugandairlines.com","source":"verified_global","reputation_score":12},
-{"name":"Emirates","slug":"emirates-airline","tier":1,"skill_primary":"travel_agency","skill_tags":["flights","airline","travel"],"location":"dubai","country":"uae","website":"https://emirates.com","source":"verified_global","reputation_score":12},
-{"name":"KLM","slug":"klm-airline","tier":1,"skill_primary":"travel_agency","skill_tags":["flights","airline","travel"],"location":"amsterdam","country":"netherlands","website":"https://klm.com","source":"verified_global","reputation_score":12},
-{"name":"Booking_com","slug":"booking-com","tier":1,"skill_primary":"hotel_lodging","skill_tags":["hotel","accommodation","travel","booking"],"location":"global","country":"netherlands","website":"https://booking.com","source":"verified_global","reputation_score":12},
-{"name":"Airbnb","slug":"airbnb","tier":1,"skill_primary":"hotel_lodging","skill_tags":["accommodation","stays","travel"],"location":"global","country":"usa","website":"https://airbnb.com","source":"verified_global","reputation_score":12},
-{"name":"Serena_Hotels","slug":"serena-hotels","tier":1,"skill_primary":"hotel_lodging","skill_tags":["hotel","luxury","safari","east africa"],"location":"nairobi","country":"kenya","website":"https://serenahotels.com","source":"verified_global","reputation_score":11},
-{"name":"MTN_Uganda","slug":"mtn-uganda-official","tier":1,"skill_primary":"mobile_money","skill_tags":["telecom","momo","mobile money","internet"],"location":"kampala","country":"uganda","website":"https://mtn.co.ug","source":"verified_global","reputation_score":13},
-{"name":"Airtel_Uganda","slug":"airtel-uganda-official","tier":1,"skill_primary":"mobile_money","skill_tags":["telecom","airtel money","mobile money","internet"],"location":"kampala","country":"uganda","website":"https://airtel.co.ug","source":"verified_global","reputation_score":12},
-{"name":"Safaricom_MPESA","slug":"safaricom-mpesa","tier":1,"skill_primary":"mobile_money","skill_tags":["telecom","mpesa","mobile money","kenya"],"location":"nairobi","country":"kenya","website":"https://safaricom.co.ke","source":"verified_global","reputation_score":13},
-{"name":"Wise","slug":"wise-transfer","tier":1,"skill_primary":"remittance","skill_tags":["money transfer","forex","remittance","diaspora"],"location":"global","country":"uk","website":"https://wise.com","source":"verified_global","reputation_score":13},
-{"name":"WorldRemit","slug":"worldremit","tier":1,"skill_primary":"remittance","skill_tags":["money transfer","remittance","diaspora","africa"],"location":"global","country":"uk","website":"https://worldremit.com","source":"verified_global","reputation_score":12},
-{"name":"Sendwave","slug":"sendwave","tier":1,"skill_primary":"remittance","skill_tags":["money transfer","remittance","africa","diaspora"],"location":"global","country":"usa","website":"https://sendwave.com","source":"verified_global","reputation_score":11},
-{"name":"Chipper_Cash","slug":"chipper-cash","tier":1,"skill_primary":"remittance","skill_tags":["money transfer","africa","mobile money"],"location":"global","country":"uganda","website":"https://chippercash.com","source":"verified_global","reputation_score":11},
-{"name":"Flutterwave","slug":"flutterwave","tier":1,"skill_primary":"finance","skill_tags":["payments","fintech","africa","api"],"location":"lagos","country":"nigeria","website":"https://flutterwave.com","source":"verified_global","reputation_score":12},
-{"name":"Paystack","slug":"paystack","tier":1,"skill_primary":"finance","skill_tags":["payments","fintech","africa","api"],"location":"lagos","country":"nigeria","website":"https://paystack.com","source":"verified_global","reputation_score":12},
-{"name":"Equity_Bank","slug":"equity-bank-kenya","tier":1,"skill_primary":"bank","skill_tags":["bank","loans","finance","east africa"],"location":"nairobi","country":"kenya","website":"https://equitygroupholdings.com","source":"verified_global","reputation_score":12},
-{"name":"KCB_Bank","slug":"kcb-bank","tier":1,"skill_primary":"bank","skill_tags":["bank","loans","finance","kenya"],"location":"nairobi","country":"kenya","website":"https://kcbgroup.com","source":"verified_global","reputation_score":11},
-{"name":"Stanbic_Bank_Uganda","slug":"stanbic-bank-uganda","tier":1,"skill_primary":"bank","skill_tags":["bank","loans","finance","uganda"],"location":"kampala","country":"uganda","website":"https://stanbicbank.co.ug","source":"verified_global","reputation_score":11},
-{"name":"Centenary_Bank","slug":"centenary-bank","tier":1,"skill_primary":"bank","skill_tags":["bank","microfinance","uganda","loans"],"location":"kampala","country":"uganda","website":"https://centenarybank.co.ug","source":"verified_global","reputation_score":11},
-{"name":"Absa_Africa","slug":"absa-africa","tier":1,"skill_primary":"bank","skill_tags":["bank","finance","africa","loans"],"location":"johannesburg","country":"southafrica","website":"https://absa.africa","source":"verified_global","reputation_score":11},
-{"name":"DHL","slug":"dhl-express","tier":1,"skill_primary":"logistics","skill_tags":["courier","shipping","freight","delivery"],"location":"global","country":"germany","website":"https://dhl.com","source":"verified_global","reputation_score":12},
-{"name":"FedEx","slug":"fedex","tier":1,"skill_primary":"logistics","skill_tags":["courier","shipping","freight","delivery"],"location":"global","country":"usa","website":"https://fedex.com","source":"verified_global","reputation_score":11},
-{"name":"Jumia","slug":"jumia-africa","tier":1,"skill_primary":"logistics","skill_tags":["ecommerce","delivery","shopping","africa"],"location":"lagos","country":"nigeria","website":"https://jumia.com","source":"verified_global","reputation_score":12},
-{"name":"Alibaba","slug":"alibaba","tier":1,"skill_primary":"china_sourcing","skill_tags":["import","export","china","sourcing","wholesale"],"location":"guangzhou","country":"china","website":"https://alibaba.com","source":"verified_global","reputation_score":12},
-{"name":"Uber","slug":"uber","tier":1,"skill_primary":"transport","skill_tags":["taxi","ride","delivery","transport"],"location":"global","country":"usa","website":"https://uber.com","source":"verified_global","reputation_score":12},
-{"name":"Bolt","slug":"bolt-ride","tier":1,"skill_primary":"transport","skill_tags":["taxi","ride","boda","transport","africa"],"location":"global","country":"estonia","website":"https://bolt.eu","source":"verified_global","reputation_score":12},
-{"name":"SafeBoda","slug":"safeboda","tier":1,"skill_primary":"transport","skill_tags":["boda","ride","delivery","kampala"],"location":"kampala","country":"uganda","website":"https://safeboda.com","source":"verified_global","reputation_score":11},
-{"name":"Uganda_Law_Society","slug":"uganda-law-society","tier":1,"skill_primary":"legal","skill_tags":["lawyer","advocate","law","referral"],"location":"kampala","country":"uganda","website":"https://uls.or.ug","source":"verified_global","reputation_score":12},
-{"name":"Law_Society_of_Kenya","slug":"law-society-kenya","tier":1,"skill_primary":"legal","skill_tags":["lawyer","advocate","law","referral"],"location":"nairobi","country":"kenya","website":"https://lsk.or.ke","source":"verified_global","reputation_score":12},
-{"name":"URA_Uganda_Revenue","slug":"ura-uganda","tier":1,"skill_primary":"tax","skill_tags":["tax","ura","revenue","customs","uganda"],"location":"kampala","country":"uganda","website":"https://ura.go.ug","source":"verified_global","reputation_score":12},
-{"name":"KRA_Kenya_Revenue","slug":"kra-kenya","tier":1,"skill_primary":"tax","skill_tags":["tax","kra","revenue","customs","kenya"],"location":"nairobi","country":"kenya","website":"https://kra.go.ke","source":"verified_global","reputation_score":12},
-{"name":"NSSF_Uganda","slug":"nssf-uganda","tier":1,"skill_primary":"finance","skill_tags":["pension","savings","social security","uganda"],"location":"kampala","country":"uganda","website":"https://nssfug.org","source":"verified_global","reputation_score":11},
-{"name":"UNBS","slug":"unbs-uganda","tier":1,"skill_primary":"legal","skill_tags":["standards","certification","compliance","uganda"],"location":"kampala","country":"uganda","website":"https://unbs.go.ug","source":"verified_global","reputation_score":11},
-{"name":"NWSC_Water","slug":"nwsc-uganda","tier":1,"skill_primary":"water_supply","skill_tags":["water","utility","uganda"],"location":"kampala","country":"uganda","website":"https://nwsc.co.ug","source":"verified_global","reputation_score":11},
-{"name":"Makerere_University","slug":"makerere-university","tier":1,"skill_primary":"education","skill_tags":["university","education","research","uganda"],"location":"kampala","country":"uganda","website":"https://mak.ac.ug","source":"verified_global","reputation_score":12},
-{"name":"University_of_Nairobi","slug":"university-of-nairobi","tier":1,"skill_primary":"education","skill_tags":["university","education","research","kenya"],"location":"nairobi","country":"kenya","website":"https://uonbi.ac.ke","source":"verified_global","reputation_score":11},
-{"name":"Coursera","slug":"coursera","tier":1,"skill_primary":"education","skill_tags":["courses","learning","certificates","online"],"location":"global","country":"usa","website":"https://coursera.org","source":"verified_global","reputation_score":12},
-{"name":"Khan_Academy","slug":"khan-academy","tier":1,"skill_primary":"education","skill_tags":["learning","school","free","tutoring"],"location":"global","country":"usa","website":"https://khanacademy.org","source":"verified_global","reputation_score":12},
-{"name":"FoondaMate","slug":"foondamate","tier":1,"skill_primary":"education","skill_tags":["whatsapp","study","school","africa"],"location":"cape town","country":"southafrica","website":"https://foondamate.com","source":"verified_global","reputation_score":11},
-{"name":"BrighterMonday_Uganda","slug":"brightermonday-uganda","tier":1,"skill_primary":"recruitment","skill_tags":["jobs","hiring","careers","uganda"],"location":"kampala","country":"uganda","website":"https://brightermonday.co.ug","source":"verified_global","reputation_score":11},
-{"name":"Fuzu","slug":"fuzu-jobs","tier":1,"skill_primary":"recruitment","skill_tags":["jobs","careers","east africa","hiring"],"location":"nairobi","country":"kenya","website":"https://fuzu.com","source":"verified_global","reputation_score":11},
-{"name":"LinkedIn","slug":"linkedin","tier":1,"skill_primary":"recruitment","skill_tags":["jobs","networking","careers","professional"],"location":"global","country":"usa","website":"https://linkedin.com","source":"verified_global","reputation_score":12},
-{"name":"Upwork","slug":"upwork","tier":1,"skill_primary":"recruitment","skill_tags":["freelance","jobs","remote","hiring"],"location":"global","country":"usa","website":"https://upwork.com","source":"verified_global","reputation_score":12},
-{"name":"Fiverr","slug":"fiverr","tier":1,"skill_primary":"recruitment","skill_tags":["freelance","gigs","design","services"],"location":"global","country":"israel","website":"https://fiverr.com","source":"verified_global","reputation_score":11},
-{"name":"Andela","slug":"andela","tier":1,"skill_primary":"recruitment","skill_tags":["developers","remote","africa","talent"],"location":"lagos","country":"nigeria","website":"https://andela.com","source":"verified_global","reputation_score":11},
-{"name":"M_KOPA","slug":"m-kopa","tier":1,"skill_primary":"solar_energy","skill_tags":["solar","financing","phones","africa"],"location":"nairobi","country":"kenya","website":"https://m-kopa.com","source":"verified_global","reputation_score":11},
-{"name":"d_light","slug":"d-light-solar","tier":1,"skill_primary":"solar_energy","skill_tags":["solar","off grid","energy","africa"],"location":"nairobi","country":"kenya","website":"https://dlight.com","source":"verified_global","reputation_score":10},
-{"name":"SunCulture","slug":"sunculture","tier":1,"skill_primary":"agriculture","skill_tags":["solar","irrigation","farming","kenya"],"location":"nairobi","country":"kenya","website":"https://sunculture.io","source":"verified_global","reputation_score":10},
-{"name":"One_Acre_Fund","slug":"one-acre-fund","tier":1,"skill_primary":"agriculture","skill_tags":["farming","smallholder","inputs","africa"],"location":"kigali","country":"rwanda","website":"https://oneacrefund.org","source":"verified_global","reputation_score":11},
-{"name":"Twiga_Foods","slug":"twiga-foods","tier":1,"skill_primary":"agriculture","skill_tags":["food","supply chain","market","kenya"],"location":"nairobi","country":"kenya","website":"https://twiga.com","source":"verified_global","reputation_score":10},
-{"name":"iProcure","slug":"iprocure","tier":1,"skill_primary":"agriculture","skill_tags":["farm inputs","supply chain","kenya"],"location":"nairobi","country":"kenya","website":"https://iprocu.re","source":"verified_global","reputation_score":9},
-{"name":"Booking_Flights_Google","slug":"google-flights","tier":1,"skill_primary":"travel_agency","skill_tags":["flights","search","travel","booking"],"location":"global","country":"global","website":"https://google.com/travel/flights","source":"verified_global","reputation_score":11},
-{"name":"Godena_Web","slug":"godena-web","tier":2,"skill_primary":"coding","skill_tags":["ai","agents","search","directory","network"],"location":"kampala","country":"uganda","website":"https://sammyghe.github.io/Godena/","source":"curated_ai","reputation_score":12},
-{"name":"Stripe","slug":"stripe","tier":1,"skill_primary":"finance","skill_tags":["payments","api","fintech","developer"],"location":"global","country":"usa","website":"https://stripe.com","source":"verified_global","reputation_score":12},
-{"name":"PayPal","slug":"paypal","tier":1,"skill_primary":"finance","skill_tags":["payments","money transfer","online"],"location":"global","country":"usa","website":"https://paypal.com","source":"verified_global","reputation_score":11},
-{"name":"Binance","slug":"binance","tier":1,"skill_primary":"cryptocurrency","skill_tags":["crypto","bitcoin","exchange","p2p"],"location":"global","country":"global","website":"https://binance.com","source":"verified_global","reputation_score":11},
-{"name":"Coinbase","slug":"coinbase","tier":1,"skill_primary":"cryptocurrency","skill_tags":["crypto","bitcoin","exchange","wallet"],"location":"global","country":"usa","website":"https://coinbase.com","source":"verified_global","reputation_score":11},
-{"name":"Yellow_Card","slug":"yellow-card-africa","tier":1,"skill_primary":"cryptocurrency","skill_tags":["crypto","stablecoin","africa","p2p"],"location":"lagos","country":"nigeria","website":"https://yellowcard.io","source":"verified_global","reputation_score":10},
-{"name":"IOM_Migration","slug":"iom-migration","tier":1,"skill_primary":"immigration","skill_tags":["migration","visa","refugees","global"],"location":"global","country":"global","website":"https://iom.int","source":"verified_global","reputation_score":11},
-{"name":"VFS_Global","slug":"vfs-global","tier":1,"skill_primary":"visa_consulting","skill_tags":["visa","applications","embassy","travel"],"location":"global","country":"uae","website":"https://vfsglobal.com","source":"verified_global","reputation_score":11},
-{"name":"DAAD_Scholarships","slug":"daad-scholarships","tier":1,"skill_primary":"scholarship_finder","skill_tags":["scholarship","germany","study abroad","grants"],"location":"berlin","country":"germany","website":"https://daad.de","source":"verified_global","reputation_score":11},
-{"name":"Chevening_Scholarships","slug":"chevening","tier":1,"skill_primary":"scholarship_finder","skill_tags":["scholarship","uk","masters","study abroad"],"location":"london","country":"uk","website":"https://chevening.org","source":"verified_global","reputation_score":11},
-{"name":"Mastercard_Foundation_Scholars","slug":"mastercard-foundation-scholars","tier":1,"skill_primary":"scholarship_finder","skill_tags":["scholarship","africa","university","funding"],"location":"global","country":"global","website":"https://mastercardfdn.org/all/scholars/","source":"verified_global","reputation_score":11},
-{"name":"YC_Startup_School","slug":"yc-startup-school","tier":1,"skill_primary":"startup_support","skill_tags":["startup","accelerator","funding","founders"],"location":"sf","country":"usa","website":"https://startupschool.org","source":"verified_global","reputation_score":11},
-{"name":"Y_Combinator","slug":"y-combinator","tier":1,"skill_primary":"startup_support","skill_tags":["startup","accelerator","funding","investor"],"location":"sf","country":"usa","website":"https://ycombinator.com","source":"verified_global","reputation_score":12},
-{"name":"Future_Africa","slug":"future-africa","tier":1,"skill_primary":"startup_support","skill_tags":["investor","africa","venture","funding"],"location":"lagos","country":"nigeria","website":"https://future.africa","source":"verified_global","reputation_score":10},
-{"name":"Norrsken_East_Africa","slug":"norrsken-east-africa","tier":1,"skill_primary":"startup_support","skill_tags":["startup","hub","kigali","funding"],"location":"kigali","country":"rwanda","website":"https://norrsken.org","source":"verified_global","reputation_score":10},
-{"name":"Anthropic","slug":"anthropic","tier":1,"skill_primary":"coding","skill_tags":["ai","api","claude","models","safety"],"location":"sf","country":"usa","website":"https://anthropic.com","source":"curated_ai","reputation_score":13},
-{"name":"OpenAI","slug":"openai","tier":1,"skill_primary":"coding","skill_tags":["ai","api","gpt","models"],"location":"sf","country":"usa","website":"https://openai.com","source":"curated_ai","reputation_score":13},
-{"name":"Groq","slug":"groq","tier":1,"skill_primary":"coding","skill_tags":["ai","api","inference","fast","llm"],"location":"global","country":"usa","website":"https://groq.com","source":"curated_ai","reputation_score":11},
-{"name":"Ollama","slug":"ollama","tier":1,"skill_primary":"coding","skill_tags":["ai","local","models","open source"],"location":"global","country":"global","website":"https://ollama.com","source":"curated_ai","reputation_score":11},
-{"name":"Notion_AI","slug":"notion-ai","tier":1,"skill_primary":"coding","skill_tags":["ai","productivity","notes","workspace"],"location":"global","country":"usa","website":"https://notion.com","source":"curated_ai","reputation_score":11},
-{"name":"Grammarly","slug":"grammarly","tier":1,"skill_primary":"translation","skill_tags":["ai","writing","english","editing"],"location":"global","country":"usa","website":"https://grammarly.com","source":"curated_ai","reputation_score":11},
-{"name":"DeepL","slug":"deepl-translate","tier":1,"skill_primary":"translation","skill_tags":["ai","translation","languages"],"location":"global","country":"germany","website":"https://deepl.com","source":"curated_ai","reputation_score":11},
-{"name":"Google_Translate","slug":"google-translate","tier":1,"skill_primary":"translation","skill_tags":["translation","languages","free","swahili"],"location":"global","country":"global","website":"https://translate.google.com","source":"verified_global","reputation_score":11},
-{"name":"Shopify","slug":"shopify","tier":1,"skill_primary":"marketing","skill_tags":["ecommerce","store","online shop","business"],"location":"global","country":"canada","website":"https://shopify.com","source":"verified_global","reputation_score":11},
-{"name":"Mailchimp","slug":"mailchimp","tier":1,"skill_primary":"marketing","skill_tags":["email","marketing","campaigns","automation"],"location":"global","country":"usa","website":"https://mailchimp.com","source":"verified_global","reputation_score":10},
-{"name":"WHO_Health_Info","slug":"who-health","tier":1,"skill_primary":"healthcare","skill_tags":["health","information","guidance","global"],"location":"global","country":"global","website":"https://who.int","source":"verified_global","reputation_score":12},
-{"name":"Marie_Stopes_Uganda","slug":"marie-stopes-uganda","tier":1,"skill_primary":"healthcare","skill_tags":["clinic","health","family planning","uganda"],"location":"kampala","country":"uganda","website":"https://mariestopes.or.ug","source":"verified_global","reputation_score":10},
-{"name":"AAR_Healthcare","slug":"aar-healthcare","tier":1,"skill_primary":"healthcare","skill_tags":["clinic","insurance","health","east africa"],"location":"nairobi","country":"kenya","website":"https://aar-healthcare.com","source":"verified_global","reputation_score":10},
-{"name":"Jubilee_Insurance","slug":"jubilee-insurance","tier":1,"skill_primary":"insurance","skill_tags":["insurance","health cover","motor","east africa"],"location":"nairobi","country":"kenya","website":"https://jubileeinsurance.com","source":"verified_global","reputation_score":10},
-{"name":"UAP_Old_Mutual","slug":"uap-old-mutual","tier":1,"skill_primary":"insurance","skill_tags":["insurance","cover","east africa"],"location":"nairobi","country":"kenya","website":"https://uapoldmutual.com","source":"verified_global","reputation_score":10},
-{"name":"Knight_Frank_Uganda","slug":"knight-frank-uganda","tier":1,"skill_primary":"real_estate","skill_tags":["property","land","rental","valuation"],"location":"kampala","country":"uganda","website":"https://knightfrank.ug","source":"verified_global","reputation_score":10},
-{"name":"BuyRentKenya","slug":"buyrentkenya","tier":1,"skill_primary":"real_estate","skill_tags":["property","house","rental","kenya"],"location":"nairobi","country":"kenya","website":"https://buyrentkenya.com","source":"verified_global","reputation_score":10},
-{"name":"Lamudi_Property24","slug":"property24-africa","tier":1,"skill_primary":"real_estate","skill_tags":["property","house","rental","africa"],"location":"johannesburg","country":"southafrica","website":"https://property24.com","source":"verified_global","reputation_score":10},
-{"name":"Cloudflare","slug":"cloudflare","tier":1,"skill_primary":"coding","skill_tags":["hosting","dns","security","developer"],"location":"global","country":"usa","website":"https://cloudflare.com","source":"verified_global","reputation_score":11},
-{"name":"GitHub","slug":"github","tier":1,"skill_primary":"coding","skill_tags":["code","open source","developer","git"],"location":"global","country":"usa","website":"https://github.com","source":"verified_global","reputation_score":12},
-{"name":"Supabase","slug":"supabase","tier":1,"skill_primary":"coding","skill_tags":["database","postgres","api","developer"],"location":"global","country":"global","website":"https://supabase.com","source":"verified_global","reputation_score":11},
-{"name":"Vercel","slug":"vercel","tier":1,"skill_primary":"coding","skill_tags":["hosting","web","deploy","developer"],"location":"global","country":"usa","website":"https://vercel.com","source":"verified_global","reputation_score":11}
+{
+"name": "Claude",
+"slug": "claude-ai",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"assistant",
+"coding",
+"writing",
+"research",
+"analysis"
+],
+"location": "global",
+"country": "global",
+"website": "https://claude.ai",
+"source": "curated_ai",
+"reputation_score": 14
+},
+{
+"name": "ChatGPT",
+"slug": "chatgpt",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"assistant",
+"coding",
+"writing",
+"research"
+],
+"location": "global",
+"country": "global",
+"website": "https://chatgpt.com",
+"source": "curated_ai",
+"reputation_score": 14
+},
+{
+"name": "Gemini",
+"slug": "gemini-google",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"assistant",
+"research",
+"writing"
+],
+"location": "global",
+"country": "global",
+"website": "https://gemini.google.com",
+"source": "curated_ai",
+"reputation_score": 13
+},
+{
+"name": "Perplexity_AI",
+"slug": "perplexity-ai",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"research",
+"search",
+"answers"
+],
+"location": "global",
+"country": "global",
+"website": "https://perplexity.ai",
+"source": "curated_ai",
+"reputation_score": 13
+},
+{
+"name": "DeepSeek",
+"slug": "deepseek",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"coding",
+"research",
+"llm"
+],
+"location": "global",
+"country": "china",
+"website": "https://deepseek.com",
+"source": "curated_ai",
+"reputation_score": 12
+},
+{
+"name": "Mistral_Le_Chat",
+"slug": "mistral-le-chat",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"assistant",
+"coding",
+"llm"
+],
+"location": "global",
+"country": "france",
+"website": "https://chat.mistral.ai",
+"source": "curated_ai",
+"reputation_score": 12
+},
+{
+"name": "Grok",
+"slug": "grok-xai",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"assistant",
+"research"
+],
+"location": "global",
+"country": "usa",
+"website": "https://grok.com",
+"source": "curated_ai",
+"reputation_score": 12
+},
+{
+"name": "Claude_Code",
+"slug": "claude-code",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"coding",
+"developer",
+"cli",
+"agent"
+],
+"location": "global",
+"country": "global",
+"website": "https://claude.com/claude-code",
+"source": "curated_ai",
+"reputation_score": 14
+},
+{
+"name": "Cursor_AI",
+"slug": "cursor-ai-editor",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"coding",
+"developer",
+"ide",
+"software"
+],
+"location": "global",
+"country": "usa",
+"website": "https://cursor.com",
+"source": "curated_ai",
+"reputation_score": 13
+},
+{
+"name": "GitHub_Copilot",
+"slug": "github-copilot",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"coding",
+"developer",
+"software"
+],
+"location": "global",
+"country": "usa",
+"website": "https://github.com/features/copilot",
+"source": "curated_ai",
+"reputation_score": 13
+},
+{
+"name": "Windsurf",
+"slug": "windsurf-editor",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"coding",
+"ide",
+"developer"
+],
+"location": "global",
+"country": "usa",
+"website": "https://windsurf.com",
+"source": "curated_ai",
+"reputation_score": 12
+},
+{
+"name": "Replit_Agent",
+"slug": "replit-agent",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"coding",
+"apps",
+"developer"
+],
+"location": "global",
+"country": "usa",
+"website": "https://replit.com",
+"source": "curated_ai",
+"reputation_score": 12
+},
+{
+"name": "Aider",
+"slug": "aider-pair-programmer",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"coding",
+"cli",
+"open source"
+],
+"location": "global",
+"country": "global",
+"website": "https://aider.chat",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "Cline",
+"slug": "cline-vscode",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"coding",
+"vscode",
+"open source"
+],
+"location": "global",
+"country": "global",
+"website": "https://cline.bot",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "Devin_AI",
+"slug": "devin-ai",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"coding",
+"software engineer",
+"agent"
+],
+"location": "global",
+"country": "usa",
+"website": "https://devin.ai",
+"source": "curated_ai",
+"reputation_score": 12
+},
+{
+"name": "OpenHands",
+"slug": "openhands",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"coding",
+"agent",
+"open source"
+],
+"location": "global",
+"country": "global",
+"website": "https://all-hands.dev",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "Bolt_new",
+"slug": "bolt-new",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"coding",
+"web",
+"apps"
+],
+"location": "global",
+"country": "usa",
+"website": "https://bolt.new",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "Lovable",
+"slug": "lovable-app",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"coding",
+"web",
+"apps"
+],
+"location": "global",
+"country": "sweden",
+"website": "https://lovable.dev",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "Vercel_v0",
+"slug": "vercel-v0",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"coding",
+"web",
+"ui",
+"design"
+],
+"location": "global",
+"country": "usa",
+"website": "https://v0.dev",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "Amazon_Q_Developer",
+"slug": "amazon-q-developer",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"coding",
+"aws",
+"developer"
+],
+"location": "global",
+"country": "usa",
+"website": "https://aws.amazon.com/q/developer/",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "LangChain",
+"slug": "langchain",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"framework",
+"agents",
+"developer"
+],
+"location": "global",
+"country": "usa",
+"website": "https://langchain.com",
+"source": "curated_ai",
+"reputation_score": 12
+},
+{
+"name": "LlamaIndex",
+"slug": "llamaindex",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"framework",
+"rag",
+"developer"
+],
+"location": "global",
+"country": "usa",
+"website": "https://llamaindex.ai",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "CrewAI",
+"slug": "crewai",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"framework",
+"agents",
+"automation"
+],
+"location": "global",
+"country": "usa",
+"website": "https://crewai.com",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "Pydantic_AI",
+"slug": "pydantic-ai",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"framework",
+"python",
+"agents"
+],
+"location": "global",
+"country": "global",
+"website": "https://ai.pydantic.dev",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Hugging_Face",
+"slug": "hugging-face",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"models",
+"hosting",
+"open source",
+"agents"
+],
+"location": "global",
+"country": "usa",
+"website": "https://huggingface.co",
+"source": "curated_ai",
+"reputation_score": 13
+},
+{
+"name": "Replicate",
+"slug": "replicate-ai",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"models",
+"api",
+"hosting"
+],
+"location": "global",
+"country": "usa",
+"website": "https://replicate.com",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "Poe",
+"slug": "poe-quora",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"bots",
+"assistant",
+"chat"
+],
+"location": "global",
+"country": "usa",
+"website": "https://poe.com",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "agent_ai",
+"slug": "agent-ai-network",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"agents",
+"directory",
+"network"
+],
+"location": "global",
+"country": "usa",
+"website": "https://agent.ai",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "Smithery_MCP",
+"slug": "smithery-mcp",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"mcp",
+"tools",
+"registry",
+"developer"
+],
+"location": "global",
+"country": "global",
+"website": "https://smithery.ai",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Glama_MCP",
+"slug": "glama-mcp",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"mcp",
+"registry",
+"developer"
+],
+"location": "global",
+"country": "global",
+"website": "https://glama.ai",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "PulseMCP",
+"slug": "pulsemcp",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"mcp",
+"registry",
+"developer"
+],
+"location": "global",
+"country": "global",
+"website": "https://pulsemcp.com",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "ElevenLabs",
+"slug": "elevenlabs",
+"tier": 1,
+"skill_primary": "media_production",
+"skill_tags": [
+"ai",
+"voice",
+"audio",
+"speech"
+],
+"location": "global",
+"country": "usa",
+"website": "https://elevenlabs.io",
+"source": "curated_ai",
+"reputation_score": 12
+},
+{
+"name": "Vapi_AI",
+"slug": "vapi-ai",
+"tier": 1,
+"skill_primary": "media_production",
+"skill_tags": [
+"ai",
+"voice",
+"phone",
+"agents"
+],
+"location": "global",
+"country": "usa",
+"website": "https://vapi.ai",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Retell_AI",
+"slug": "retell-ai",
+"tier": 1,
+"skill_primary": "media_production",
+"skill_tags": [
+"ai",
+"voice",
+"phone",
+"agents"
+],
+"location": "global",
+"country": "usa",
+"website": "https://retellai.com",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Midjourney",
+"slug": "midjourney",
+"tier": 1,
+"skill_primary": "design",
+"skill_tags": [
+"ai",
+"image",
+"art",
+"creative"
+],
+"location": "global",
+"country": "usa",
+"website": "https://midjourney.com",
+"source": "curated_ai",
+"reputation_score": 12
+},
+{
+"name": "Stability_AI",
+"slug": "stability-ai",
+"tier": 1,
+"skill_primary": "design",
+"skill_tags": [
+"ai",
+"image",
+"stable diffusion",
+"creative"
+],
+"location": "global",
+"country": "uk",
+"website": "https://stability.ai",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "Runway",
+"slug": "runway-ml",
+"tier": 1,
+"skill_primary": "media_production",
+"skill_tags": [
+"ai",
+"video",
+"creative",
+"film"
+],
+"location": "global",
+"country": "usa",
+"website": "https://runwayml.com",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "Suno",
+"slug": "suno-music",
+"tier": 1,
+"skill_primary": "media_production",
+"skill_tags": [
+"ai",
+"music",
+"audio",
+"creative"
+],
+"location": "global",
+"country": "usa",
+"website": "https://suno.com",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "Adobe_Firefly",
+"slug": "adobe-firefly",
+"tier": 1,
+"skill_primary": "design",
+"skill_tags": [
+"ai",
+"image",
+"creative",
+"photoshop"
+],
+"location": "global",
+"country": "usa",
+"website": "https://www.adobe.com/products/firefly.html",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "Canva",
+"slug": "canva",
+"tier": 1,
+"skill_primary": "design",
+"skill_tags": [
+"design",
+"graphics",
+"marketing",
+"ai"
+],
+"location": "global",
+"country": "australia",
+"website": "https://canva.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Figma",
+"slug": "figma",
+"tier": 1,
+"skill_primary": "design",
+"skill_tags": [
+"design",
+"ui",
+"ux",
+"collaboration"
+],
+"location": "global",
+"country": "usa",
+"website": "https://figma.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Zapier",
+"slug": "zapier",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"automation",
+"workflow",
+"integration"
+],
+"location": "global",
+"country": "usa",
+"website": "https://zapier.com",
+"source": "curated_ai",
+"reputation_score": 12
+},
+{
+"name": "n8n",
+"slug": "n8n-automation",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"automation",
+"workflow",
+"open source"
+],
+"location": "global",
+"country": "germany",
+"website": "https://n8n.io",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "Make",
+"slug": "make-automation",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"automation",
+"workflow",
+"integration"
+],
+"location": "global",
+"country": "global",
+"website": "https://make.com",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Lindy_AI",
+"slug": "lindy-ai",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"automation",
+"assistant",
+"agents"
+],
+"location": "global",
+"country": "usa",
+"website": "https://lindy.ai",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Dify_AI",
+"slug": "dify-ai",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"agents",
+"platform",
+"open source"
+],
+"location": "global",
+"country": "global",
+"website": "https://dify.ai",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Kenya_Airways",
+"slug": "kenya-airways",
+"tier": 1,
+"skill_primary": "travel_agency",
+"skill_tags": [
+"flights",
+"airline",
+"travel",
+"tourism"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://kenya-airways.com",
+"source": "verified_global",
+"reputation_score": 13
+},
+{
+"name": "Ethiopian_Airlines",
+"slug": "ethiopian-airlines",
+"tier": 1,
+"skill_primary": "travel_agency",
+"skill_tags": [
+"flights",
+"airline",
+"travel",
+"cargo"
+],
+"location": "addis",
+"country": "ethiopia",
+"website": "https://ethiopianairlines.com",
+"source": "verified_global",
+"reputation_score": 13
+},
+{
+"name": "RwandAir",
+"slug": "rwandair",
+"tier": 1,
+"skill_primary": "travel_agency",
+"skill_tags": [
+"flights",
+"airline",
+"travel"
+],
+"location": "kigali",
+"country": "rwanda",
+"website": "https://rwandair.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Uganda_Airlines",
+"slug": "uganda-airlines",
+"tier": 1,
+"skill_primary": "travel_agency",
+"skill_tags": [
+"flights",
+"airline",
+"travel"
+],
+"location": "entebbe",
+"country": "uganda",
+"website": "https://ugandairlines.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Emirates",
+"slug": "emirates-airline",
+"tier": 1,
+"skill_primary": "travel_agency",
+"skill_tags": [
+"flights",
+"airline",
+"travel"
+],
+"location": "dubai",
+"country": "uae",
+"website": "https://emirates.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "KLM",
+"slug": "klm-airline",
+"tier": 1,
+"skill_primary": "travel_agency",
+"skill_tags": [
+"flights",
+"airline",
+"travel"
+],
+"location": "amsterdam",
+"country": "netherlands",
+"website": "https://klm.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Booking_com",
+"slug": "booking-com",
+"tier": 1,
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel",
+"accommodation",
+"travel",
+"booking"
+],
+"location": "global",
+"country": "netherlands",
+"website": "https://booking.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Airbnb",
+"slug": "airbnb",
+"tier": 1,
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"accommodation",
+"stays",
+"travel"
+],
+"location": "global",
+"country": "usa",
+"website": "https://airbnb.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Serena_Hotels",
+"slug": "serena-hotels",
+"tier": 1,
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel",
+"luxury",
+"safari",
+"east africa"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://serenahotels.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "MTN_Uganda",
+"slug": "mtn-uganda-official",
+"tier": 1,
+"skill_primary": "mobile_money",
+"skill_tags": [
+"telecom",
+"momo",
+"mobile money",
+"internet"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://mtn.co.ug",
+"source": "verified_global",
+"reputation_score": 13
+},
+{
+"name": "Airtel_Uganda",
+"slug": "airtel-uganda-official",
+"tier": 1,
+"skill_primary": "mobile_money",
+"skill_tags": [
+"telecom",
+"airtel money",
+"mobile money",
+"internet"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://airtel.co.ug",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Safaricom_MPESA",
+"slug": "safaricom-mpesa",
+"tier": 1,
+"skill_primary": "mobile_money",
+"skill_tags": [
+"telecom",
+"mpesa",
+"mobile money",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://safaricom.co.ke",
+"source": "verified_global",
+"reputation_score": 13
+},
+{
+"name": "Wise",
+"slug": "wise-transfer",
+"tier": 1,
+"skill_primary": "remittance",
+"skill_tags": [
+"money transfer",
+"forex",
+"remittance",
+"diaspora"
+],
+"location": "global",
+"country": "uk",
+"website": "https://wise.com",
+"source": "verified_global",
+"reputation_score": 13
+},
+{
+"name": "WorldRemit",
+"slug": "worldremit",
+"tier": 1,
+"skill_primary": "remittance",
+"skill_tags": [
+"money transfer",
+"remittance",
+"diaspora",
+"africa"
+],
+"location": "global",
+"country": "uk",
+"website": "https://worldremit.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Sendwave",
+"slug": "sendwave",
+"tier": 1,
+"skill_primary": "remittance",
+"skill_tags": [
+"money transfer",
+"remittance",
+"africa",
+"diaspora"
+],
+"location": "global",
+"country": "usa",
+"website": "https://sendwave.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Chipper_Cash",
+"slug": "chipper-cash",
+"tier": 1,
+"skill_primary": "remittance",
+"skill_tags": [
+"money transfer",
+"africa",
+"mobile money"
+],
+"location": "global",
+"country": "uganda",
+"website": "https://chippercash.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Flutterwave",
+"slug": "flutterwave",
+"tier": 1,
+"skill_primary": "finance",
+"skill_tags": [
+"payments",
+"fintech",
+"africa",
+"api"
+],
+"location": "lagos",
+"country": "nigeria",
+"website": "https://flutterwave.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Paystack",
+"slug": "paystack",
+"tier": 1,
+"skill_primary": "finance",
+"skill_tags": [
+"payments",
+"fintech",
+"africa",
+"api"
+],
+"location": "lagos",
+"country": "nigeria",
+"website": "https://paystack.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Equity_Bank",
+"slug": "equity-bank-kenya",
+"tier": 1,
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"loans",
+"finance",
+"east africa"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://equitygroupholdings.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "KCB_Bank",
+"slug": "kcb-bank",
+"tier": 1,
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"loans",
+"finance",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://kcbgroup.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Stanbic_Bank_Uganda",
+"slug": "stanbic-bank-uganda",
+"tier": 1,
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"loans",
+"finance",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://stanbicbank.co.ug",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Centenary_Bank",
+"slug": "centenary-bank",
+"tier": 1,
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"microfinance",
+"uganda",
+"loans"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://centenarybank.co.ug",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Absa_Africa",
+"slug": "absa-africa",
+"tier": 1,
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"finance",
+"africa",
+"loans"
+],
+"location": "johannesburg",
+"country": "southafrica",
+"website": "https://absa.africa",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "DHL",
+"slug": "dhl-express",
+"tier": 1,
+"skill_primary": "logistics",
+"skill_tags": [
+"courier",
+"shipping",
+"freight",
+"delivery"
+],
+"location": "global",
+"country": "germany",
+"website": "https://dhl.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "FedEx",
+"slug": "fedex",
+"tier": 1,
+"skill_primary": "logistics",
+"skill_tags": [
+"courier",
+"shipping",
+"freight",
+"delivery"
+],
+"location": "global",
+"country": "usa",
+"website": "https://fedex.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Jumia",
+"slug": "jumia-africa",
+"tier": 1,
+"skill_primary": "logistics",
+"skill_tags": [
+"ecommerce",
+"delivery",
+"shopping",
+"africa"
+],
+"location": "lagos",
+"country": "nigeria",
+"website": "https://jumia.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Alibaba",
+"slug": "alibaba",
+"tier": 1,
+"skill_primary": "china_sourcing",
+"skill_tags": [
+"import",
+"export",
+"china",
+"sourcing",
+"wholesale"
+],
+"location": "guangzhou",
+"country": "china",
+"website": "https://alibaba.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Uber",
+"slug": "uber",
+"tier": 1,
+"skill_primary": "transport",
+"skill_tags": [
+"taxi",
+"ride",
+"delivery",
+"transport"
+],
+"location": "global",
+"country": "usa",
+"website": "https://uber.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Bolt",
+"slug": "bolt-ride",
+"tier": 1,
+"skill_primary": "transport",
+"skill_tags": [
+"taxi",
+"ride",
+"boda",
+"transport",
+"africa"
+],
+"location": "global",
+"country": "estonia",
+"website": "https://bolt.eu",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "SafeBoda",
+"slug": "safeboda",
+"tier": 1,
+"skill_primary": "transport",
+"skill_tags": [
+"boda",
+"ride",
+"delivery",
+"kampala"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://safeboda.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Uganda_Law_Society",
+"slug": "uganda-law-society",
+"tier": 1,
+"skill_primary": "legal",
+"skill_tags": [
+"lawyer",
+"advocate",
+"law",
+"referral"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://uls.or.ug",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Law_Society_of_Kenya",
+"slug": "law-society-kenya",
+"tier": 1,
+"skill_primary": "legal",
+"skill_tags": [
+"lawyer",
+"advocate",
+"law",
+"referral"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://lsk.or.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "URA_Uganda_Revenue",
+"slug": "ura-uganda",
+"tier": 1,
+"skill_primary": "tax",
+"skill_tags": [
+"tax",
+"ura",
+"revenue",
+"customs",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://ura.go.ug",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "KRA_Kenya_Revenue",
+"slug": "kra-kenya",
+"tier": 1,
+"skill_primary": "tax",
+"skill_tags": [
+"tax",
+"kra",
+"revenue",
+"customs",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://kra.go.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "NSSF_Uganda",
+"slug": "nssf-uganda",
+"tier": 1,
+"skill_primary": "finance",
+"skill_tags": [
+"pension",
+"savings",
+"social security",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://nssfug.org",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "UNBS",
+"slug": "unbs-uganda",
+"tier": 1,
+"skill_primary": "legal",
+"skill_tags": [
+"standards",
+"certification",
+"compliance",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://unbs.go.ug",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "NWSC_Water",
+"slug": "nwsc-uganda",
+"tier": 1,
+"skill_primary": "water_supply",
+"skill_tags": [
+"water",
+"utility",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://nwsc.co.ug",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Makerere_University",
+"slug": "makerere-university",
+"tier": 1,
+"skill_primary": "education",
+"skill_tags": [
+"university",
+"education",
+"research",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://mak.ac.ug",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "University_of_Nairobi",
+"slug": "university-of-nairobi",
+"tier": 1,
+"skill_primary": "education",
+"skill_tags": [
+"university",
+"education",
+"research",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://uonbi.ac.ke",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Coursera",
+"slug": "coursera",
+"tier": 1,
+"skill_primary": "education",
+"skill_tags": [
+"courses",
+"learning",
+"certificates",
+"online"
+],
+"location": "global",
+"country": "usa",
+"website": "https://coursera.org",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Khan_Academy",
+"slug": "khan-academy",
+"tier": 1,
+"skill_primary": "education",
+"skill_tags": [
+"learning",
+"school",
+"free",
+"tutoring"
+],
+"location": "global",
+"country": "usa",
+"website": "https://khanacademy.org",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "FoondaMate",
+"slug": "foondamate",
+"tier": 1,
+"skill_primary": "education",
+"skill_tags": [
+"whatsapp",
+"study",
+"school",
+"africa"
+],
+"location": "cape town",
+"country": "southafrica",
+"website": "https://foondamate.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "BrighterMonday_Uganda",
+"slug": "brightermonday-uganda",
+"tier": 1,
+"skill_primary": "recruitment",
+"skill_tags": [
+"jobs",
+"hiring",
+"careers",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://brightermonday.co.ug",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Fuzu",
+"slug": "fuzu-jobs",
+"tier": 1,
+"skill_primary": "recruitment",
+"skill_tags": [
+"jobs",
+"careers",
+"east africa",
+"hiring"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://fuzu.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "LinkedIn",
+"slug": "linkedin",
+"tier": 1,
+"skill_primary": "recruitment",
+"skill_tags": [
+"jobs",
+"networking",
+"careers",
+"professional"
+],
+"location": "global",
+"country": "usa",
+"website": "https://linkedin.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Upwork",
+"slug": "upwork",
+"tier": 1,
+"skill_primary": "recruitment",
+"skill_tags": [
+"freelance",
+"jobs",
+"remote",
+"hiring"
+],
+"location": "global",
+"country": "usa",
+"website": "https://upwork.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Fiverr",
+"slug": "fiverr",
+"tier": 1,
+"skill_primary": "recruitment",
+"skill_tags": [
+"freelance",
+"gigs",
+"design",
+"services"
+],
+"location": "global",
+"country": "israel",
+"website": "https://fiverr.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Andela",
+"slug": "andela",
+"tier": 1,
+"skill_primary": "recruitment",
+"skill_tags": [
+"developers",
+"remote",
+"africa",
+"talent"
+],
+"location": "lagos",
+"country": "nigeria",
+"website": "https://andela.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "M_KOPA",
+"slug": "m-kopa",
+"tier": 1,
+"skill_primary": "solar_energy",
+"skill_tags": [
+"solar",
+"financing",
+"phones",
+"africa"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://m-kopa.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "d_light",
+"slug": "d-light-solar",
+"tier": 1,
+"skill_primary": "solar_energy",
+"skill_tags": [
+"solar",
+"off grid",
+"energy",
+"africa"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://dlight.com",
+"source": "verified_global",
+"reputation_score": 10
+},
+{
+"name": "SunCulture",
+"slug": "sunculture",
+"tier": 1,
+"skill_primary": "agriculture",
+"skill_tags": [
+"solar",
+"irrigation",
+"farming",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://sunculture.io",
+"source": "verified_global",
+"reputation_score": 10
+},
+{
+"name": "One_Acre_Fund",
+"slug": "one-acre-fund",
+"tier": 1,
+"skill_primary": "agriculture",
+"skill_tags": [
+"farming",
+"smallholder",
+"inputs",
+"africa"
+],
+"location": "kigali",
+"country": "rwanda",
+"website": "https://oneacrefund.org",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Twiga_Foods",
+"slug": "twiga-foods",
+"tier": 1,
+"skill_primary": "agriculture",
+"skill_tags": [
+"food",
+"supply chain",
+"market",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://twiga.com",
+"source": "verified_global",
+"reputation_score": 10
+},
+{
+"name": "iProcure",
+"slug": "iprocure",
+"tier": 1,
+"skill_primary": "agriculture",
+"skill_tags": [
+"farm inputs",
+"supply chain",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://iprocu.re",
+"source": "verified_global",
+"reputation_score": 9
+},
+{
+"name": "Booking_Flights_Google",
+"slug": "google-flights",
+"tier": 1,
+"skill_primary": "travel_agency",
+"skill_tags": [
+"flights",
+"search",
+"travel",
+"booking"
+],
+"location": "global",
+"country": "global",
+"website": "https://google.com/travel/flights",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Godena_Web",
+"slug": "godena-web",
+"tier": 2,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"agents",
+"search",
+"directory",
+"network"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://sammyghe.github.io/Godena/",
+"source": "curated_ai",
+"reputation_score": 12
+},
+{
+"name": "Stripe",
+"slug": "stripe",
+"tier": 1,
+"skill_primary": "finance",
+"skill_tags": [
+"payments",
+"api",
+"fintech",
+"developer"
+],
+"location": "global",
+"country": "usa",
+"website": "https://stripe.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "PayPal",
+"slug": "paypal",
+"tier": 1,
+"skill_primary": "finance",
+"skill_tags": [
+"payments",
+"money transfer",
+"online"
+],
+"location": "global",
+"country": "usa",
+"website": "https://paypal.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Binance",
+"slug": "binance",
+"tier": 1,
+"skill_primary": "cryptocurrency",
+"skill_tags": [
+"crypto",
+"bitcoin",
+"exchange",
+"p2p"
+],
+"location": "global",
+"country": "global",
+"website": "https://binance.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Coinbase",
+"slug": "coinbase",
+"tier": 1,
+"skill_primary": "cryptocurrency",
+"skill_tags": [
+"crypto",
+"bitcoin",
+"exchange",
+"wallet"
+],
+"location": "global",
+"country": "usa",
+"website": "https://coinbase.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Yellow_Card",
+"slug": "yellow-card-africa",
+"tier": 1,
+"skill_primary": "cryptocurrency",
+"skill_tags": [
+"crypto",
+"stablecoin",
+"africa",
+"p2p"
+],
+"location": "lagos",
+"country": "nigeria",
+"website": "https://yellowcard.io",
+"source": "verified_global",
+"reputation_score": 10
+},
+{
+"name": "IOM_Migration",
+"slug": "iom-migration",
+"tier": 1,
+"skill_primary": "immigration",
+"skill_tags": [
+"migration",
+"visa",
+"refugees",
+"global"
+],
+"location": "global",
+"country": "global",
+"website": "https://iom.int",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "VFS_Global",
+"slug": "vfs-global",
+"tier": 1,
+"skill_primary": "visa_consulting",
+"skill_tags": [
+"visa",
+"applications",
+"embassy",
+"travel"
+],
+"location": "global",
+"country": "uae",
+"website": "https://vfsglobal.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "DAAD_Scholarships",
+"slug": "daad-scholarships",
+"tier": 1,
+"skill_primary": "scholarship_finder",
+"skill_tags": [
+"scholarship",
+"germany",
+"study abroad",
+"grants"
+],
+"location": "berlin",
+"country": "germany",
+"website": "https://daad.de",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Chevening_Scholarships",
+"slug": "chevening",
+"tier": 1,
+"skill_primary": "scholarship_finder",
+"skill_tags": [
+"scholarship",
+"uk",
+"masters",
+"study abroad"
+],
+"location": "london",
+"country": "uk",
+"website": "https://chevening.org",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Mastercard_Foundation_Scholars",
+"slug": "mastercard-foundation-scholars",
+"tier": 1,
+"skill_primary": "scholarship_finder",
+"skill_tags": [
+"scholarship",
+"africa",
+"university",
+"funding"
+],
+"location": "global",
+"country": "global",
+"website": "https://mastercardfdn.org/all/scholars/",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "YC_Startup_School",
+"slug": "yc-startup-school",
+"tier": 1,
+"skill_primary": "startup_support",
+"skill_tags": [
+"startup",
+"accelerator",
+"funding",
+"founders"
+],
+"location": "sf",
+"country": "usa",
+"website": "https://startupschool.org",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Y_Combinator",
+"slug": "y-combinator",
+"tier": 1,
+"skill_primary": "startup_support",
+"skill_tags": [
+"startup",
+"accelerator",
+"funding",
+"investor"
+],
+"location": "sf",
+"country": "usa",
+"website": "https://ycombinator.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Future_Africa",
+"slug": "future-africa",
+"tier": 1,
+"skill_primary": "startup_support",
+"skill_tags": [
+"investor",
+"africa",
+"venture",
+"funding"
+],
+"location": "lagos",
+"country": "nigeria",
+"website": "https://future.africa",
+"source": "verified_global",
+"reputation_score": 10
+},
+{
+"name": "Norrsken_East_Africa",
+"slug": "norrsken-east-africa",
+"tier": 1,
+"skill_primary": "startup_support",
+"skill_tags": [
+"startup",
+"hub",
+"kigali",
+"funding"
+],
+"location": "kigali",
+"country": "rwanda",
+"website": "https://norrsken.org",
+"source": "verified_global",
+"reputation_score": 10
+},
+{
+"name": "Anthropic",
+"slug": "anthropic",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"api",
+"claude",
+"models",
+"safety"
+],
+"location": "sf",
+"country": "usa",
+"website": "https://anthropic.com",
+"source": "curated_ai",
+"reputation_score": 13
+},
+{
+"name": "OpenAI",
+"slug": "openai",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"api",
+"gpt",
+"models"
+],
+"location": "sf",
+"country": "usa",
+"website": "https://openai.com",
+"source": "curated_ai",
+"reputation_score": 13
+},
+{
+"name": "Groq",
+"slug": "groq",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"api",
+"inference",
+"fast",
+"llm"
+],
+"location": "global",
+"country": "usa",
+"website": "https://groq.com",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "Ollama",
+"slug": "ollama",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"local",
+"models",
+"open source"
+],
+"location": "global",
+"country": "global",
+"website": "https://ollama.com",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "Notion_AI",
+"slug": "notion-ai",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"productivity",
+"notes",
+"workspace"
+],
+"location": "global",
+"country": "usa",
+"website": "https://notion.com",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "Grammarly",
+"slug": "grammarly",
+"tier": 1,
+"skill_primary": "translation",
+"skill_tags": [
+"ai",
+"writing",
+"english",
+"editing"
+],
+"location": "global",
+"country": "usa",
+"website": "https://grammarly.com",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "DeepL",
+"slug": "deepl-translate",
+"tier": 1,
+"skill_primary": "translation",
+"skill_tags": [
+"ai",
+"translation",
+"languages"
+],
+"location": "global",
+"country": "germany",
+"website": "https://deepl.com",
+"source": "curated_ai",
+"reputation_score": 11
+},
+{
+"name": "Google_Translate",
+"slug": "google-translate",
+"tier": 1,
+"skill_primary": "translation",
+"skill_tags": [
+"translation",
+"languages",
+"free",
+"swahili"
+],
+"location": "global",
+"country": "global",
+"website": "https://translate.google.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Shopify",
+"slug": "shopify",
+"tier": 1,
+"skill_primary": "marketing",
+"skill_tags": [
+"ecommerce",
+"store",
+"online shop",
+"business"
+],
+"location": "global",
+"country": "canada",
+"website": "https://shopify.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Mailchimp",
+"slug": "mailchimp",
+"tier": 1,
+"skill_primary": "marketing",
+"skill_tags": [
+"email",
+"marketing",
+"campaigns",
+"automation"
+],
+"location": "global",
+"country": "usa",
+"website": "https://mailchimp.com",
+"source": "verified_global",
+"reputation_score": 10
+},
+{
+"name": "WHO_Health_Info",
+"slug": "who-health",
+"tier": 1,
+"skill_primary": "healthcare",
+"skill_tags": [
+"health",
+"information",
+"guidance",
+"global"
+],
+"location": "global",
+"country": "global",
+"website": "https://who.int",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Marie_Stopes_Uganda",
+"slug": "marie-stopes-uganda",
+"tier": 1,
+"skill_primary": "healthcare",
+"skill_tags": [
+"clinic",
+"health",
+"family planning",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://mariestopes.or.ug",
+"source": "verified_global",
+"reputation_score": 10
+},
+{
+"name": "AAR_Healthcare",
+"slug": "aar-healthcare",
+"tier": 1,
+"skill_primary": "healthcare",
+"skill_tags": [
+"clinic",
+"insurance",
+"health",
+"east africa"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://aar-healthcare.com",
+"source": "verified_global",
+"reputation_score": 10
+},
+{
+"name": "Jubilee_Insurance",
+"slug": "jubilee-insurance",
+"tier": 1,
+"skill_primary": "insurance",
+"skill_tags": [
+"insurance",
+"health cover",
+"motor",
+"east africa"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://jubileeinsurance.com",
+"source": "verified_global",
+"reputation_score": 10
+},
+{
+"name": "UAP_Old_Mutual",
+"slug": "uap-old-mutual",
+"tier": 1,
+"skill_primary": "insurance",
+"skill_tags": [
+"insurance",
+"cover",
+"east africa"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://uapoldmutual.com",
+"source": "verified_global",
+"reputation_score": 10
+},
+{
+"name": "Knight_Frank_Uganda",
+"slug": "knight-frank-uganda",
+"tier": 1,
+"skill_primary": "real_estate",
+"skill_tags": [
+"property",
+"land",
+"rental",
+"valuation"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://knightfrank.ug",
+"source": "verified_global",
+"reputation_score": 10
+},
+{
+"name": "BuyRentKenya",
+"slug": "buyrentkenya",
+"tier": 1,
+"skill_primary": "real_estate",
+"skill_tags": [
+"property",
+"house",
+"rental",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://buyrentkenya.com",
+"source": "verified_global",
+"reputation_score": 10
+},
+{
+"name": "Lamudi_Property24",
+"slug": "property24-africa",
+"tier": 1,
+"skill_primary": "real_estate",
+"skill_tags": [
+"property",
+"house",
+"rental",
+"africa"
+],
+"location": "johannesburg",
+"country": "southafrica",
+"website": "https://property24.com",
+"source": "verified_global",
+"reputation_score": 10
+},
+{
+"name": "Cloudflare",
+"slug": "cloudflare",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"hosting",
+"dns",
+"security",
+"developer"
+],
+"location": "global",
+"country": "usa",
+"website": "https://cloudflare.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "GitHub",
+"slug": "github",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"code",
+"open source",
+"developer",
+"git"
+],
+"location": "global",
+"country": "usa",
+"website": "https://github.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Supabase",
+"slug": "supabase",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"database",
+"postgres",
+"api",
+"developer"
+],
+"location": "global",
+"country": "global",
+"website": "https://supabase.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Vercel",
+"slug": "vercel",
+"tier": 1,
+"skill_primary": "coding",
+"skill_tags": [
+"hosting",
+"web",
+"deploy",
+"developer"
+],
+"location": "global",
+"country": "usa",
+"website": "https://vercel.com",
+"source": "verified_global",
+"reputation_score": 11
+},
+{
+"name": "Elicit",
+"slug": "elicit-research",
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"research",
+"papers",
+"science"
+],
+"website": "https://elicit.com",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Consensus",
+"slug": "consensus-research",
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"research",
+"papers",
+"evidence"
+],
+"website": "https://consensus.app",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "NotebookLM",
+"slug": "notebooklm",
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"research",
+"notes",
+"google"
+],
+"website": "https://notebooklm.google.com",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Semantic_Scholar",
+"slug": "semantic-scholar",
+"skill_primary": "education",
+"skill_tags": [
+"research",
+"papers",
+"science",
+"free"
+],
+"website": "https://semanticscholar.org",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Jasper",
+"slug": "jasper-ai",
+"skill_primary": "marketing",
+"skill_tags": [
+"ai",
+"writing",
+"content",
+"copy"
+],
+"website": "https://jasper.ai",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Copy_ai",
+"slug": "copy-ai",
+"skill_primary": "marketing",
+"skill_tags": [
+"ai",
+"writing",
+"copy",
+"sales"
+],
+"website": "https://copy.ai",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "HeyGen",
+"slug": "heygen",
+"skill_primary": "media_production",
+"skill_tags": [
+"ai",
+"video",
+"avatar",
+"content"
+],
+"website": "https://heygen.com",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Synthesia",
+"slug": "synthesia",
+"skill_primary": "media_production",
+"skill_tags": [
+"ai",
+"video",
+"avatar",
+"training"
+],
+"website": "https://synthesia.io",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Descript",
+"slug": "descript",
+"skill_primary": "media_production",
+"skill_tags": [
+"ai",
+"video",
+"audio",
+"editing"
+],
+"website": "https://descript.com",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "OpusClip",
+"slug": "opusclip",
+"skill_primary": "media_production",
+"skill_tags": [
+"ai",
+"video",
+"clips",
+"social"
+],
+"website": "https://opus.pro",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Clay",
+"slug": "clay-sales",
+"skill_primary": "marketing",
+"skill_tags": [
+"ai",
+"sales",
+"leads",
+"enrichment"
+],
+"website": "https://clay.com",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Apollo_io",
+"slug": "apollo-io",
+"skill_primary": "marketing",
+"skill_tags": [
+"sales",
+"leads",
+"outreach",
+"crm"
+],
+"website": "https://apollo.io",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Intercom_Fin",
+"slug": "intercom-fin",
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"support",
+"customer service",
+"agent"
+],
+"website": "https://intercom.com",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Decagon",
+"slug": "decagon-ai",
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"support",
+"customer service",
+"agent"
+],
+"website": "https://decagon.ai",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Sierra_AI",
+"slug": "sierra-ai",
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"support",
+"customer service",
+"agent"
+],
+"website": "https://sierra.ai",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Manus",
+"slug": "manus-agent",
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"agent",
+"autonomous",
+"tasks"
+],
+"website": "https://manus.im",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Genspark",
+"slug": "genspark",
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"agent",
+"research",
+"tasks"
+],
+"website": "https://genspark.ai",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Relevance_AI",
+"slug": "relevance-ai",
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"agents",
+"workforce",
+"automation"
+],
+"website": "https://relevanceai.com",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Gumloop",
+"slug": "gumloop",
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"automation",
+"workflow",
+"agents"
+],
+"website": "https://gumloop.com",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Browser_Use",
+"slug": "browser-use",
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"browser",
+"agent",
+"automation"
+],
+"website": "https://browser-use.com",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Beam_AI",
+"slug": "beam-ai",
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"agents",
+"operations",
+"automation"
+],
+"website": "https://beam.ai",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "AutoGen_Microsoft",
+"slug": "autogen-microsoft",
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"framework",
+"agents",
+"multi-agent"
+],
+"website": "https://microsoft.github.io/autogen/",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "LangGraph",
+"slug": "langgraph",
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"framework",
+"agents",
+"orchestration"
+],
+"website": "https://langchain.com/langgraph",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Mem0",
+"slug": "mem0-memory",
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"memory",
+"agents",
+"developer"
+],
+"website": "https://mem0.ai",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Composio",
+"slug": "composio",
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"tools",
+"integrations",
+"agents"
+],
+"website": "https://composio.dev",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "E2B",
+"slug": "e2b-sandbox",
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"sandbox",
+"code execution",
+"agents"
+],
+"website": "https://e2b.dev",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Browserbase",
+"slug": "browserbase",
+"skill_primary": "coding",
+"skill_tags": [
+"ai",
+"browser",
+"infrastructure",
+"agents"
+],
+"website": "https://browserbase.com",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "DoNotPay",
+"slug": "donotpay",
+"skill_primary": "legal",
+"skill_tags": [
+"ai",
+"legal",
+"consumer",
+"claims"
+],
+"website": "https://donotpay.com",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Harvey_AI",
+"slug": "harvey-ai",
+"skill_primary": "legal",
+"skill_tags": [
+"ai",
+"legal",
+"law firms",
+"research"
+],
+"website": "https://harvey.ai",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "iVisa",
+"slug": "ivisa",
+"skill_primary": "visa_consulting",
+"skill_tags": [
+"visa",
+"travel",
+"applications",
+"online"
+],
+"website": "https://ivisa.com",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "Ada_Health",
+"slug": "ada-health",
+"skill_primary": "healthcare",
+"skill_tags": [
+"ai",
+"health",
+"symptoms",
+"triage"
+],
+"website": "https://ada.com",
+"tier": 1,
+"location": "global",
+"country": "global",
+"source": "curated_ai",
+"reputation_score": 10
+},
+{
+"name": "OPay",
+"slug": "opay-nigeria",
+"skill_primary": "mobile_money",
+"skill_tags": [
+"payments",
+"wallet",
+"nigeria",
+"transfer"
+],
+"location": "lagos",
+"country": "nigeria",
+"website": "https://opayweb.com",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "Moniepoint",
+"slug": "moniepoint",
+"skill_primary": "finance",
+"skill_tags": [
+"payments",
+"banking",
+"business",
+"nigeria"
+],
+"location": "lagos",
+"country": "nigeria",
+"website": "https://moniepoint.com",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "PalmPay",
+"slug": "palmpay",
+"skill_primary": "mobile_money",
+"skill_tags": [
+"payments",
+"wallet",
+"nigeria"
+],
+"location": "lagos",
+"country": "nigeria",
+"website": "https://palmpay.com",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "Pesapal",
+"slug": "pesapal",
+"skill_primary": "finance",
+"skill_tags": [
+"payments",
+"east africa",
+"business"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://pesapal.com",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "DPO_Group",
+"slug": "dpo-group",
+"skill_primary": "finance",
+"skill_tags": [
+"payments",
+"africa",
+"business"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://dpogroup.com",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "GTBank",
+"slug": "gtbank",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"nigeria",
+"loans",
+"finance"
+],
+"location": "lagos",
+"country": "nigeria",
+"website": "https://gtbank.com",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "Zenith_Bank",
+"slug": "zenith-bank",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"nigeria",
+"finance"
+],
+"location": "lagos",
+"country": "nigeria",
+"website": "https://zenithbank.com",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "Ecobank",
+"slug": "ecobank",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"africa",
+"panafrican",
+"finance"
+],
+"location": "lome",
+"country": "togo",
+"website": "https://ecobank.com",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "Access_Bank",
+"slug": "access-bank",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"nigeria",
+"africa",
+"finance"
+],
+"location": "lagos",
+"country": "nigeria",
+"website": "https://accessbankplc.com",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "Bank_of_Kigali",
+"slug": "bank-of-kigali",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"rwanda",
+"loans",
+"finance"
+],
+"location": "kigali",
+"country": "rwanda",
+"website": "https://bk.rw",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "Ethio_Telecom",
+"slug": "ethio-telecom",
+"skill_primary": "mobile_money",
+"skill_tags": [
+"telecom",
+"telebirr",
+"ethiopia",
+"internet"
+],
+"location": "addis",
+"country": "ethiopia",
+"website": "https://ethiotelecom.et",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "Safaricom_Ethiopia",
+"slug": "safaricom-ethiopia",
+"skill_primary": "mobile_money",
+"skill_tags": [
+"telecom",
+"mpesa",
+"ethiopia"
+],
+"location": "addis",
+"country": "ethiopia",
+"website": "https://safaricom.et",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "Vodacom_Tanzania",
+"slug": "vodacom-tanzania",
+"skill_primary": "mobile_money",
+"skill_tags": [
+"telecom",
+"mpesa",
+"tanzania"
+],
+"location": "dar",
+"country": "tanzania",
+"website": "https://vodacom.co.tz",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "Orange_Africa",
+"slug": "orange-africa",
+"skill_primary": "mobile_money",
+"skill_tags": [
+"telecom",
+"orange money",
+"west africa"
+],
+"location": "dakar",
+"country": "senegal",
+"website": "https://orange.com",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "Qatar_Airways",
+"slug": "qatar-airways",
+"skill_primary": "travel_agency",
+"skill_tags": [
+"flights",
+"airline",
+"travel"
+],
+"location": "doha",
+"country": "qatar",
+"website": "https://qatarairways.com",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "Turkish_Airlines",
+"slug": "turkish-airlines",
+"skill_primary": "travel_agency",
+"skill_tags": [
+"flights",
+"airline",
+"travel"
+],
+"location": "istanbul",
+"country": "turkey",
+"website": "https://turkishairlines.com",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "Air_Peace",
+"slug": "air-peace",
+"skill_primary": "travel_agency",
+"skill_tags": [
+"flights",
+"airline",
+"nigeria"
+],
+"location": "lagos",
+"country": "nigeria",
+"website": "https://flyairpeace.com",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "Skyscanner",
+"slug": "skyscanner",
+"skill_primary": "travel_agency",
+"skill_tags": [
+"flights",
+"search",
+"travel",
+"compare"
+],
+"website": "https://skyscanner.net",
+"source": "verified_global",
+"tier": 1,
+"location": "global",
+"country": "global",
+"reputation_score": 10
+},
+{
+"name": "Expedia",
+"slug": "expedia",
+"skill_primary": "travel_agency",
+"skill_tags": [
+"flights",
+"hotel",
+"travel",
+"booking"
+],
+"website": "https://expedia.com",
+"source": "verified_global",
+"tier": 1,
+"location": "global",
+"country": "global",
+"reputation_score": 10
+},
+{
+"name": "Udemy",
+"slug": "udemy",
+"skill_primary": "education",
+"skill_tags": [
+"courses",
+"learning",
+"skills",
+"online"
+],
+"website": "https://udemy.com",
+"source": "verified_global",
+"tier": 1,
+"location": "global",
+"country": "global",
+"reputation_score": 10
+},
+{
+"name": "edX",
+"slug": "edx",
+"skill_primary": "education",
+"skill_tags": [
+"courses",
+"university",
+"online",
+"certificates"
+],
+"website": "https://edx.org",
+"source": "verified_global",
+"tier": 1,
+"location": "global",
+"country": "global",
+"reputation_score": 10
+},
+{
+"name": "ALX_Africa",
+"slug": "alx-africa",
+"skill_primary": "education",
+"skill_tags": [
+"tech",
+"training",
+"africa",
+"careers"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://alxafrica.com",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "Indeed",
+"slug": "indeed",
+"skill_primary": "recruitment",
+"skill_tags": [
+"jobs",
+"hiring",
+"careers",
+"search"
+],
+"website": "https://indeed.com",
+"source": "verified_global",
+"tier": 1,
+"location": "global",
+"country": "global",
+"reputation_score": 10
+},
+{
+"name": "Glassdoor",
+"slug": "glassdoor",
+"skill_primary": "recruitment",
+"skill_tags": [
+"jobs",
+"salaries",
+"reviews",
+"careers"
+],
+"website": "https://glassdoor.com",
+"source": "verified_global",
+"tier": 1,
+"location": "global",
+"country": "global",
+"reputation_score": 10
+},
+{
+"name": "Kilimall",
+"slug": "kilimall",
+"skill_primary": "logistics",
+"skill_tags": [
+"ecommerce",
+"shopping",
+"kenya",
+"delivery"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://kilimall.co.ke",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "Glovo_Africa",
+"slug": "glovo-africa",
+"skill_primary": "delivery",
+"skill_tags": [
+"delivery",
+"food",
+"courier",
+"africa"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://glovoapp.com",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "Yango",
+"slug": "yango-ride",
+"skill_primary": "transport",
+"skill_tags": [
+"taxi",
+"ride",
+"delivery",
+"africa"
+],
+"location": "global",
+"country": "global",
+"website": "https://yango.com",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "Britam",
+"slug": "britam",
+"skill_primary": "insurance",
+"skill_tags": [
+"insurance",
+"health",
+"east africa"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://britam.com",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+},
+{
+"name": "Turaco",
+"slug": "turaco-insurance",
+"skill_primary": "insurance",
+"skill_tags": [
+"microinsurance",
+"health",
+"africa"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://turaco.insure",
+"source": "verified_global",
+"tier": 1,
+"reputation_score": 10
+}
 ]
