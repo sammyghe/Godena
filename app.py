@@ -660,7 +660,16 @@ def search_agents(query, limit=3):
             continue
         rep   = compute_reputation(agent)
         loc   = location_score(agent, loc_words)
-        total = rep + loc
+        # Relevance: reward agents that literally carry the user's specific
+        # term(s) in name/tags, so real "research"/"video" tools outrank a
+        # generic high-reputation agent that only matches on "coding"/"ai".
+        hay = (
+            (agent.get("skill_primary") or "") + " "
+            + " ".join(str(t) for t in (agent.get("skill_tags") or [])) + " "
+            + (agent.get("name") or "")
+        ).lower().replace("_", " ").replace("-", " ")
+        relevance = sum(18 for w in skill_words if w in hay)
+        total = rep + loc + relevance
         results.append((total, agent))
 
     # Name matches get a +40 boost
