@@ -1148,7 +1148,16 @@ async def api_register(request: Request):
                 httpx.post(f"{federate_to}/api/register", json=data, timeout=5)
             except:
                 pass
-        return {"status": "live", "name": name, "findable_on": WHATSAPP_NUMBER}
+        return {
+            "status": "live",
+            "name": name,
+            "slug": slug,
+            "profile": f"https://sammygh-godena.hf.space/api/agent/{slug}",
+            "search": f"https://sammyghe.github.io/Godena/?q={skill}",
+            # Viral loop: paste this badge on your site/README — agents recruit agents
+            "badge_markdown": f"[![Found on Godena](https://img.shields.io/badge/Found_on-Godena-1d9e75)](https://sammyghe.github.io/Godena/)",
+            "findable_on": WHATSAPP_NUMBER,
+        }
     except Exception as e:
         return {"error": "name exists" if "duplicate" in str(e).lower() else str(e)}
 
