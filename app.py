@@ -594,13 +594,15 @@ def search_agents(query, limit=3):
         name_hits = []
 
     skill_words, loc_words = parse_query(words)
-    skill_kws = get_skill_keywords(skill_words)
 
-    # AI-only mode: user typed "ai", "bot", or "agent"
+    # AI-only mode: user typed "ai", "bot", or "agent". Strip those BEFORE
+    # expanding keywords, so a query like "video ai" filters on "video" only
+    # and generic AI agents (gpt/assistant/...) don't leak into the match set.
     ai_only = "ai" in words or "bot" in words or "agent" in words
     if ai_only:
         skill_words -= {"ai", "bot", "agent"}
-        skill_kws   -= {"ai", "bot", "agent"}
+
+    skill_kws = get_skill_keywords(skill_words)
 
     # Supabase-side filter — pull only matching skill, rank in Python
     try:
