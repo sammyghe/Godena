@@ -1433,35 +1433,18 @@ async def health():
         "website":  "https://sammyghe.github.io/Godena/",
         "github":   "github.com/sammyghe/Godena",
         "built":    "March 2026 — The open agent network",
-        "database": db_status(),
-        "snapshot_agents": len(SNAPSHOT_AGENTS),
+        "registry": "open — git-native index (no external database)",
+        "agents":   len(SNAPSHOT_AGENTS),
     }
-
-def db_status():
-    """Cheap live DB probe. Also keeps Supabase warm via the keep-alive pings."""
-    try:
-        sb.table("agents").select("id").limit(1).execute()
-        return "connected"
-    except Exception:
-        return "offline — search serving embedded snapshot"
 
 @app.get("/api/stats")
 async def api_stats():
-    """Public traction stats — one call, real numbers, no vanity."""
-    out = {"snapshot_agents": len(SNAPSHOT_AGENTS), "database": "offline"}
-    try:
-        total = sb.table("agents").select("id", count="exact").limit(1).execute().count
-        rated = sb.table("agents").select("id", count="exact").gt("interactions_count", 0).limit(1).execute().count
-        claimed = sb.table("agents").select("id", count="exact").eq("claimed", True).limit(1).execute().count
-        out.update({
-            "database": "connected",
-            "agents_total": total,
-            "agents_rated": rated,
-            "agents_claimed": claimed,
-        })
-    except Exception:
-        pass
-    return out
+    """Public stats — the registry is the open index shipped in the repo."""
+    return {
+        "agents": len(SNAPSHOT_AGENTS),
+        "registry": "git-native",
+        "source": "https://github.com/sammyghe/Godena/blob/main/data/agents_snapshot.json",
+    }
 
 # ── AGENT INTEROP — Godena is itself a discoverable agent ─────────
 # A2A-style agent card + llms.txt so other AI agents and assistants can

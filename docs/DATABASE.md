@@ -1,30 +1,18 @@
-# Does Godena have to run on Supabase?
+# Godena's registry is the open Git repo — no external database
 
-Short answer: **no — and as of July 2026 it no longer fully depends on it.**
+Godena does **not** depend on any hosted database. The registry is `data/agents_snapshot.json` — an open, versioned index of real agents and services that ships inside this repo and loads into memory at startup. This is deliberate:
 
-## The problem this answers
+- **Unkillable.** No project to pause, no host to bill, no key to expire. If GitHub + the Space are up, search works. There is no separate database to go down.
+- **Open by definition.** The registry is public and forkable — the data is as open as the code. Anyone can inspect, audit, or fork it.
+- **Fast + free.** A few hundred KB in memory; searches never touch an external DB.
 
-Godena's registry lived only in a free-tier Supabase project. Free projects pause after ~7 days idle, and a paused project's API hostname is deprovisioned — so search returned zero results even though all data was intact. The database was the single point of failure for the whole product.
+## How the index grows
+- **Harvesters** (`seeders/`) pull real, verifiable entries from free public APIs — Hugging Face (AI Spaces), GitHub (agent repos), OpenStreetMap (real businesses with websites). Idempotent, real-URL-only, no fakes. Committed to the repo.
+- **Community** — open a PR adding real agents to `data/agents_snapshot.json`, or POST to `/api/register`.
+- Capped at ~1,200 in the in-repo snapshot for memory safety; larger runs live in the harvest output and can be paginated/sharded later.
 
-## The architecture now: three layers of resilience
+## Reputation & ratings
+The rating loop (`RATE 1-5`) and reputation scoring run in the app. For a launch/pre-scale stage, ratings that need durable write storage are the one thing a git-native registry doesn't persist across restarts — when durable per-agent write history is needed at scale, the drop-in is **Neon Postgres (free tier, auto-resumes on connect)** or Turso/libSQL. This is a scale decision, not a dependency: search and discovery never require it.
 
-1. **Primary — Supabase Postgres.** Live reputation, ratings, registrations, the full registry. Still the system of record.
-2. **Keep-alive — GitHub Actions cron** (`.github/workflows/keepalive.yml`). Pings `/health` (which touches the DB) every ~10 minutes: the HF Space never sleeps, Supabase never idles into a pause. Back it up with a free external pinger (cron-job.org / UptimeRobot) since GitHub disables cron on repos inactive for 60 days.
-3. **Embedded snapshot — `data/agents_snapshot.json`.** A curated registry of real, verified agents (official websites only) ships inside the repo and loads into memory at startup. Search always merges it in (DB rows win by slug), and when the database is unreachable the snapshot carries search alone. **The core product — search — can no longer fully die.** `/health` reports which mode is active.
-
-Degradation contract: with the DB down, search works from the snapshot; registrations and ratings fail gracefully and users are asked to retry later.
-
-## If/when to move off Supabase
-
-| Option | Why | When |
-|---|---|---|
-| Stay (free) + layers above | $0, data already there | Now — default |
-| **Neon Postgres (free)** | Compute suspends but **auto-resumes on any connection** — no manual dashboard resume, the exact failure Supabase has | First choice if a migration happens; near drop-in (Postgres) |
-| Turso / libSQL (free) | Generous free tier, no pause | Alternative; more code changes (not Postgres wire) |
-| Supabase Pro ($25/mo) | No pausing, backups | When funded |
-
-Migration is simple by design: one `agents` table (see `Desktop`-side `schema.sql` in the maintainers' recovery kit), `pg_dump` → restore, change `SUPABASE_URL`/`SUPABASE_KEY`. The snapshot layer keeps search alive during any migration.
-
-## Refreshing the snapshot
-
-When the database is healthy, regenerate the snapshot from the top verified agents (highest reputation, claimed/verified first) and commit it. Never hand-edit fake entries in — every snapshot agent must be a real, verifiable service with its official website. See `CONTRIBUTING.md`'s no-fake-data rule.
+## Bottom line
+The database question is closed: **Godena is git-native.** The open index is the product's source of truth, and it can't be paused, deleted, or held hostage.
