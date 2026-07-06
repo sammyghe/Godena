@@ -4,7 +4,12 @@ Run: python seeders/harvest_github.py"""
 import json, time, urllib.request, urllib.parse
 from _common import slugify, merge
 
-TOPICS = ["ai-agents", "llm-agent", "mcp-server", "autonomous-agents", "ai-agent"]
+TOPICS = [
+    "ai-agents", "llm-agent", "mcp-server", "autonomous-agents", "ai-agent",
+    "rag", "llm", "chatbot", "langchain", "agent-based-model", "generative-ai",
+    "prompt-engineering", "vector-database", "ai-tools", "openai", "llmops",
+    "text-to-speech", "text-to-image", "computer-vision", "nlp",
+]
 
 def fetch(url):
     req = urllib.request.Request(url, headers={

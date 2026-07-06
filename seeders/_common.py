@@ -3,7 +3,7 @@ real, verifiable URL. Idempotent by slug. Snapshot is capped for the free Space.
 import json, os, re
 
 SNAP = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "agents_snapshot.json")
-CAP = 1200  # max entries in the in-repo snapshot (memory/latency safety on HF free tier)
+CAP = 12000  # max entries in the git-native index (a few MB; loads in memory, fast)
 
 def slugify(s):
     s = re.sub(r"[^a-z0-9]+", "-", (s or "").lower()).strip("-")

@@ -8,11 +8,16 @@ OVERPASS = "https://overpass-api.de/api/interpreter"
 
 # (city label, country, bbox south,west,north,east)
 CITIES = [
-    ("kampala", "uganda",   (0.24, 32.50, 0.42, 32.68)),
-    ("nairobi", "kenya",    (-1.37, 36.72, -1.16, 36.95)),
-    ("lagos",   "nigeria",  (6.40, 3.30, 6.65, 3.55)),
-    ("kigali",  "rwanda",   (-1.99, 30.02, -1.90, 30.14)),
+    ("kampala",      "uganda",       (0.24, 32.50, 0.42, 32.68)),
+    ("nairobi",      "kenya",        (-1.37, 36.72, -1.16, 36.95)),
+    ("lagos",        "nigeria",      (6.40, 3.30, 6.65, 3.55)),
+    ("kigali",       "rwanda",       (-1.99, 30.02, -1.90, 30.14)),
+    ("addis",        "ethiopia",     (8.90, 38.68, 9.05, 38.85)),
+    ("accra",        "ghana",        (5.52, -0.28, 5.66, -0.10)),
+    ("dar",          "tanzania",     (-6.90, 39.20, -6.75, 39.32)),
+    ("johannesburg", "southafrica",  (-26.28, 27.95, -26.10, 28.12)),
 ]
+SLEEP = 12  # Overpass rate-limits hard; be patient between cities
 
 SKILL = {
     "pharmacy": "healthcare", "hospital": "healthcare", "clinic": "healthcare",
@@ -72,7 +77,7 @@ def harvest():
                 "reputation_score": 9,
             })
         print(f"  osm {label}: {len(out)} cumulative")
-        time.sleep(3)
+        time.sleep(SLEEP)
     return out
 
 if __name__ == "__main__":
