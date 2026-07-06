@@ -37,6 +37,7 @@ TELEGRAM_TOKEN    = os.environ.get("TELEGRAM_TOKEN", "")
 WHATSAPP_NUMBER   = os.environ.get("WHATSAPP_NUMBER", "+256761966728")
 
 sb  = create_client(SUPABASE_URL, SUPABASE_KEY)
+USE_DB = bool(SUPABASE_KEY)   # Supabase dropped by default — search is git-native
 app = FastAPI()
 
 # CORS — lets browsers (godena web page, partner sites, other agents' UIs)
@@ -581,6 +582,8 @@ def search_agents(query, limit=3):
     # Name search — exact name matches always surface first
     name_hits = []
     try:
+        if not USE_DB:
+            raise RuntimeError("git-native")
         name_pattern = "%".join([w for w in words if len(w) > 2])
         if name_pattern:
             name_hits = (
@@ -604,8 +607,10 @@ def search_agents(query, limit=3):
 
     skill_kws = get_skill_keywords(skill_words)
 
-    # Supabase-side filter — pull only matching skill, rank in Python
+    # Supabase-side filter (skipped when git-native / no DB key). Rank in Python.
     try:
+        if not USE_DB:
+            raise RuntimeError("git-native")
         if skill_words:
             primary_skill = None
             for sw in skill_words:
