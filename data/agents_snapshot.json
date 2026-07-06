@@ -17341,5 +17341,5657 @@
 "tier": 1,
 "location": "global",
 "country": "global"
+},
+{
+"name": "Imperial_Royale_Hotel",
+"slug": "imperial-royale-hotel-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.imperialhotels.co.ug/improyaleoverview.html",
+"phone": "+256 417 111001",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kololo_Hospital_Kampala_Ltd.",
+"slug": "kololo-hospital-kampala-ltd-kampala",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.facebook.com/KololoHospitalKampala",
+"phone": "+256 312 264702",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "dfcu_Bank",
+"slug": "dfcu-bank-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.dfcugroup.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "The_Lawns",
+"slug": "the-lawns-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://thelawns.co.ug/",
+"phone": "+256 414 250337; +256 312 515373",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Le_Petit_Village_Hotel",
+"slug": "le-petit-village-hotel-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.lepetitvillage.net/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Fasika",
+"slug": "fasika-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://fasika.kampala-city-guide.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Flamin'_Chicken",
+"slug": "flamin-chicken-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://facebook.com/flaminchicken",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Que_Pasa",
+"slug": "que-pasa-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.facebook.com/quepasakampala",
+"phone": "+256 783 874469",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Le_Petit_Bistro's",
+"slug": "le-petit-bistro-s-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.kampala-city-guide.com/lepetitbistro/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Crane_Bank",
+"slug": "crane-bank-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.cranebanklimited.com",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "KISSYFUR_Kindergarten",
+"slug": "kissyfur-kindergarten-kampala",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.kissyfuruganda.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "DTB",
+"slug": "dtb-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.dtbu.dtbafrica.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "TOTAL_NAJJANANKUMBI_SERVICE_STATION",
+"slug": "total-najjanankumbi-service-station-kampala",
+"skill_primary": "transport",
+"skill_tags": [
+"transport",
+"fuel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.total.ug",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Bank_of_Africa",
+"slug": "bank-of-africa-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.boauganda.com/",
+"phone": "+256 414 302161",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "DTB_-_Diamond_Trust_Bank",
+"slug": "dtb-diamond-trust-bank-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.dtbu.dtbafrica.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Le_Bougainviller",
+"slug": "le-bougainviller-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.bougainviller.com/",
+"phone": "+256 414 220966",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kampala_Serena_Hotel",
+"slug": "kampala-serena-hotel-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.serenahotels.com/serenakampala/default-en.html",
+"phone": "+256 414 309000",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Makuma_Y'awoga_Refloxology_Clinic",
+"slug": "makuma-y-awoga-refloxology-clinic-kampala",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"clinic",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://newstartreflexology.org/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kampala_Club_Hotel_Shangri-la",
+"slug": "kampala-club-hotel-shangri-la-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.shangri-la.co.ug/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Nanjing",
+"slug": "nanjing-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.nanjinguganda.com/",
+"phone": "+256 414 340928",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Barclays",
+"slug": "barclays-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.barclays.co.ug/",
+"phone": "+256 417 125291",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Pan_Dental_Surgery",
+"slug": "pan-dental-surgery-kampala",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"dentist",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.pandentalsurgery.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Housing_Finance_Bank",
+"slug": "housing-finance-bank-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.housingfinance.co.ug/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Coffee_at_Last",
+"slug": "coffee-at-last-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.facebook.com/CoffeeAtLastUG",
+"phone": "+256 704 263333",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Tourist_Hotel",
+"slug": "tourist-hotel-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.touristhotel.net/",
+"phone": "+256 414 251471",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Pizzeria_The_Italian_Cuisine",
+"slug": "pizzeria-the-italian-cuisine-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.spekehotel.com/restaurants/pizzeria-italian-cuisine",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Equity_Bank",
+"slug": "equity-bank-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://ug.equitybankgroup.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Centenary_Bank",
+"slug": "centenary-bank-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.centenarybank.co.ug/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Tropical_Bank",
+"slug": "tropical-bank-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.trobank.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Stanbic_Bank",
+"slug": "stanbic-bank-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.stanbicbank.co.ug/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Yujo_Japanese_Restaurant",
+"slug": "yujo-japanese-restaurant-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.yujo.ug/",
+"phone": "+256794289856",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Mediterraneo",
+"slug": "mediterraneo-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.villakololo.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Basil's_Dental_Clinic",
+"slug": "basil-s-dental-clinic-kampala",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"dentist",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://basilsdentalclinic.com/",
+"phone": "+256 772 728222;+256 414 235526",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Cafe_Javas",
+"slug": "cafe-javas-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.cafejavas.co.ug/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Gatto_Matto",
+"slug": "gatto-matto-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.facebook.com/GattoMatto.Kampala",
+"phone": "+256 750 424344",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Prunes",
+"slug": "prunes-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.facebook.com/pages/prunes",
+"phone": "+256 772 712002",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Golf_Course_Apartments",
+"slug": "golf-course-apartments-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.golfcourseapartments.com",
+"phone": "+256 414 255465",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Endiro_Coffee_Kisimenti",
+"slug": "endiro-coffee-kisimenti-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.endirocoffee.com/",
+"phone": "+256 312 515322",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "La_Fontaine",
+"slug": "la-fontaine-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.lafontaine-kampala.com/",
+"phone": "+256 772 406197",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Standard_Chartered",
+"slug": "standard-chartered-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.sc.com/ug/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "IMC_Kololo",
+"slug": "imc-kololo-kampala",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"clinic",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://imc.img.co.ug/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kampala_Imaging_Centre",
+"slug": "kampala-imaging-centre-kampala",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"clinic",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.kampalaimaging.com/",
+"phone": "+256 414 349577",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Shanghai_Restaurant",
+"slug": "shanghai-restaurant-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.shangri-la.co.ug/restaurants-booking.htm",
+"phone": "+256 414 236213",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Ivys_Hotel",
+"slug": "ivys-hotel-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.ivyshotel.co.ug/",
+"phone": "+256 414 273 664 / +255 312 265 482",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Fairway_Hotel",
+"slug": "fairway-hotel-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://fairwayhotel.co.ug/",
+"phone": "+256 414 259571",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kololo_Courts",
+"slug": "kololo-courts-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.kololocourts.com/",
+"phone": "+256 414 235369",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Speke_Hotel",
+"slug": "speke-hotel-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.spekehotel.com/",
+"phone": "+256 414 259221",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Holiday_Express_Hotel",
+"slug": "holiday-express-hotel-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.holidayexpresshotel.com/",
+"phone": "+256 414 253451",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Humura_Resort_Hotel",
+"slug": "humura-resort-hotel-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.humurauganda.com/",
+"phone": "+256 414 700400",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "The_Prestige_Hotel_Suites",
+"slug": "the-prestige-hotel-suites-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.prestigehotelsuites.com/",
+"phone": "+256 717 820100",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Cafe_Ballet",
+"slug": "cafe-ballet-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.facebook.com/cafeballet.co.ug",
+"phone": "+256 414 234190",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kampala_Associated_Advocates",
+"slug": "kampala-associated-advocates-kampala",
+"skill_primary": "legal",
+"skill_tags": [
+"legal",
+"lawyer",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.kaa.co.ug/",
+"phone": "+256 414 344 123",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Orient_Bank",
+"slug": "orient-bank-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.orient-bank.com/",
+"phone": "+256 414 250839",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Tuhende_Safari_Lodge",
+"slug": "tuhende-safari-lodge-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"guest_house",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.tuhendesafarilodge.com/",
+"phone": "+256 (0) 772 468 360",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "St._Denis_Ssebugwawo_SS_Ggaba",
+"slug": "st-denis-ssebugwawo-ss-ggaba-kampala",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.stdenis.ac.ug",
+"phone": "+256312295119",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Il_Patio",
+"slug": "il-patio-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.myfrgroup.com/ilpatiokam.html",
+"phone": "+256 414 258448",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Caf\u00e9_Reze",
+"slug": "caf-reze-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://cafereze.com/",
+"phone": "+256 701 578 764",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Khyber_Pass",
+"slug": "khyber-pass-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.spekehotel.com/restaurants/khyber-pass-restaurant",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Athina_Club_House",
+"slug": "athina-club-house-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.athinaclubhouse.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Cafesserie",
+"slug": "cafesserie-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.cafesserie.com/",
+"phone": "+256 787 968080",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Family_Care_Medical_Centre_Eddwaliro",
+"slug": "family-care-medical-centre-eddwaliro-kampala",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"clinic",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.designwithoutborders.com/office-in-kampala/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "De_Salu_Bistro_&_Wine_Bar",
+"slug": "de-salu-bistro-wine-bar-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.desalubistro.com/",
+"phone": "+256 797 290649",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Caramel_Caf\u00e9_&_Lounge",
+"slug": "caramel-caf-lounge-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.caramelcafe.co/",
+"phone": "+256 794 417777",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Il_Paradiso",
+"slug": "il-paradiso-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.il-paradiso.net",
+"phone": "+256 777 778 282 and +256 711 778 282",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Cassia_Lodge",
+"slug": "cassia-lodge-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://cassialodge.com/",
+"phone": "+256 755 777002",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Bank_of_Baroda",
+"slug": "bank-of-baroda-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.bankofbaroda.ug/",
+"phone": "+256 414 236192",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Centenary_Bank_Headquarters",
+"slug": "centenary-bank-headquarters-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.centenarybank.co.ug/",
+"phone": "+256 414 251276",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Ndejje_University_Kampala_Campus",
+"slug": "ndejje-university-kampala-campus-kampala",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.ndejjeuniversity.ac.ug/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "IDC_International_Diagnostics_Centre",
+"slug": "idc-international-diagnostics-centre-kampala",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"clinic",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://idc.img.co.ug/",
+"phone": "+256 417 335922",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "IMC_Executive_Clinic",
+"slug": "imc-executive-clinic-kampala",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"clinic",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://imc.img.co.ug/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "The_Orthodontist",
+"slug": "the-orthodontist-kampala",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"dentist",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.theorthodontist.org/",
+"phone": "+256 414 534488",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Villa_Kololo",
+"slug": "villa-kololo-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.villakololo.com/",
+"phone": "+256 701 098732",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "City_Oil",
+"slug": "city-oil-kampala",
+"skill_primary": "transport",
+"skill_tags": [
+"transport",
+"fuel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.cityoiluganda.com/oil",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Datamine_Technical_Business_School",
+"slug": "datamine-technical-business-school-kampala",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.datamineschool.com/",
+"phone": "+256 0414 542-036 +256 703 408999 +256 752991435 +256 701991435",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Cayenne",
+"slug": "cayenne-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.cayennekampala.com/",
+"phone": "+256-792-200555",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Pan_Dental_Surgery_Ltd.",
+"slug": "pan-dental-surgery-ltd-kampala",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"dentist",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.pandentalsurgery.com/",
+"phone": "+256 414 251525",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Opportunity_Bank",
+"slug": "opportunity-bank-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.opportunitybank.co.ug/",
+"phone": "+256 414 566635",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Fang_Fang_Hotel",
+"slug": "fang-fang-hotel-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.fangfang.co.ug/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Grand_Imperial_Hotel",
+"slug": "grand-imperial-hotel-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.imperialhotels.co.ug/grandimperialoverview.html",
+"phone": "+256 414 311048",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Absa_Bank",
+"slug": "absa-bank-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.absa.co.ug/personal/",
+"phone": "+256 417 122393",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Cairo_International_Bank",
+"slug": "cairo-international-bank-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.cairointernationalbank.co.ug/",
+"phone": "+256 414 230141",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Nexus_Law_Chambers",
+"slug": "nexus-law-chambers-kampala",
+"skill_primary": "legal",
+"skill_tags": [
+"legal",
+"lawyer",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.nexuslawchambers.com/",
+"phone": "+256 414 531356",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "United_Bank_of_Africa_Bank",
+"slug": "united-bank-of-africa-bank-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.dfcugroup.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "East_African_Development_Bank_Headquarters",
+"slug": "east-african-development-bank-headquarters-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.eadb.org/",
+"phone": "+256 417 112900",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Pride_Microfinance_Ltd.",
+"slug": "pride-microfinance-ltd-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.pridemicrofinance.co.ug/",
+"phone": "+256 414 567155",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "TOTAL_KIBUYE_SERVICE_STATION",
+"slug": "total-kibuye-service-station-kampala",
+"skill_primary": "transport",
+"skill_tags": [
+"transport",
+"fuel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.total.com/",
+"phone": "+256704684472",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "World_PolyClinic",
+"slug": "world-polyclinic-kampala",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"clinic",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.dentalandmedicalworld.com",
+"phone": "+256 414 575711",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "China_Bowl",
+"slug": "china-bowl-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.facebook.com/Chinabowlrestaurant",
+"phone": "+256 716 786500",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Zaika",
+"slug": "zaika-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.facebook.com/Chinabowlrestaurant",
+"phone": "+256 716 786500",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Mythos",
+"slug": "mythos-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.facebook.com/MythosGreekTavernaAndLounge",
+"phone": "+256 790 916183; +256 793 999666",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Shangri-la_Hotel",
+"slug": "shangri-la-hotel-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.hotel-apartment-uganda.com/",
+"phone": "+256 772 222621; +256 772 222622",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Biraj_International_Hotel",
+"slug": "biraj-international-hotel-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.birajhotel.com/",
+"phone": "+256 703 503541",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Finca",
+"slug": "finca-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.finca.ug/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "GT_Bank",
+"slug": "gt-bank-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.gtbank.co.ug/",
+"phone": "+256 417 718538",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "UPMB_Optical_Centre",
+"slug": "upmb-optical-centre-kampala",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"clinic",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://upmb.co.ug/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Rock_Garden_Caf\u00e9",
+"slug": "rock-garden-caf-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.spekehotel.com/restaurants/rock-garden-cafe",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Fas_Fas_Art_Caf\u00e9",
+"slug": "fas-fas-art-caf-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.facebook.com/FasFasKampala",
+"phone": "+256 752 537828",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "IMC_Park_Royal",
+"slug": "imc-park-royal-kampala",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"clinic",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://imc.img.co.ug/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Biryani_House",
+"slug": "biryani-house-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.biryanihouseuganda.com/",
+"phone": "+256 758 935839",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Mount_Zion",
+"slug": "mount-zion-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://mtzionhotel.co.ug/",
+"phone": "+256 312 800 800 / +256 414 343 888",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "IMC_Namirembe_Road",
+"slug": "imc-namirembe-road-kampala",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"clinic",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://imc.img.co.ug/",
+"phone": "+256 392 176519",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "dfcu_Business_Centre",
+"slug": "dfcu-business-centre-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.dfcugroup.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Piato",
+"slug": "piato-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.piatokampala.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kasalina_Gardens_Serviced_Apartments",
+"slug": "kasalina-gardens-serviced-apartments-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.kasalinagardens.com/",
+"phone": "+256 752 612523 ,+256 774 160956",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Diamond_Trust_Bank_-_DTB",
+"slug": "diamond-trust-bank-dtb-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.dtbafrica.com/",
+"phone": "(041) 4387000 /(041) 4387100",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "IMG_Pharmaceuticals_Ltd",
+"slug": "img-pharmaceuticals-ltd-kampala",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"pharmacy",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.img.co.ug",
+"phone": "(031 ) 22021 20",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Tropical_Bank_Lugogo",
+"slug": "tropical-bank-lugogo-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.trobank.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Java_House",
+"slug": "java-house-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.javahouseafrica.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Banda_Inns",
+"slug": "banda-inns-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"guest_house",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.bandainns.com/",
+"phone": "+256 759 334 746",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "FeedRite",
+"slug": "feedrite-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.feedriterestaurant.com",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Dream_Africa_School_Nalya",
+"slug": "dream-africa-school-nalya-kampala",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.dreamafricaschools.com/",
+"phone": "+256778917738",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "White_Angels_Nursery_Day_and_Boarding_Primary_School,_Masajj",
+"slug": "white-angels-nursery-day-and-boarding-primary-school-masajja-campus-kampala",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.wapsschools.com",
+"phone": "+256702877437",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Sheehan_Standard_Primary_School",
+"slug": "sheehan-standard-primary-school-kampala",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.facebook.com/pg/Sheehan-standard-day-and-boarding-primary-schoolRubaga-Kampala-1465706183719771/about/?ref=page_internal",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "ALTX_Uganda",
+"slug": "altx-uganda-kampala",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.altxafrica.com/",
+"phone": "+256 31 2209600",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "TOTAL_HORIZON_NDEEBA_SERVICE_STATION",
+"slug": "total-horizon-ndeeba-service-station-kampala",
+"skill_primary": "transport",
+"skill_tags": [
+"transport",
+"fuel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://www.total.ug",
+"phone": "+256712584351",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Nexus_Resort_Hotel",
+"slug": "nexus-resort-hotel-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.nexusresorts.net/",
+"phone": "+256414690759",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Endiro_Coffee_Muyenga",
+"slug": "endiro-coffee-muyenga-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.endirocoffee.com/",
+"phone": "+256 786 996858",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Bromelia_Guest_House",
+"slug": "bromelia-guest-house-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"guest_house",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://bromeliaguesthouse.com/",
+"phone": "+256754408024",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "The_Hickory_Kampala",
+"slug": "the-hickory-kampala-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://thehickorykampala.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Hotel_Ruch",
+"slug": "hotel-ruch-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.hotelruch.com/",
+"phone": "+256 717 820100",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Christ_Care_Junior_School",
+"slug": "christ-care-junior-school-kampala",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.christcareschools.com/",
+"phone": "0200903803",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Ernest_Cook_Ultrasound_Research_&_Education_Institute",
+"slug": "ernest-cook-ultrasound-research-education-institute-kampala",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://ecurei.ac.ug/",
+"phone": "0414273394",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "City_medicals",
+"slug": "city-medicals-kampala",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"doctors",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://citymedicals.org",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "The_17_Apartment_+_Hotel",
+"slug": "the-17-apartment-hotel-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "http://ww.the17apartmenthotel.com/",
+"phone": "+256 792 172017",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "The_Hash_Tag_Guest_House",
+"slug": "the-hash-tag-guest-house-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"guest_house",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://the-hashtag-guest-house.business.site",
+"phone": "+256772 369512",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "King_Ceaser_University",
+"slug": "king-ceaser-university-kampala",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://kcu.ac.ug/",
+"phone": "+256705444540",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Karibu_Grill_&Lounge",
+"slug": "karibu-grill-lounge-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.karibugrillrestaurant.com",
+"phone": "+256 700 696755",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Endiro_Coffee_Bugolobi",
+"slug": "endiro-coffee-bugolobi-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.endirocoffee.com/",
+"phone": "+256 759 529716",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Endiro_Coffee_Naguru",
+"slug": "endiro-coffee-naguru-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.endirocoffee.com/",
+"phone": "+256 392 174907",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Ivory_Castle_Boutique_Hotel",
+"slug": "ivory-castle-boutique-hotel-kampala",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://ivorycastle.co.com/",
+"phone": "0789994261",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Endiro_Coffee_Nakasero",
+"slug": "endiro-coffee-nakasero-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.endirocoffee.com/",
+"phone": "+256 785 552 091",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Endiro_Coffee_(Standard_Chartered)",
+"slug": "endiro-coffee-standard-chartered-kampala",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"kampala",
+"uganda"
+],
+"location": "kampala",
+"country": "uganda",
+"website": "https://www.endirocoffee.com/",
+"phone": "+256 788 122 620",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Muthu_Silver_Springs_Hotel",
+"slug": "muthu-silver-springs-hotel-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.muthuhotelsmgm.com/muthu-silver-springs-hotel.html",
+"phone": "+254 7030 48000",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kinderworld_International_School",
+"slug": "kinderworld-international-school-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://kis.sc.ke/",
+"phone": "+254798139954",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Windsor_Golf_Hotel_&_Country_Club",
+"slug": "windsor-golf-hotel-country-club-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.windsorgolfresort.com/",
+"phone": "+254208647000",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Java_House",
+"slug": "java-house-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://javahouseafrica.com/",
+"phone": "+254 721 555 831",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Seven_Seafood_&_Grill",
+"slug": "seven-seafood-grill-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.experienceseven.com/",
+"phone": "(254) 737 776 677",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Total_Spring_Valley",
+"slug": "total-spring-valley-nairobi",
+"skill_primary": "transport",
+"skill_tags": [
+"transport",
+"fuel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://springvalleyfuel.co.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Fogo_Gaucho",
+"slug": "fogo-gaucho-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://fogogaucho.co.ke/contact-us/",
+"phone": "+254 712 123456",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Sankara_Hotel",
+"slug": "sankara-hotel-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://sankara.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Sushi_Soo",
+"slug": "sushi-soo-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.sushisoo.co.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Galitos_restaurant",
+"slug": "galitos-restaurant-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.galitos.co.za/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Muthaiga_Country_Club",
+"slug": "muthaiga-country-club-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.mcc.co.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Saint_Mary's_Mission_Hospital",
+"slug": "saint-mary-s-mission-hospital-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://stmmh.co.ke/",
+"phone": "+254 717305204",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Hibiscus_Guest_House",
+"slug": "hibiscus-guest-house-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"guest_house",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "http://hibiscuskenya.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Riara_Group_of_Schools_Primary",
+"slug": "riara-group-of-schools-primary-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.riaraschools.ac.ke/",
+"phone": "+254 703 038 100",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Utalii_Hotel",
+"slug": "utalii-hotel-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "http://www.utaliihotel.co.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Nomad_Paradise_Hotel",
+"slug": "nomad-paradise-hotel-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://nomadparadisehotel.co.ke/",
+"phone": "+254 728 714084",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Amani_Gardens_Inn",
+"slug": "amani-gardens-inn-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"guest_house",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "http://www.amanigardensinn.con",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Chicken_Inn",
+"slug": "chicken-inn-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"fast_food",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://chickeninn.co.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Sanford_Fish_&_Chips",
+"slug": "sanford-fish-chips-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"fast_food",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "http://www.travelfever.tv/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "I&M_Parklands_HQ",
+"slug": "i-m-parklands-hq-nairobi",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.imbankgroup.com/",
+"phone": "+254 719 088 000",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kenya_Institute_of_Management",
+"slug": "kenya-institute-of-management-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.kim.ac.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Havana_Bar_&_Restaurant",
+"slug": "havana-bar-restaurant-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.facebook.com/HavanaBarNairobi/",
+"phone": "+254 724 803452",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kiota_School_Dennis_Pritt_Campus",
+"slug": "kiota-school-dennis-pritt-campus-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.kiotaschool.com/dennis-pritt-campus/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "St_Catherine_Children_and_Educational_Centre",
+"slug": "st-catherine-children-and-educational-centre-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://chnstcatherine.com/",
+"phone": "0722365177",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Shell_Roysambu",
+"slug": "shell-roysambu-nairobi",
+"skill_primary": "transport",
+"skill_tags": [
+"transport",
+"fuel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://find.shell.com/ke",
+"phone": "+254 702 991310",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Soaring_Eagle_Spur",
+"slug": "soaring-eagle-spur-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.spursteakranches.com/ke/restaurant/international/nairobi/highway-estate/soaring-eagle-spur-2",
+"phone": "+254 706 101106",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Khweza_Bed_&_Breakfast",
+"slug": "khweza-bed-breakfast-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "http://khweza.com/",
+"phone": "+254202672116;+254717060045",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "U-Block",
+"slug": "u-block-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://tukenya.ac.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "West_Wood_Hotel_Nairobi",
+"slug": "west-wood-hotel-nairobi-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "http://westwoodhotelkenya.com/",
+"phone": "+254 20 217 3830",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Cooperative_Bank_of_Kenya",
+"slug": "cooperative-bank-of-kenya-nairobi",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.co-opbank.co.ke/locations/langata-road-t-mall-branch/",
+"phone": "+254 793071966",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Lotos_Inn_&_Suites",
+"slug": "lotos-inn-suites-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://lotos.co.ke/",
+"phone": "0780168168",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Covenant_Guest_House",
+"slug": "covenant-guest-house-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"guest_house",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "http://covenant.co.ke",
+"phone": "+254721815353",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "KidStar_Academy",
+"slug": "kidstar-academy-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.goodhearts.ch/",
+"phone": "+254723273477",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Lenana_Suites",
+"slug": "lenana-suites-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"guest_house",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "http://www.lenanasuites.com/index.php",
+"phone": "+254 722 381 627",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Golden_Eagle_Spur",
+"slug": "golden-eagle-spur-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.spursteakranches.com/ke/restaurant/international/kenya/nairobi/golden-eagle-spur-steak-ranch",
+"phone": "+254 791 009717",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Hilton_Garden_Inn_Nairobi_Airport",
+"slug": "hilton-garden-inn-nairobi-airport-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.hilton.com/en/hotels/nboapgi-hilton-garden-inn-nairobi-airport/",
+"phone": "+254-20-4075000",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Palm_Tree_Bed_&_Breakfast",
+"slug": "palm-tree-bed-breakfast-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "http://palmtree.co.ke",
+"phone": "+254 700 326633",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "CHEKAFE_Japanese_Izakaya",
+"slug": "chekafe-japanese-izakaya-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.instagram.com/chekafe/?hl=en",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "7_Degrees_Bar_Restaurant_and_Lounge",
+"slug": "7-degrees-bar-restaurant-and-lounge-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.7degrees.co.ke",
+"phone": "+254704782214",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Taste_of_China_Restaurant",
+"slug": "taste-of-china-restaurant-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.chinesefood.co.ke/",
+"phone": "+254 720 222211",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Urban_Gourmet_Burgerv_-_Westgate_Mall",
+"slug": "urban-gourmet-burgerv-westgate-mall-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.urbanburgers.co.ke/",
+"phone": "+254 721303030",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Silver_Stream_Spur",
+"slug": "silver-stream-spur-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.spursteakranches.com/ke/restaurant/international/nairobi/kitisuru/silver-stream-spur",
+"phone": "+254-792 451 378/9",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Nyama_Mama",
+"slug": "nyama-mama-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.thegoodearthgroup.com/nyama-mama",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Stedmak_Gardens_And_Recreation_Centre",
+"slug": "stedmak-gardens-and-recreation-centre-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://stedmak.com/",
+"phone": "+254 705 734 780",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Road_House_Grill_Kilimani",
+"slug": "road-house-grill-kilimani-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://roadhouse.co.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Homescope_Hostels",
+"slug": "homescope-hostels-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://homescopehostels.co.ke/",
+"phone": "+254704313313",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Lulu's_Guest_House",
+"slug": "lulu-s-guest-house-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"guest_house",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://lulusguesthouse.com/",
+"phone": "+254 700 091 999",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Ankole_Grill",
+"slug": "ankole-grill-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://ankole.co.ke/",
+"phone": "+254 710 20 20 20",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Open_House_Westlands",
+"slug": "open-house-westlands-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.openhouserestaurant.co.ke/",
+"phone": "+254 735 621 824",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "KFC",
+"slug": "kfc-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"fast_food",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://kfc.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Oh_Cha_Noodle_Bar",
+"slug": "oh-cha-noodle-bar-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.ohcha.co.ke/",
+"phone": "+254 709278888",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "The_Ndemi_Place",
+"slug": "the-ndemi-place-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"guest_house",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "http://www.ndemiplace.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Decale_Palace_Hotel",
+"slug": "decale-palace-hotel-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://decalepalacehotel.com/",
+"phone": "+254741717171",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Chicken_Inn_Union_Towers",
+"slug": "chicken-inn-union-towers-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"fast_food",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://chickeninn.co.ke/",
+"phone": "+254700323323",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Pizza_Inn",
+"slug": "pizza-inn-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"fast_food",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://pizzainn.co.ke/",
+"phone": "+254 700 323 323",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Artcaff\u00e9_Britam_Tower",
+"slug": "artcaff-britam-tower-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.artcaffe.co.ke/",
+"phone": "+254709828282",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Aga_Khan_Hospital_Komarock",
+"slug": "aga-khan-hospital-komarock-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.agakhanhospitals.org/",
+"phone": "+254 700744491",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Shell_Mumias_Road",
+"slug": "shell-mumias-road-nairobi",
+"skill_primary": "transport",
+"skill_tags": [
+"transport",
+"fuel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://find.shell.com/",
+"phone": "+254 721 243317",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "CJ\u2019s_Koinage_Street",
+"slug": "cj-s-koinage-street-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://cjs.co.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "PrideInn_Suites_Lantana",
+"slug": "prideinn-suites-lantana-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.prideinn.co.ke/prideinn-suites-lantana/",
+"phone": "+254713565055",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Java_House_Mbagathi",
+"slug": "java-house-mbagathi-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://javahouseafrica.com",
+"phone": "+254790049130",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kilimanjaro_Jamia_Kimathi_Street",
+"slug": "kilimanjaro-jamia-kimathi-street-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://kilimanjarojamia.com/",
+"phone": "+254 796 766808",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Hanan_Guest_House",
+"slug": "hanan-guest-house-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"guest_house",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.hanan-guesthouse.com/",
+"phone": "+254 20 2679580",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "AAR_Healthcare_Buruburu",
+"slug": "aar-healthcare-buruburu-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"clinic",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.aar-healthcare.com/",
+"phone": "+254780888234",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Equity_Afia_Kawangware",
+"slug": "equity-afia-kawangware-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"clinic",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.equityafia.co.ke",
+"phone": "+254 765 000004",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kilimani_Childrens_Clinic",
+"slug": "kilimani-childrens-clinic-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"clinic",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://kilimanichildrensclinic.co.ke/",
+"phone": "+254 20 440 4949",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Health_Gate_Hospital",
+"slug": "health-gate-hospital-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://healthgatehospital.com/",
+"phone": "+254 202355355",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "The_Nairobi_South_Hospital",
+"slug": "the-nairobi-south-hospital-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://nairobisouthhospital.org/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Shell_Mirema",
+"slug": "shell-mirema-nairobi",
+"skill_primary": "transport",
+"skill_tags": [
+"transport",
+"fuel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://find.shell.com/ke/fuel/10128142-mirema-shell-service-station/en_KE",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Ka_Dana_Delicacies",
+"slug": "ka-dana-delicacies-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://kadana.co.ke/?utm_source=osm&utm_medium=maps&utm_campaign=osm",
+"phone": "+254758940064",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "The_Shack_-_Nairobi_West",
+"slug": "the-shack-nairobi-west-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://theshack.co.ke/",
+"phone": "+254740729955",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Rainbow_smiles_dental_clinic",
+"slug": "rainbow-smiles-dental-clinic-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"dentist",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://rainbowsmilesdental.com/",
+"phone": "+254 757 751 100",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "French_Mission_Roastery_Ltd",
+"slug": "french-mission-roastery-ltd-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "http://frenchmissionroastery.com/",
+"phone": "+254769083578",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Forex_Brokers_Kenya",
+"slug": "forex-brokers-kenya-nairobi",
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://forexbroker.co.ke/",
+"phone": "+254 786 930 302",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "The_Periodontist_Dental_Centre",
+"slug": "the-periodontist-dental-centre-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"dentist",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.theperiodontist.co.ke",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Terra_Moyo",
+"slug": "terra-moyo-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.terramoyo.com/",
+"phone": "+254 723115507",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Langata_Hospital",
+"slug": "langata-hospital-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://langatahospital.org/",
+"phone": "+254 724485376",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Bao_Box",
+"slug": "bao-box-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://baobox.co.ke/",
+"phone": "+254 715 226269",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Hob_House",
+"slug": "hob-house-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://hobhouse.co",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "La_Villa_Restaurant_and_Wine_Bar",
+"slug": "la-villa-restaurant-and-wine-bar-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.lavilla.co.ke/",
+"phone": "+254 706 880 688",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Lava_Latte",
+"slug": "lava-latte-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://lavalatte.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Crafty_Chameleon",
+"slug": "crafty-chameleon-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://craftychameleon.co.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "JW_Marriott",
+"slug": "jw-marriott-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://jw-marriott.marriott.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Longonot_Place_Serviced_Apartments",
+"slug": "longonot-place-serviced-apartments-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.longonotplace.co.ke/",
+"phone": "+254 722 205870",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Norfolk_Towers_Serviced_Apartments",
+"slug": "norfolk-towers-serviced-apartments-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.norfolktowers.co.ke/",
+"phone": "+254 20 2220032",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "The_Clarion_Hotel",
+"slug": "the-clarion-hotel-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://theclarionhotel.co.ke",
+"phone": "+254 721 485 024",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Debonairs",
+"slug": "debonairs-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"fast_food",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://kenya.debonairspizza.africa/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "steers",
+"slug": "steers-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"fast_food",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://kenya.steers.africa/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Domino's",
+"slug": "domino-s-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"fast_food",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.dominos.co.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "pharmaplus",
+"slug": "pharmaplus-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"pharmacy",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.pharmapluspharmacies.co.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "The_Artcaffe",
+"slug": "the-artcaffe-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.artcaffe.co.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Digestive_Health_&_Endoscopy_Clinic",
+"slug": "digestive-health-endoscopy-clinic-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"clinic",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://digestivehealthltd.netlify.app",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Sarai_Popcorns",
+"slug": "sarai-popcorns-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"fast_food",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://twitter.com/SaraiTradersLTD",
+"phone": "+254700070687",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kwetu_Nairobi,_Curio_Collection_by_Hilton",
+"slug": "kwetu-nairobi-curio-collection-by-hilton-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.hilton.com/en/hotels/nboknqq-kwetu-nairobi/",
+"phone": "+254 709 588 000",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Hooyo's_Kitchen_&_Poetry",
+"slug": "hooyo-s-kitchen-poetry-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://hooyoskitchen.com/",
+"phone": "0113346878",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Severine_Cottages",
+"slug": "severine-cottages-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.severinecottages.com/",
+"phone": "+254 704 338050",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Geco_Cafe",
+"slug": "geco-cafe-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.gecotribe.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Best_Western_Plus_Westlands",
+"slug": "best-western-plus-westlands-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.bestwestern.com/en_US/book/nairobi/hotel-rooms/best-western-plus-westlands/propertyCode.75155.html",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Muthurwa_Primary_School",
+"slug": "muthurwa-primary-school-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://muthurwaprimaryschool.wordpress.com/contact-us/",
+"phone": "0719410875",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Apollo_Dental_Clinic",
+"slug": "apollo-dental-clinic-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"dentist",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://apollodental.co.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Trunk_And_Tandoor",
+"slug": "trunk-and-tandoor-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://app.fetchmyorder.com/558/2/5020",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Gemma's",
+"slug": "gemma-s-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://app.fetchmyorder.com/556/2/5000",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "AKs_Restaurant",
+"slug": "aks-restaurant-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://aksplaces.com",
+"phone": "0794 903303",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "BELLEZZA_SKIN_AESTHETICS",
+"slug": "bellezza-skin-aesthetics-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.bellezza.skin",
+"phone": "+254-746847630",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Mirema_Cottages",
+"slug": "mirema-cottages-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"guest_house",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.airbnb.com/rooms/820014569018853647",
+"phone": "+25441409922",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Mokka_City_Cafe_&_Lounge",
+"slug": "mokka-city-cafe-lounge-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://hotelmokkacity.com/",
+"phone": "+254742111444",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Eco_Cafe",
+"slug": "eco-cafe-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://maps.app.goo.gl/R3Kf8LLhrfWt4HNV9?g_st=ipc",
+"phone": "+254 716 889988",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Argyle_Grand_Hotel_Nairobi_Airport",
+"slug": "argyle-grand-hotel-nairobi-airport-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://argylehotelkenya.ke",
+"phone": "+254797555888",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Western_Delicacy",
+"slug": "western-delicacy-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://westerndelicacy.com/",
+"phone": "+254757285955",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "P.C.E.A_Kariobangi_South_Comprehensive_School",
+"slug": "p-c-e-a-kariobangi-south-comprehensive-school-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://pcea.or.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Zetech_University_-_Nairobi_City_Campus",
+"slug": "zetech-university-nairobi-city-campus-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.zetech.ac.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Cafe_AMKA",
+"slug": "cafe-amka-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://cafeamka.co.ke/",
+"phone": "+254748701585",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "RC's",
+"slug": "rc-s-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://rcs.co.ke/home",
+"phone": "+254712878787",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Aga_Khan_University_Hospital",
+"slug": "aga-khan-university-hospital-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://hospitals.aku.edu/",
+"phone": "+254 111 011888",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Fairmont_The_Norfolk",
+"slug": "fairmont-the-norfolk-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.fairmont.com/norfolk-hotel-nairobi/",
+"phone": "+254 20 2265000",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Miami_Global_Hotel",
+"slug": "miami-global-hotel-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.miamiglobalhotel.co.ke/",
+"phone": "+254 727 300 849",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Strathmore_University",
+"slug": "strathmore-university-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://strathmore.edu/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Mama_Lucy_Kibaki_Memorial_Hospital",
+"slug": "mama-lucy-kibaki-memorial-hospital-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://mamalucykibakihospital.or.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kenya_School_of_Law",
+"slug": "kenya-school-of-law-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.ksl.ac.ke/",
+"phone": "+254 202699582",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Gertrude's_Children_Hospital",
+"slug": "gertrude-s-children-hospital-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "http://www.gerties.org/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Novotel",
+"slug": "novotel-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://all.accor.com/hotel/9332/index.en.shtml",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "University_of_Nairobi-_Kenya_Science_Campus",
+"slug": "university-of-nairobi-kenya-science-campus-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://ksc.uonbi.ac.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Braeburn_School",
+"slug": "braeburn-school-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://braeburn.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Nairobi_Women's_Hospital",
+"slug": "nairobi-women-s-hospital-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://nwh.co.ke/hospital/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Aga_Khan_High_School_Nairobi",
+"slug": "aga-khan-high-school-nairobi-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.agakhanschools.org/kenya/akhsn/index",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "St_Cathrines_Mukuru_Primary_School",
+"slug": "st-cathrines-mukuru-primary-school-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "http://www.mukurupromotioncentre.org/education/index.cfm?loadref=3",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kenyatta_National_Hospital",
+"slug": "kenyatta-national-hospital-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://knh.or.ke/",
+"phone": "+254 272 6300 9",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Mater_Misericordiae_Hospital",
+"slug": "mater-misericordiae-hospital-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.materkenya.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "The_Heron_Hotel",
+"slug": "the-heron-hotel-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.sarovarhotels.com/the-heron-portico-nairobi/",
+"phone": "+254-020-272 0740, 272 0741, 272 0742, 272 0743, 235 0401, 235 0402",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kenya_Institute_of_Special_Education",
+"slug": "kenya-institute-of-special-education-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.kise.co.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Oak_Place_Conference_and_Training_Centre",
+"slug": "oak-place-conference-and-training-centre-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "http://oakplace.co.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Upper_Hill_Hotel",
+"slug": "upper-hill-hotel-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "http://nairobiupperhillhotel.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Hillcrest_Preparatory_School",
+"slug": "hillcrest-preparatory-school-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.hillcrest.ac.ke/Preparatory",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Hillcrest__secondary_School",
+"slug": "hillcrest-secondary-school-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://hillcrest.ac.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Light_Academy",
+"slug": "light-academy-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://lightacademy.ac.ke/nairobi/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Lenana_School",
+"slug": "lenana-school-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.lenanaschool.sc.ke/",
+"phone": "+254 722 977795",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "KCA_University",
+"slug": "kca-university-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://kcau.ac.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kenya_Comfort_Suites",
+"slug": "kenya-comfort-suites-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.kenyacomfort.com/kcs/suites.html",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "United_States_International_University_-_Africa",
+"slug": "united-states-international-university-africa-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.usiu.ac.ke/",
+"phone": "+254.20.3606000",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Carnivore_Restaurant",
+"slug": "carnivore-restaurant-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://tamarind.co.ke/",
+"phone": "+254 20 5141300",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Brookhouse_School-_Karen",
+"slug": "brookhouse-school-karen-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.brookhouse.ac.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Nairobi_School",
+"slug": "nairobi-school-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://nairobischool.ac.ke/",
+"phone": "+254 741 946507",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "International_School_of_Kenya",
+"slug": "international-school-of-kenya-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.isk.ac.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Crowne_Plaza_Nairobi_Airport",
+"slug": "crowne-plaza-nairobi-airport-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.ihg.com/crowneplaza/hotels/gb/en/nairobi/nboir/hoteldetail;https://www.ihg.com/crowneplaza/hotels/us/en/nairobi/nboir/hoteldetail",
+"phone": "+254 709 222444;+254 20 709222444",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kenyatta_University_Teaching_and_Referral_Hospital",
+"slug": "kenyatta-university-teaching-and-referral-hospital-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://kutrrh.go.ke/",
+"phone": "+254 780 900519",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Peponi_House_Preparatory_School",
+"slug": "peponi-house-preparatory-school-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.peponischool.org/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Peponi_School_Kabete_Kindergarten",
+"slug": "peponi-school-kabete-kindergarten-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.peponischool.org/kabetekindergarten",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kianda_School",
+"slug": "kianda-school-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://kiandaschool.ac.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Brookhouse_School_Runda",
+"slug": "brookhouse-school-runda-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.brookhouse.ac.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Rosslyn_Academy",
+"slug": "rosslyn-academy-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://rosslynacademy.org/",
+"phone": "+254-732-646-602",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "DoubleTree_by_Hilton_Nairobi_Hurlingham",
+"slug": "doubletree-by-hilton-nairobi-hurlingham-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.hilton.com/en/hotels/nbohudi-doubletree-nairobi-hurlingham/",
+"phone": "+254-709090000",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Moi_Girls_School_Nairobi",
+"slug": "moi-girls-school-nairobi-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://moigirlsschoolnairobi.sc.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "The_Monarch_Boutique_Hotel",
+"slug": "the-monarch-boutique-hotel-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://themonarchboutiquehotel.com/",
+"phone": "+254203860777",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Four_Points_by_Sheraton",
+"slug": "four-points-by-sheraton-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://four-points.marriott.com/",
+"phone": "+254 70 976 0000",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Mayhouse_680_Hotel",
+"slug": "mayhouse-680-hotel-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://sentrim-hotels.com/",
+"phone": "+254 722 207361",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Starehe_Boys'_Centre_and_School",
+"slug": "starehe-boys-centre-and-school-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "http://www.stareheboyscentre.ac.ke/",
+"phone": "+254 777 761213",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Ibis_Styles",
+"slug": "ibis-styles-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.ibisstylesnairobi.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Ofafa_Jericho_High_School",
+"slug": "ofafa-jericho-high-school-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://ofafajerichohigh.or.ke/",
+"phone": "+254721722880",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Pearl_Hearts_Schools",
+"slug": "pearl-hearts-schools-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://pearlhearts.ac.ke/",
+"phone": "+254750323323",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Hyatt_House_Nairobi_Westlands",
+"slug": "hyatt-house-nairobi-westlands-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.hyatt.com/hyatt-house/en-US/nboxn-hyatt-house-nairobi-westlands",
+"phone": "+254 709785000",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Artcaff\u00e8_Market_Rhapta_Square",
+"slug": "artcaff-market-rhapta-square-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"cafe",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.artcaffe.co.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "University_of_Nairobi_School_of_Business",
+"slug": "university-of-nairobi-school-of-business-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://business.uonbi.ac.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Dr_Rasik_Kantaria_Jalaram_Medical_Center",
+"slug": "dr-rasik-kantaria-jalaram-medical-center-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://rkjms.org/",
+"phone": "+254 20 5012200",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Mirema_School",
+"slug": "mirema-school-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.miremaschool.ac.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Tangaza_University_College",
+"slug": "tangaza-university-college-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://tangaza.ac.ke/",
+"phone": "+254 722204724",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Mathari_National_Teaching_&_Referral_Hospital",
+"slug": "mathari-national-teaching-referral-hospital-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.mntrh.go.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Treeside_Special_School",
+"slug": "treeside-special-school-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.treesidespecialschool.sc.ke",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "The_Nairobi_West_Hospital",
+"slug": "the-nairobi-west-hospital-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://nairobiwesthospital.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Swaminarayan_Hospital",
+"slug": "swaminarayan-hospital-nairobi",
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://shreeswaminarayanhospital.com/",
+"phone": "+254 711 500400",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "University_of_Nairobi_-_Main_Campus",
+"slug": "university-of-nairobi-main-campus-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.uonbi.ac.ke/content/college-humanities-and-social-sciences-chss",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kukito_Hurlingham",
+"slug": "kukito-hurlingham-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"fast_food",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://kukito.co.ke/",
+"phone": "+254113353042",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "The_Pot_Belly_Resturant_&_Bar",
+"slug": "the-pot-belly-resturant-bar-nairobi",
+"skill_primary": "restaurant",
+"skill_tags": [
+"restaurant",
+"restaurant",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://thepotbellyrestaurantbar.business.site/?utm_source=gmb&utm_medium=referral",
+"phone": "0701757217",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Kenya_High_School",
+"slug": "kenya-high-school-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "http://www.kenyahigh.ac.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Boulevard",
+"slug": "boulevard-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://hotelboulevard.co.ke/",
+"phone": "+254 722 200 755",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Sunshine_Secondary_School",
+"slug": "sunshine-secondary-school-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://sunshineschool.sc.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Pullman_Nairobi_Upper_Hill",
+"slug": "pullman-nairobi-upper-hill-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://all.accor.com/",
+"phone": "+254 719 096000",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Hyatt_Regency_Nairobi_Westlands",
+"slug": "hyatt-regency-nairobi-westlands-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.hyatt.com/hyatt-regency/en-US/nborn-hyatt-regency-nairobi-westlands",
+"phone": "+254 20 3631234",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "The_Banda_School",
+"slug": "the-banda-school-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.bandaschool.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Rose_of_Sharon_Academy",
+"slug": "rose-of-sharon-academy-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"school",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://rsa.ac.ke/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Zarita_Boutique",
+"slug": "zarita-boutique-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://zaritahotel.com/",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "University_of_Nairobi-_College_of_Agriculture_&_veterinary_S",
+"slug": "university-of-nairobi-college-of-agriculture-veterinary-sciences-nairobi",
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.uonbi.ac.ke/content/college-agriculture-and-veterinary-sciences-cavs",
+"phone": null,
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
+},
+{
+"name": "Hyatt_Place_Nairobi_Westlands",
+"slug": "hyatt-place-nairobi-westlands-nairobi",
+"skill_primary": "hotel_lodging",
+"skill_tags": [
+"hotel_lodging",
+"hotel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.hyatt.com/hyatt-place/en-US/nbozn-hyatt-place-nairobi-westlands",
+"phone": "+254 709785000",
+"source": "osm_scraped",
+"reputation_score": 9,
+"tier": 1
 }
 ]
