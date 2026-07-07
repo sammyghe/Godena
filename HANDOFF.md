@@ -28,9 +28,10 @@ Standing task board so any model, in any session, picks up cold. **Protocol ever
 - [ ] Submit Godena to directories in `Godena-strategy/POSTS.md` (there's-an-ai-for-that, aiagentsdirectory).
 
 ### Sonnet (build)
-- [ ] Expand `SKILL_SYNONYMS` in app.py: add `research, sales, support, writing, voice, video, automation, agent-framework` → fixes ai-mode queries returning generic top-rep. KNOWN GAP.
-- [ ] Add `harvest_osm.py` (Overpass API, phone/website-tagged businesses in Kampala/Nairobi/Lagos) — human-services mass source. Skeleton described in the plan.
-- [ ] When DB restored: add a `searches` table + log every query (persistent gap map), and a `refresh_snapshot` script (top ~1000 by reputation → snapshot).
+- [ ] **PERF — TOP PRIORITY: bucket index.** At 8.3k, search scans the whole snapshot every query (~1s on the free HF CPU; ~40ms locally). Build `SNAPSHOT_BY_SKILL = {skill_primary: [agents]}` at load. In `search_agents`, when `skill_words` present, gather candidates only from the relevant skill buckets (map via skill_kws) + a bounded name pass, instead of merging all `SNAPSHOT_AGENTS`. Target <300ms. Test locally: `SUPABASE_KEY=x python -c "import app; app.search_agents('video ai')"` — results must stay identical. `USE_SUPABASE` unset = git-native path.
+- [x] SKILL_SYNONYMS (+30 keys) + relevance ranking — DONE.
+- [x] harvest_osm.py (8 African cities) — DONE.
+- [ ] Optional (only if DB ever returns): `searches` table for a persistent gap map.
 
 ### Opus 4.8 (orchestrate)
 - [ ] On Samuel's Supabase re-login: restore the paused project, then bulk-seed the full harvest (10k+) into Supabase (not just the 1200 snapshot cap).
