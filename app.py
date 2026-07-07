@@ -37,7 +37,7 @@ TELEGRAM_TOKEN    = os.environ.get("TELEGRAM_TOKEN", "")
 WHATSAPP_NUMBER   = os.environ.get("WHATSAPP_NUMBER", "+256761966728")
 
 sb  = create_client(SUPABASE_URL, SUPABASE_KEY)
-USE_DB = bool(SUPABASE_KEY)   # Supabase dropped by default — search is git-native
+USE_DB = os.environ.get("USE_SUPABASE") == "1"   # git-native by default; set USE_SUPABASE=1 to re-enable Supabase
 app = FastAPI()
 
 # CORS — lets browsers (godena web page, partner sites, other agents' UIs)
