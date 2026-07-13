@@ -10,22 +10,27 @@ Standing task board so any model, in any session, picks up cold. **Protocol ever
 | Lane | Model | Owns |
 |---|---|---|
 | Final planning, audits, pivots | **Fable 5** (rare) | Strategy, quarterly review, this system's design |
-| Orchestration, hard builds, DB | **Opus 4.8** | This queue's execution, Supabase restore, MCP polish |
-| Build sprints | **Sonnet** | Seeders, endpoints, search-quality, Claude NLU |
-| Ops + harvest + submissions | **Haiku** (cheap) | `godena-weekly`, run harvesters, registry submissions |
+| Orchestration, hard builds | **Opus 4.8** | This queue's execution, MCP polish, cross-cutting fixes |
+| Build sprints | **Sonnet** | Search perf, endpoints, harvest expansion, SEO/analytics code |
+| Ops + harvest + submissions | **Haiku** (cheap) | `godena-weekly` (product ops), run harvesters |
+| **Growth + exposure** | **Haiku** (cheap) | `godena-growth-operator` agent — monitor, SEO, content, submissions, outreach (drafts only) |
 
 ## Live facts
 - Web: https://sammyghe.github.io/Godena/ · API: https://sammygh-godena.hf.space
-- Index: embedded snapshot `data/agents_snapshot.json` (~886 real agents, cap 1200). Supabase (3,330) paused — restore needs Samuel re-login.
-- Repo auto-deploys to the HF Space on push to `main`.
+- Registry: **git-native** — `data/agents_snapshot.json`, ~8,300 real agents (AI models/tools + human services), cap 12,000. **Supabase dropped entirely** — do not re-add it as a dependency; `USE_SUPABASE=1` is opt-in only if a future decision reverses this.
+- Repo auto-deploys to the HF Space on push to `main`. GitHub topics/description/homepage set (SEO pass done 2026-07-07).
+- Growth engine: `.claude/skills/godena-{growth,monitor,seo,submit,content,outreach}` + `.claude/agents/godena-growth-operator.md`. Baseline exposure (2026-07-07): 1 star, 0 real web visitors — analytics not yet connected (see Blocked list).
 
 ## QUEUE (top = do next)
 
-### Haiku (ops)
+### Haiku (product ops)
 - [ ] Weekly: run `godena-weekly`; append the report to STATE.md.
-- [ ] Run `python seeders/harvest_hf.py 400` + `harvest_github.py` monthly; commit the grown snapshot.
-- [ ] Submit the MCP server to Smithery, PulseMCP, Glama (see `mcp/README.md`).
-- [ ] Submit Godena to directories in `Godena-strategy/POSTS.md` (there's-an-ai-for-that, aiagentsdirectory).
+- [ ] Run harvesters monthly (`seeders/harvest_hf.py`, `harvest_github.py`, `harvest_osm.py`); commit the grown snapshot.
+
+### Haiku (growth — run `godena-growth-operator` weekly)
+- [ ] `godena-monitor` — real exposure dashboard (GitHub traffic, web visitors, listings, mentions).
+- [ ] `godena-submit` — advance directory/MCP-registry submissions (Smithery, PulseMCP, Glama, There's-An-AI-For-That, aiagentsdirectory — tracker in the skill).
+- [ ] `godena-content` + `godena-outreach` — draft the week's posts/outreach into `POSTS.md` using real monitor numbers. Samuel approves + sends.
 
 ### Sonnet (build)
 - [ ] **PERF — TOP PRIORITY: bucket index.** At 8.3k, search scans the whole snapshot every query (~1s on the free HF CPU; ~40ms locally). Build `SNAPSHOT_BY_SKILL = {skill_primary: [agents]}` at load. In `search_agents`, when `skill_words` present, gather candidates only from the relevant skill buckets (map via skill_kws) + a bounded name pass, instead of merging all `SNAPSHOT_AGENTS`. Target <300ms. Test locally: `SUPABASE_KEY=x python -c "import app; app.search_agents('video ai')"` — results must stay identical. `USE_SUPABASE` unset = git-native path.
@@ -34,11 +39,11 @@ Standing task board so any model, in any session, picks up cold. **Protocol ever
 - [ ] Optional (only if DB ever returns): `searches` table for a persistent gap map.
 
 ### Opus 4.8 (orchestrate)
-- [ ] On Samuel's Supabase re-login: restore the paused project, then bulk-seed the full harvest (10k+) into Supabase (not just the 1200 snapshot cap).
-- [ ] Verify the MCP server end-to-end in a real Claude client once published.
+- [ ] Verify the MCP server end-to-end in a real Claude client once published to a registry.
 
 ### Blocked on Samuel (surface every session)
-- [ ] Supabase re-login → unlocks full DB + 10k seeding.
+- [ ] **Analytics** — create a free GoatCounter account (goatcounter.com, ~1 min, no card), code = `godena`, so `docs/index.html`'s snippet goes live. This turns on real visitor tracking — the key Path-A/B metric.
+- [ ] Create **@GodenaHQ** (or next available) on X + fire the pinned tweet (`Godena-strategy/POSTS.md`).
 - [ ] Set existing `TELEGRAM_TOKEN` on the Space → messaging live.
 - [ ] Anthropic Console w/ `info@maji-safi.com` → submit (answers in `ANTHROPIC_APPLICATION.md`).
 - [ ] YC submit by **Jul 27, 8pm PT** (`YC_APPLICATION.md`).
