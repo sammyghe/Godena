@@ -1,4 +1,4 @@
-> **⚠️ Hugging Face blocks `api.telegram.org`** (verified via `/api/egress`) — a bot hosted only on the Space cannot reply on Telegram, whatever token is set. Host `app.py` where egress is open (see [HOSTING.md](HOSTING.md)); Godena then registers its own Telegram webhook on boot.
+> **✅ SOLVED — @GodenaBot is live.** Hugging Face TLS-blocks `api.telegram.org`, but only *outbound*; inbound webhooks always arrived. Godena now routes replies through an egress relay (see `egress_request` in `app.py`), verified end to end: webhook registered, and Telegram answers our POSTs. No host migration needed. Message **[@GodenaBot](https://t.me/GodenaBot)**.
 
 # Go live on Telegram in 5 minutes (no phone number needed)
 

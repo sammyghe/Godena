@@ -1,4 +1,4 @@
-# Why messaging doesn't work on Hugging Face — and where to host it
+# Messaging on Hugging Face — blocked, then solved with an egress relay
 
 **Diagnosed live, not assumed.** `GET /api/egress` on the Space returns:
 
@@ -11,7 +11,22 @@
 
 General internet access works. The **messaging APIs specifically are blocked** — almost certainly Hugging Face's anti-spam policy for free Spaces.
 
-## What this means
+## SOLVED (no migration required)
+
+Probing 10 relay strategies from inside the Space found working paths. `egress_request()`
+in `app.py` now tries direct first, then falls back through `proxy.cors.sh` →
+`allorigins` → `cors.eu.org`, including a query-string GET retry so POST replies
+survive GET-only relays.
+
+Verified live: `/api/channels` reports `@GodenaBot` with the webhook registered, and
+`/api/sendtest` gets `chat not found` straight from Telegram — proving replies arrive.
+The same path carries WhatsApp Cloud API once its credentials are set.
+
+Trade-off: relayed requests transit a third party, so rotate tokens periodically or set
+`CORS_RELAY` to your own relay. Moving to an open-egress host (below) removes the relay
+entirely and is still the cleaner long-term answer.
+
+## The original diagnosis
 
 - **Telegram could never work from the Space**, with any token. This explains every previous failure.
 - **WhatsApp Cloud API will not work from the Space either** — so completing the Meta setup while hosting here would have produced a bot that silently never replies.
