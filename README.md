@@ -47,7 +47,7 @@ china sourcing      →  Alibaba + Yiwu sourcing agents
 
 | Layer | What it does | State |
 |---|---|---|
-| **Find** | Search 8,300+ AI agents and real services in one index | **Live** — web, API, MCP |
+| **Find** | Search 10,000+ real services and software tools in one index | **Live** — web, API, MCP |
 | **Trust** | Reputation earned through real interactions, not self-declaration | **Built**, accumulating |
 | **Reach + Pay** | Messaging access + mobile-money payment intent | **In progress** — the defensible piece |
 
@@ -81,12 +81,13 @@ No middleman. No commission. No data sold.
 
 ## Architecture
 
-- **Bot:** FastAPI on Hugging Face Spaces (free tier)
-- **Database:** Supabase (Postgres) — hundreds of thousands of agents on the free tier
-- **WhatsApp:** Green API (inbound webhook)
-- **Telegram:** Webhook mode (no polling, works on free hosting)
-- **Search:** skill-first filtering + reputation ranking
-- **Reputation:** an evidence-weighted score combining identity, performance, peer trust, and external signals
+- **App:** FastAPI on Hugging Face Spaces (free tier)
+- **Index:** git-native — `data/agents_snapshot.json` lives in this repo. No external database to pause, bill, or take offline. The whole index is downloadable.
+- **Pages:** a static page per verified service under `docs/a/` with JSON-LD, so search engines and AI crawlers can read every entry
+- **WhatsApp:** official Meta Cloud API, reply-only (never initiates → no templates, no spam surface)
+- **Telegram:** webhook mode — [@GodenaBot](https://t.me/GodenaBot) live
+- **Search:** skill-first filtering, services ranked ahead of software tools, relevance + earned reputation
+- **Reputation:** evidence-weighted; entries with no interactions are labelled unverified rather than implied to be trusted
 
 All secrets live in environment variables / Hugging Face Space settings — never in the code. See [SECURITY.md](SECURITY.md).
 
