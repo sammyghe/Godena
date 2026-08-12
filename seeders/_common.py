@@ -39,6 +39,10 @@ def merge(new, snap=None):
         a.setdefault("skill_primary", "coding")
         a.setdefault("skill_tags", ["ai"])
         a.setdefault("reputation_score", 8)
+        # service = a real business/person; agent = an AI tool/model
+        a.setdefault("entity_type",
+                     "service" if a.get("source") in
+                     {"osm_scraped", "verified_global", "claimed"} else "agent")
         snap.append(a)
         have.add(a["slug"])
         added += 1

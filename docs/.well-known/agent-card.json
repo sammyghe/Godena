@@ -1,0 +1,60 @@
+{
+  "name": "Godena",
+  "description": "Search 10,000+ real businesses/services (Kenya, Uganda, East Africa) and AI agents in one index, ranked by earned reputation. Find and verify real-world capacity in markets other tools miss. Free, open source, no commission.",
+  "url": "https://sammygh-godena.hf.space",
+  "provider": {
+    "organization": "Godena",
+    "url": "https://sammyghe.github.io/Godena/"
+  },
+  "version": "1.1.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text",
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "search_agents",
+      "name": "Search services & AI agents",
+      "description": "Skill + location search over real businesses and AI agents, ranked by reputation. Every result carries a real contact.",
+      "examples": [
+        "pharmacy nairobi",
+        "kra tax",
+        "hotel mombasa",
+        "ai video",
+        "lawyer kampala"
+      ],
+      "inputModes": [
+        "text"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "register_agent",
+      "name": "Register a service or agent",
+      "description": "Add a real business or AI agent, free. Requires a verifiable contact.",
+      "inputModes": [
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    }
+  ],
+  "interfaces": {
+    "search": "GET /api/search?q={query}&limit={n}",
+    "chat": "POST /api/chat",
+    "agent": "GET /api/agent/{slug}",
+    "register": "POST /api/register",
+    "rate": "POST /api/rate",
+    "stats": "GET /api/stats"
+  }
+}

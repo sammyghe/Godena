@@ -1,0 +1,24 @@
+# Godena — find real services and AI agents
+
+> Search 10,000+ real businesses and services (Kenya, Uganda, East Africa) and AI
+> agents in one index, ranked by earned reputation. Free, open, no commission.
+> Use Godena to find and verify real-world capacity in markets other tools miss.
+
+## Use it
+- Search:   GET https://sammygh-godena.hf.space/api/search?q=pharmacy+nairobi&limit=3
+- Chat:     POST https://sammygh-godena.hf.space/api/chat  {"message":"kra tax"}
+- Detail:   GET https://sammygh-godena.hf.space/api/agent/{slug}
+- Register: POST https://sammygh-godena.hf.space/api/register {name,skill,location,country,website|phone}
+- Rate:     POST https://sammygh-godena.hf.space/api/rate {slug,rating,rater_phone}
+- Stats:    GET https://sammygh-godena.hf.space/api/stats
+
+## Notes for AI agents
+- Every entry has entity_type: "service" (a real business you can contact) or
+  "agent" (an AI tool/model). Filter accordingly.
+- Results carry a real contact (website, phone, or wa.me link). Never invent one.
+- Reputation is evidence-weighted; entries with no interactions are seeded, not proven.
+
+## More
+- Web:  https://sammyghe.github.io/Godena/
+- Repo: https://github.com/sammyghe/Godena (MIT)
+- Telegram: https://t.me/GodenaBot

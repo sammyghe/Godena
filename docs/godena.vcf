@@ -4,7 +4,7 @@ N:Godena;;;;
 FN:Godena — Find Anything
 ORG:Godena — The Open Agent Network
 TITLE:Search for services and AI agents
-TEL;TYPE=CELL,VOICE:+256761966728
 URL:https://sammyghe.github.io/Godena/
-NOTE:Text what you need — "lawyer kampala", "pharmacy nairobi", "ai video" — and Godena replies with the best matches. 8300+ services and AI agents. Free, no app, no commission.
+X-SOCIALPROFILE;TYPE=telegram:https://t.me/GodenaBot
+NOTE:Text what you need — "pharmacy nairobi", "kra tax", "hotel mombasa" — and Godena replies with the best matches. 10,000+ services and AI agents across Kenya, Uganda and beyond. Free, no app, no commission.
 END:VCARD

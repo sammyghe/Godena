@@ -108,7 +108,7 @@ def egress_get(url, **kw):
 def egress_post(url, **kw):
     return egress_request("POST", url, **kw)
 TELEGRAM_TOKEN    = os.environ.get("TELEGRAM_TOKEN", "")
-WHATSAPP_NUMBER   = os.environ.get("WHATSAPP_NUMBER", "+256761966728")
+WHATSAPP_NUMBER   = os.environ.get("WHATSAPP_NUMBER", "")  # set only when a business number is live
 
 sb  = create_client(SUPABASE_URL, SUPABASE_KEY)
 USE_DB = os.environ.get("USE_SUPABASE") == "1"   # git-native by default; set USE_SUPABASE=1 to re-enable Supabase
@@ -741,6 +741,13 @@ def search_agents(query, limit=3):
             continue
         agent = apply_ratings(agent)   # earned ratings move ranking
         rep   = compute_reputation(agent)
+        # Real services lead. The scraped AI tail is a long tail — useful when
+        # asked for ("ai video"), but it should never bury a real business.
+        etype = agent.get("entity_type") or ("agent" if is_ai_agent(agent) else "service")
+        if ai_only:
+            rep += 25 if etype == "agent" else 0
+        else:
+            rep += 30 if etype == "service" else -15
         loc   = location_score(agent, loc_words)
         # Relevance: reward agents that literally carry the user's specific
         # term(s) in name/tags, so real "research"/"video" tools outrank a
@@ -895,11 +902,10 @@ def format_results(results, query):
 def share_card(source="whatsapp"):
     """A clean, forwardable block. Designed to be long-pressed and sent
     into a WhatsApp group — the way things actually spread here."""
-    reach = (
-        f"💬 WhatsApp: wa.me/{normalize(WHATSAPP_NUMBER)}"
-        if source == "whatsapp"
-        else "💬 Telegram: t.me/GodenaBot"
-    )
+    if source == "whatsapp" and WHATSAPP_NUMBER:
+        reach = f"💬 WhatsApp: wa.me/{normalize(WHATSAPP_NUMBER)}"
+    else:
+        reach = "💬 Telegram: t.me/GodenaBot"
     return (
         "📤 Forward this to any group:\n"
         "─────────────────\n"
@@ -1412,7 +1418,7 @@ async def api_register(request: Request):
             "search": f"https://sammyghe.github.io/Godena/?q={skill}",
             # Viral loop: paste this badge on your site/README — agents recruit agents
             "badge_markdown": f"[![Found on Godena](https://img.shields.io/badge/Found_on-Godena-1d9e75)](https://sammyghe.github.io/Godena/)",
-            "findable_on": WHATSAPP_NUMBER,
+            "findable_on": "https://sammyghe.github.io/Godena/",
         }
     except Exception as e:
         return {"error": "name exists" if "duplicate" in str(e).lower() else str(e)}
@@ -1634,7 +1640,6 @@ def background_updater():
 async def health():
     return {
         "status":   "Godena is live",
-        "founders": ["Samuel Gedamua", "Amanuel Asmerom"],
         "search":   "/api/search?q=lawyer+kampala",
         "register": "POST /api/register",
         "claim":    "POST /api/claim",
@@ -1642,7 +1647,6 @@ async def health():
         "endorse":  "POST /api/endorse",
         "complete": "POST /api/complete",
         "gaps":     "GET /api/gaps",
-        "whatsapp": WHATSAPP_NUMBER,
         "telegram": "@GodenaBot",
         "website":  "https://sammyghe.github.io/Godena/",
         "github":   "github.com/sammyghe/Godena",
@@ -1880,7 +1884,6 @@ async def llms_txt():
 async def startup():
     print("=" * 55)
     print("GODENA — The Open Agent Network")
-    print("Founders: Samuel Gedamua + Amanuel Asmerom")
     print("WhatsApp + Telegram + Public API")
     print("Co-built with Claude (Anthropic)")
     print("=" * 55)
