@@ -106,6 +106,18 @@
   <div id="spin" class="spin">Searching the network…</div>
   <div id="out"></div>
 
+  <div id="chatwrap" style="margin-top:34px">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+      <strong style="font-size:1.05rem">Chat with Godena</strong>
+      <span class="hints" style="margin:0">— same bot as WhatsApp, no app or number needed</span>
+    </div>
+    <div id="chatlog" style="background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;min-height:120px;max-height:420px;overflow-y:auto;font-size:.95rem"></div>
+    <div class="searchbar" style="margin-top:10px">
+      <input id="cin" type="text" placeholder="say hi, or type what you need…">
+      <button onclick="csend()">Send</button>
+    </div>
+  </div>
+
   <div id="stats" class="hints" style="margin-top:6px"></div>
 
   <div class="cta">
@@ -185,6 +197,40 @@ function contact(a){
 function link(h,t){return '<a href="'+esc(h)+'" target="_blank" rel="noopener">'+esc(t)+'</a>';}
 function cap(s){return (s||'').replace(/\b\w/g,c=>c.toUpperCase());}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+
+/* ---- chat: the full Godena bot, no account or phone number needed ---- */
+const CSESS = "w" + Math.random().toString(36).slice(2, 10);
+function cadd(who, text){
+  const log = document.getElementById('chatlog');
+  const mine = who === 'you';
+  const bubble = document.createElement('div');
+  bubble.style.cssText = "margin:8px 0;display:flex;" + (mine ? "justify-content:flex-end" : "justify-content:flex-start");
+  const inner = document.createElement('div');
+  inner.style.cssText = "max-width:86%;padding:9px 12px;border-radius:12px;white-space:pre-wrap;word-break:break-word;"
+    + (mine ? "background:var(--green);color:#04210f" : "background:var(--bg);border:1px solid var(--line);color:var(--text)");
+  inner.innerHTML = linkify(esc(text));
+  bubble.appendChild(inner); log.appendChild(bubble);
+  log.scrollTop = log.scrollHeight;
+}
+function linkify(s){
+  return s.replace(/(https?:\/\/[^\s<]+)/g,'<a href="$1" target="_blank" rel="noopener" style="color:var(--green)">$1</a>')
+          .replace(/(^|\s)(wa\.me\/[0-9]+)/g,'$1<a href="https://$2" target="_blank" rel="noopener" style="color:var(--green)">$2</a>');
+}
+async function csend(){
+  const el = document.getElementById('cin');
+  const msg = el.value.trim(); if(!msg) return;
+  cadd('you', msg); el.value = '';
+  try{
+    const r = await fetch(API + "/api/chat", {
+      method: "POST", headers: {"Content-Type":"application/json"},
+      body: JSON.stringify({message: msg, session: CSESS})
+    });
+    const d = await r.json();
+    cadd('godena', d.reply || "…");
+  }catch(e){ cadd('godena', "I'm waking up — try again in a moment."); }
+}
+document.getElementById('cin').addEventListener('keydown', e => { if(e.key==='Enter') csend(); });
+cadd('godena', "🌐 Godena\nTell me what you need — a service near you or an AI agent.\n\nTry:  pharmacy kampala  ·  ai video  ·  lawyer nairobi\n\n1 — Search   2 — Add your service   3 — Share Godena");
 </script>
 </body>
 </html>

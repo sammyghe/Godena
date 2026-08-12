@@ -82,6 +82,8 @@ wa_state   = {}   # WhatsApp registration flows
 tg_state   = {}   # Telegram registration flows
 wa_context = {}   # WhatsApp current context
 tg_context = {}   # Telegram current context
+web_state   = {}  # Web-chat registration flows
+web_context = {}  # Web-chat current context
 rating_log = {}   # anti-gaming: timestamps per phone
 gap_log    = {}   # demand signals: searches with no results
 
@@ -1589,6 +1591,38 @@ async def health():
         "agents":   len(SNAPSHOT_AGENTS),
     }
 
+@app.post("/api/chat")
+async def api_chat(request: Request):
+    """The full conversational Godena over HTTP — same engine as WhatsApp
+    and Telegram, but needs no account, no phone number, no app. This is
+    what powers the chat on the website and lets anyone use Godena today."""
+    try:
+        data = await request.json()
+    except Exception:
+        data = {}
+    text = (data.get("message") or data.get("text") or "").strip()
+    uid  = "web:" + str(data.get("session") or "anon")
+    if not text:
+        return {"reply": main_menu(), "session": uid}
+    try:
+        reply = handle(web_state, web_context, uid, text, "web")
+    except Exception as e:
+        print(f"chat error: {e}")
+        reply = "Something went wrong on my side — try again."
+    return {"reply": reply, "session": uid}
+
+@app.get("/api/channels")
+async def api_channels():
+    """Which channels are wired up. Booleans only — never exposes a secret."""
+    return {
+        "web":      True,
+        "api":      True,
+        "mcp":      True,
+        "telegram": bool(TELEGRAM_TOKEN),
+        "whatsapp_cloud": USE_CLOUD_API,
+        "whatsapp_legacy": bool(GREEN_INSTANCE_ID and GREEN_TOKEN),
+    }
+
 @app.get("/api/stats")
 async def api_stats():
     """Public stats — the registry is the open index shipped in the repo."""
@@ -1685,6 +1719,34 @@ async def startup():
     t = threading.Thread(target=background_updater, daemon=True)
     t.start()
     print("Background updater started — hourly badge refresh")
+    threading.Thread(target=autoconnect_channels, daemon=True).start()
+
+
+# ── SELF-CONNECTING CHANNELS ──────────────────────────────────────
+# If a channel's credentials exist, Godena registers its own webhook on
+# boot. No dashboards, no manual wiring — set the secret and it connects
+# itself on the next restart.
+PUBLIC_URL = os.environ.get("PUBLIC_URL", "https://sammygh-godena.hf.space")
+
+def autoconnect_channels():
+    time.sleep(4)  # let the server bind first
+    if TELEGRAM_TOKEN:
+        try:
+            r = httpx.get(
+                f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/setWebhook",
+                params={"url": f"{PUBLIC_URL}/telegram"},
+                timeout=20,
+            )
+            ok = r.json().get("ok")
+            print(f"Telegram webhook auto-registered: {ok}")
+            me = httpx.get(f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getMe", timeout=15).json()
+            if me.get("ok"):
+                print(f"Telegram live as @{me['result'].get('username')}")
+        except Exception as e:
+            print(f"Telegram autoconnect failed: {e}")
+    else:
+        print("Telegram: no token set — channel idle")
+    print(f"WhatsApp Cloud API: {'configured' if USE_CLOUD_API else 'no token set — channel idle'}")
 # GODENA — /api/signal endpoint
 # Paste this into app.py BEFORE the if __name__ == "__main__": line
 # This is the flywheel. AI agents rate other AI agents after tasks.
