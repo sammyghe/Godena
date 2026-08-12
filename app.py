@@ -1641,6 +1641,25 @@ async def api_channels():
             out["telegram_error"] = str(e)[:120]
     return out
 
+@app.get("/api/egress")
+async def api_egress():
+    """Can this host reach the outside world? Determines whether messaging
+    channels can work from here at all. Diagnostic only, no secrets."""
+    targets = {
+        "telegram":  "https://api.telegram.org",
+        "facebook":  "https://graph.facebook.com",
+        "github":    "https://api.github.com",
+        "example":   "https://example.com",
+    }
+    out = {}
+    for name, url in targets.items():
+        try:
+            r = httpx.get(url, timeout=8)
+            out[name] = f"ok {r.status_code}"
+        except Exception as e:
+            out[name] = f"FAIL {type(e).__name__}: {str(e)[:60]}"
+    return out
+
 @app.get("/api/stats")
 async def api_stats():
     """Public stats — the registry is the open index shipped in the repo."""
