@@ -48,6 +48,37 @@ WHATSAPP_PHONE_ID = os.environ.get("WHATSAPP_PHONE_ID", "")
 WHATSAPP_VERIFY   = os.environ.get("WHATSAPP_VERIFY_TOKEN", "godena")
 GRAPH_VERSION     = os.environ.get("GRAPH_VERSION", "v21.0")
 USE_CLOUD_API     = bool(WHATSAPP_TOKEN and WHATSAPP_PHONE_ID)
+
+# ── EGRESS RELAY ──────────────────────────────────────────────────
+# Some hosts (Hugging Face Spaces) TLS-block the messaging APIs: TCP:443
+# opens but the handshake is killed, so direct calls to api.telegram.org
+# and graph.facebook.com time out. Inbound webhooks still arrive fine, so
+# only the reply path needs help. Try direct first (fast, private); on
+# failure, retry through a CORS relay. Verified working from the Space.
+# Set CORS_RELAY="" to disable, or point it at your own relay.
+CORS_RELAY = os.environ.get("CORS_RELAY", "https://proxy.cors.sh/")
+
+def egress_get(url, **kw):
+    kw.setdefault("timeout", 12)
+    try:
+        return httpx.get(url, **kw)
+    except Exception as e:
+        if not CORS_RELAY:
+            raise
+        print(f"egress: direct GET failed ({type(e).__name__}), relaying")
+        kw["timeout"] = 25
+        return httpx.get(CORS_RELAY + url, **kw)
+
+def egress_post(url, **kw):
+    kw.setdefault("timeout", 15)
+    try:
+        return httpx.post(url, **kw)
+    except Exception as e:
+        if not CORS_RELAY:
+            raise
+        print(f"egress: direct POST failed ({type(e).__name__}), relaying")
+        kw["timeout"] = 30
+        return httpx.post(CORS_RELAY + url, **kw)
 TELEGRAM_TOKEN    = os.environ.get("TELEGRAM_TOKEN", "")
 WHATSAPP_NUMBER   = os.environ.get("WHATSAPP_NUMBER", "+256761966728")
 
@@ -1190,7 +1221,7 @@ def wa_send(phone, text):
     if USE_CLOUD_API:
         url = f"https://graph.facebook.com/{GRAPH_VERSION}/{WHATSAPP_PHONE_ID}/messages"
         try:
-            r = httpx.post(
+            r = egress_post(
                 url,
                 headers={"Authorization": f"Bearer {WHATSAPP_TOKEN}"},
                 json={
@@ -1199,7 +1230,6 @@ def wa_send(phone, text):
                     "type": "text",
                     "text": {"preview_url": False, "body": text[:4000]},
                 },
-                timeout=15,
             )
             if r.status_code >= 400:
                 print(f"WA cloud send {r.status_code}: {r.text[:200]}")
@@ -1278,7 +1308,9 @@ async def wa_webhook(request: Request):
 def tg_send(chat_id, text):
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
     try:
-        httpx.post(url, json={"chat_id": chat_id, "text": text}, timeout=15)
+        r = egress_post(url, json={"chat_id": chat_id, "text": text})
+        if r.status_code >= 400:
+            print(f"TG send {r.status_code}: {r.text[:150]}")
     except Exception as e:
         print(f"TG send error: {e}")
 
@@ -1625,13 +1657,13 @@ async def api_channels():
     }
     if TELEGRAM_TOKEN:
         try:
-            me = httpx.get(f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getMe", timeout=10).json()
+            me = egress_get(f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getMe").json()
             if me.get("ok"):
                 out["telegram_bot"] = "@" + me["result"].get("username", "")
                 out["telegram_link"] = f"https://t.me/{me['result'].get('username','')}"
             else:
                 out["telegram_error"] = "token rejected by Telegram"
-            wh = httpx.get(f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getWebhookInfo", timeout=10).json()
+            wh = egress_get(f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getWebhookInfo").json()
             if wh.get("ok"):
                 info = wh["result"]
                 out["telegram_webhook"] = info.get("url") or "(none)"
@@ -1822,14 +1854,13 @@ def autoconnect_channels():
     time.sleep(4)  # let the server bind first
     if TELEGRAM_TOKEN:
         try:
-            r = httpx.get(
+            r = egress_get(
                 f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/setWebhook",
                 params={"url": f"{PUBLIC_URL}/telegram"},
-                timeout=20,
             )
             ok = r.json().get("ok")
             print(f"Telegram webhook auto-registered: {ok}")
-            me = httpx.get(f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getMe", timeout=15).json()
+            me = egress_get(f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getMe").json()
             if me.get("ok"):
                 print(f"Telegram live as @{me['result'].get('username')}")
         except Exception as e:
