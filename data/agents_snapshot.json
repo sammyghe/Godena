@@ -195072,5 +195072,1593 @@
 "reputation_score": 9,
 "website": "https://www.vegaschool.com/",
 "tier": 1
+},
+{
+"name": "Kenya_Airways",
+"slug": "kenya-airways-kenya",
+"tier": 1,
+"skill_primary": "travel_agency",
+"skill_tags": [
+"travel_agency",
+"flights",
+"airline",
+"travel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.kenya-airways.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Jambojet",
+"slug": "jambojet-kenya",
+"tier": 1,
+"skill_primary": "travel_agency",
+"skill_tags": [
+"travel_agency",
+"flights",
+"airline",
+"budget",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.jambojet.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Safarilink_Aviation",
+"slug": "safarilink-aviation-kenya",
+"tier": 1,
+"skill_primary": "travel_agency",
+"skill_tags": [
+"travel_agency",
+"flights",
+"airline",
+"safari",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.flysafarilink.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Fly540",
+"slug": "fly540-kenya",
+"tier": 1,
+"skill_primary": "travel_agency",
+"skill_tags": [
+"travel_agency",
+"flights",
+"airline",
+"budget",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.fly540.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Kenya_Railways_SGR_Madaraka_Express",
+"slug": "kenya-railways-sgr-madaraka-express-kenya",
+"tier": 1,
+"skill_primary": "transport",
+"skill_tags": [
+"transport",
+"train",
+"sgr",
+"railway",
+"tickets",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://metickets.krc.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Kenya_Tourism_Board_Magical_Kenya",
+"slug": "kenya-tourism-board-magical-kenya-kenya",
+"tier": 1,
+"skill_primary": "travel_agency",
+"skill_tags": [
+"travel_agency",
+"tourism",
+"safari",
+"travel",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://magicalkenya.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Safaricom",
+"slug": "safaricom-kenya",
+"tier": 1,
+"skill_primary": "mobile_money",
+"skill_tags": [
+"mobile_money",
+"telecom",
+"mpesa",
+"internet",
+"airtime",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.safaricom.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "M-PESA",
+"slug": "m-pesa-kenya",
+"tier": 1,
+"skill_primary": "mobile_money",
+"skill_tags": [
+"mobile_money",
+"mobile money",
+"payments",
+"send money",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.safaricom.co.ke/personal/m-pesa",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Equity_Bank_Kenya",
+"slug": "equity-bank-kenya-kenya",
+"tier": 1,
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"loans",
+"account",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://equitygroupholdings.com/ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "KCB_Bank_Kenya",
+"slug": "kcb-bank-kenya-kenya",
+"tier": 1,
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"loans",
+"account",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://ke.kcbgroup.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Co-operative_Bank_of_Kenya",
+"slug": "co-operative-bank-of-kenya-kenya",
+"tier": 1,
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"loans",
+"sacco",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.co-opbank.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "NCBA_Bank_Kenya",
+"slug": "ncba-bank-kenya-kenya",
+"tier": 1,
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"loans",
+"mshwari",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://ke.ncbagroup.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Absa_Bank_Kenya",
+"slug": "absa-bank-kenya-kenya",
+"tier": 1,
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"loans",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.absabank.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Stanbic_Bank_Kenya",
+"slug": "stanbic-bank-kenya-kenya",
+"tier": 1,
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"loans",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.stanbicbank.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Diamond_Trust_Bank",
+"slug": "diamond-trust-bank-kenya",
+"tier": 1,
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"loans",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://dtbk.dtbafrica.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Family_Bank",
+"slug": "family-bank-kenya",
+"tier": 1,
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"loans",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://familybank.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "I&M_Bank_Kenya",
+"slug": "i-m-bank-kenya-kenya",
+"tier": 1,
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"bank",
+"loans",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.imbank.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Central_Bank_of_Kenya",
+"slug": "central-bank-of-kenya-kenya",
+"tier": 1,
+"skill_primary": "bank",
+"skill_tags": [
+"bank",
+"regulator",
+"forex rates",
+"currency",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.centralbank.go.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Kenya_Revenue_Authority_KRA",
+"slug": "kenya-revenue-authority-kra-kenya",
+"tier": 1,
+"skill_primary": "tax",
+"skill_tags": [
+"tax",
+"tax",
+"kra",
+"pin",
+"returns",
+"itax",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.kra.go.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "iTax_KRA_Portal",
+"slug": "itax-kra-portal-kenya",
+"tier": 1,
+"skill_primary": "tax",
+"skill_tags": [
+"tax",
+"tax",
+"returns",
+"pin",
+"filing",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://itax.kra.go.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Social_Health_Authority_SHA",
+"slug": "social-health-authority-sha-kenya",
+"tier": 1,
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"health insurance",
+"nhif",
+"cover",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://sha.go.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "NSSF_Kenya",
+"slug": "nssf-kenya-kenya",
+"tier": 1,
+"skill_primary": "finance",
+"skill_tags": [
+"finance",
+"pension",
+"savings",
+"retirement",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.nssf.or.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Business_Registration_Service_Kenya",
+"slug": "business-registration-service-kenya-kenya",
+"tier": 1,
+"skill_primary": "legal",
+"skill_tags": [
+"legal",
+"company registration",
+"business name",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://brs.go.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Law_Society_of_Kenya",
+"slug": "law-society-of-kenya-kenya",
+"tier": 1,
+"skill_primary": "legal",
+"skill_tags": [
+"legal",
+"lawyer",
+"advocate",
+"legal",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://lsk.or.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Kenya_Power",
+"slug": "kenya-power-kenya",
+"tier": 1,
+"skill_primary": "water_supply",
+"skill_tags": [
+"water_supply",
+"electricity",
+"power",
+"token",
+"bill",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.kplc.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Nairobi_Water",
+"slug": "nairobi-water-kenya",
+"tier": 1,
+"skill_primary": "water_supply",
+"skill_tags": [
+"water_supply",
+"water",
+"bill",
+"supply",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.nairobiwater.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Kenyatta_National_Hospital",
+"slug": "kenyatta-national-hospital-kenya",
+"tier": 1,
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"referral",
+"public",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://knh.or.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Aga_Khan_University_Hospital_Nairobi",
+"slug": "aga-khan-university-hospital-nairobi-kenya",
+"tier": 1,
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"private",
+"specialist",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://hospitals.aku.edu/nairobi",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "The_Nairobi_Hospital",
+"slug": "the-nairobi-hospital-kenya",
+"tier": 1,
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"private",
+"emergency",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://thenairobihosp.org",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "MP_Shah_Hospital",
+"slug": "mp-shah-hospital-kenya",
+"tier": 1,
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"private",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.mpshahhosp.org",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Gertrudes_Childrens_Hospital",
+"slug": "gertrudes-childrens-hospital-kenya",
+"tier": 1,
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"children",
+"paediatric",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://gerties.org",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Coast_General_Teaching_Referral_Hospital",
+"slug": "coast-general-teaching-referral-hospital-kenya",
+"tier": 1,
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"hospital",
+"referral",
+"coast",
+"mombasa",
+"kenya"
+],
+"location": "mombasa",
+"country": "kenya",
+"website": "https://cgtrh.go.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Kenya_Medical_Research_Institute_KEMRI",
+"slug": "kenya-medical-research-institute-kemri-kenya",
+"tier": 1,
+"skill_primary": "healthcare",
+"skill_tags": [
+"healthcare",
+"research",
+"health",
+"lab",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.kemri.go.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "University_of_Nairobi",
+"slug": "university-of-nairobi-kenya",
+"tier": 1,
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"degree",
+"admission",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.uonbi.ac.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Kenyatta_University",
+"slug": "kenyatta-university-kenya",
+"tier": 1,
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"degree",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.ku.ac.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "USIU_Africa",
+"slug": "usiu-africa-kenya",
+"tier": 1,
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"international",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.usiu.ac.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Maseno_University",
+"slug": "maseno-university-kenya",
+"tier": 1,
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"degree",
+"kisumu",
+"kenya"
+],
+"location": "kisumu",
+"country": "kenya",
+"website": "https://www.maseno.ac.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Technical_University_of_Mombasa",
+"slug": "technical-university-of-mombasa-kenya",
+"tier": 1,
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"technical",
+"mombasa",
+"kenya"
+],
+"location": "mombasa",
+"country": "kenya",
+"website": "https://www.tum.ac.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Britam",
+"slug": "britam-kenya",
+"tier": 1,
+"skill_primary": "insurance",
+"skill_tags": [
+"insurance",
+"insurance",
+"investment",
+"cover",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://ke.britam.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "APA_Insurance",
+"slug": "apa-insurance-kenya",
+"tier": 1,
+"skill_primary": "insurance",
+"skill_tags": [
+"insurance",
+"insurance",
+"motor",
+"health",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://apainsurance.org",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "CIC_Insurance_Group",
+"slug": "cic-insurance-group-kenya",
+"tier": 1,
+"skill_primary": "insurance",
+"skill_tags": [
+"insurance",
+"insurance",
+"cooperative",
+"cover",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://cic.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Bolt_Kenya",
+"slug": "bolt-kenya-kenya",
+"tier": 1,
+"skill_primary": "transport",
+"skill_tags": [
+"transport",
+"taxi",
+"ride",
+"boda",
+"delivery",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://bolt.eu/en-ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Little_Cab",
+"slug": "little-cab-kenya",
+"tier": 1,
+"skill_primary": "transport",
+"skill_tags": [
+"transport",
+"taxi",
+"ride",
+"kenya",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.little.bz",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Jumia_Kenya",
+"slug": "jumia-kenya-kenya",
+"tier": 1,
+"skill_primary": "logistics",
+"skill_tags": [
+"logistics",
+"shopping",
+"ecommerce",
+"delivery",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.jumia.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Kilimall_Kenya",
+"slug": "kilimall-kenya-kenya",
+"tier": 1,
+"skill_primary": "logistics",
+"skill_tags": [
+"logistics",
+"shopping",
+"ecommerce",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.kilimall.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "G4S_Kenya",
+"slug": "g4s-kenya-kenya",
+"tier": 1,
+"skill_primary": "security_services",
+"skill_tags": [
+"security_services",
+"security",
+"courier",
+"cash",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.g4s.com/en-ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Wells_Fargo_Courier_Kenya",
+"slug": "wells-fargo-courier-kenya-kenya",
+"tier": 1,
+"skill_primary": "logistics",
+"skill_tags": [
+"logistics",
+"courier",
+"parcel",
+"delivery",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://wellsfargo.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Posta_Kenya",
+"slug": "posta-kenya-kenya",
+"tier": 1,
+"skill_primary": "logistics",
+"skill_tags": [
+"logistics",
+"post",
+"parcel",
+"postal",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.posta.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Pesapal",
+"slug": "pesapal-kenya",
+"tier": 1,
+"skill_primary": "finance",
+"skill_tags": [
+"finance",
+"payments",
+"business",
+"online",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.pesapal.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Cellulant_Tingg",
+"slug": "cellulant-tingg-kenya",
+"tier": 1,
+"skill_primary": "finance",
+"skill_tags": [
+"finance",
+"payments",
+"bills",
+"africa",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://tingg.africa",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Wise_Kenya",
+"slug": "wise-kenya-kenya",
+"tier": 1,
+"skill_primary": "remittance",
+"skill_tags": [
+"remittance",
+"money transfer",
+"forex",
+"international",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://wise.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Sendwave",
+"slug": "sendwave-kenya",
+"tier": 1,
+"skill_primary": "remittance",
+"skill_tags": [
+"remittance",
+"money transfer",
+"diaspora",
+"remittance",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.sendwave.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Chipper_Cash",
+"slug": "chipper-cash-kenya",
+"tier": 1,
+"skill_primary": "remittance",
+"skill_tags": [
+"remittance",
+"money transfer",
+"africa",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://chippercash.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Stima_Sacco",
+"slug": "stima-sacco-kenya",
+"tier": 1,
+"skill_primary": "sacco",
+"skill_tags": [
+"sacco",
+"sacco",
+"savings",
+"loans",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.stima-sacco.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Mwalimu_National_Sacco",
+"slug": "mwalimu-national-sacco-kenya",
+"tier": 1,
+"skill_primary": "sacco",
+"skill_tags": [
+"sacco",
+"sacco",
+"teachers",
+"loans",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.mwalimunational.coop",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "SASRA",
+"slug": "sasra-kenya",
+"tier": 1,
+"skill_primary": "sacco",
+"skill_tags": [
+"sacco",
+"sacco regulator",
+"cooperative",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.sasra.go.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Kenya_Agricultural_and_Livestock_Research_KALRO",
+"slug": "kenya-agricultural-and-livestock-research-kalro-kenya",
+"tier": 1,
+"skill_primary": "agriculture",
+"skill_tags": [
+"agriculture",
+"farming",
+"research",
+"extension",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.kalro.org",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "BrighterMonday_Kenya",
+"slug": "brightermonday-kenya-kenya",
+"tier": 1,
+"skill_primary": "recruitment",
+"skill_tags": [
+"recruitment",
+"jobs",
+"careers",
+"hiring",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.brightermonday.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Fuzu",
+"slug": "fuzu-kenya",
+"tier": 1,
+"skill_primary": "recruitment",
+"skill_tags": [
+"recruitment",
+"jobs",
+"careers",
+"east africa",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.fuzu.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "MyJobMag_Kenya",
+"slug": "myjobmag-kenya-kenya",
+"tier": 1,
+"skill_primary": "recruitment",
+"skill_tags": [
+"recruitment",
+"jobs",
+"vacancies",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.myjobmag.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Nation_Africa",
+"slug": "nation-africa-kenya",
+"tier": 1,
+"skill_primary": "media_production",
+"skill_tags": [
+"media_production",
+"news",
+"media",
+"kenya",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://nation.africa",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Citizen_Digital",
+"slug": "citizen-digital-kenya",
+"tier": 1,
+"skill_primary": "media_production",
+"skill_tags": [
+"media_production",
+"news",
+"tv",
+"media",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://citizen.digital",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Business_Daily_Africa",
+"slug": "business-daily-africa-kenya",
+"tier": 1,
+"skill_primary": "media_production",
+"skill_tags": [
+"media_production",
+"business news",
+"markets",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.businessdailyafrica.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "iHub_Nairobi",
+"slug": "ihub-nairobi-kenya",
+"tier": 1,
+"skill_primary": "startup_support",
+"skill_tags": [
+"startup_support",
+"startup",
+"tech",
+"community",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://ihub.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Nailab",
+"slug": "nailab-kenya",
+"tier": 1,
+"skill_primary": "startup_support",
+"skill_tags": [
+"startup_support",
+"startup",
+"incubator",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.nailab.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Gearbox_Kenya",
+"slug": "gearbox-kenya-kenya",
+"tier": 1,
+"skill_primary": "startup_support",
+"skill_tags": [
+"startup_support",
+"hardware",
+"makerspace",
+"prototyping",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://gearbox.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "AirKenya_Express",
+"slug": "airkenya-express-kenya",
+"tier": 1,
+"skill_primary": "travel_agency",
+"skill_tags": [
+"travel_agency",
+"flights",
+"airline",
+"domestic",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.airkenya.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Kenya_Wildlife_Service",
+"slug": "kenya-wildlife-service-kenya",
+"tier": 1,
+"skill_primary": "travel_agency",
+"skill_tags": [
+"travel_agency",
+"parks",
+"safari",
+"wildlife",
+"tickets",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.kws.go.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Telkom_Kenya",
+"slug": "telkom-kenya-kenya",
+"tier": 1,
+"skill_primary": "mobile_money",
+"skill_tags": [
+"mobile_money",
+"telecom",
+"t-kash",
+"internet",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.telkom.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "eCitizen_Kenya",
+"slug": "ecitizen-kenya-kenya",
+"tier": 1,
+"skill_primary": "ngo_compliance",
+"skill_tags": [
+"ngo_compliance",
+"government",
+"services",
+"permits",
+"id",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://accounts.ecitizen.go.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "NTSA_Kenya",
+"slug": "ntsa-kenya-kenya",
+"tier": 1,
+"skill_primary": "transport",
+"skill_tags": [
+"transport",
+"driving licence",
+"logbook",
+"vehicle",
+"tims",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.ntsa.go.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Huduma_Centre_Kenya",
+"slug": "huduma-centre-kenya-kenya",
+"tier": 1,
+"skill_primary": "ngo_compliance",
+"skill_tags": [
+"ngo_compliance",
+"government",
+"services",
+"one stop",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.hudumakenya.go.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Kenya_Immigration_Services",
+"slug": "kenya-immigration-services-kenya",
+"tier": 1,
+"skill_primary": "immigration",
+"skill_tags": [
+"immigration",
+"passport",
+"visa",
+"permit",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://immigration.go.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "JKUAT",
+"slug": "jkuat-kenya",
+"tier": 1,
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"engineering",
+"technology",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.jkuat.ac.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Strathmore_University",
+"slug": "strathmore-university-kenya",
+"tier": 1,
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"business",
+"law",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://strathmore.edu",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Moi_University",
+"slug": "moi-university-kenya",
+"tier": 1,
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"university",
+"degree",
+"eldoret",
+"kenya"
+],
+"location": "eldoret",
+"country": "kenya",
+"website": "https://www.mu.ac.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Kenya_National_Examinations_Council_KNEC",
+"slug": "kenya-national-examinations-council-knec-kenya",
+"tier": 1,
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"kcse",
+"kcpe",
+"results",
+"exams",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.knec.ac.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Helb_Kenya",
+"slug": "helb-kenya-kenya",
+"tier": 1,
+"skill_primary": "education",
+"skill_tags": [
+"education",
+"student loan",
+"funding",
+"university",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.helb.co.ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Jubilee_Insurance_Kenya",
+"slug": "jubilee-insurance-kenya-kenya",
+"tier": 1,
+"skill_primary": "insurance",
+"skill_tags": [
+"insurance",
+"insurance",
+"health cover",
+"motor",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://jubileeinsurance.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Uber_Kenya",
+"slug": "uber-kenya-kenya",
+"tier": 1,
+"skill_primary": "transport",
+"skill_tags": [
+"transport",
+"taxi",
+"ride",
+"delivery",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://www.uber.com/ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Glovo_Kenya",
+"slug": "glovo-kenya-kenya",
+"tier": 1,
+"skill_primary": "delivery",
+"skill_tags": [
+"delivery",
+"delivery",
+"food",
+"errands",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://glovoapp.com/ke",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Harambee_Sacco",
+"slug": "harambee-sacco-kenya",
+"tier": 1,
+"skill_primary": "sacco",
+"skill_tags": [
+"sacco",
+"sacco",
+"savings",
+"loans",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://harambeesacco.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "Twiga_Foods",
+"slug": "twiga-foods-kenya",
+"tier": 1,
+"skill_primary": "agriculture",
+"skill_tags": [
+"agriculture",
+"produce",
+"supply",
+"market",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://twiga.com",
+"source": "verified_global",
+"reputation_score": 12
+},
+{
+"name": "iProcure",
+"slug": "iprocure-kenya",
+"tier": 1,
+"skill_primary": "agriculture",
+"skill_tags": [
+"agriculture",
+"farm inputs",
+"agrodealer",
+"nairobi",
+"kenya"
+],
+"location": "nairobi",
+"country": "kenya",
+"website": "https://iprocu.re",
+"source": "verified_global",
+"reputation_score": 12
 }
 ]
