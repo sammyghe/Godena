@@ -1613,8 +1613,9 @@ async def api_chat(request: Request):
 
 @app.get("/api/channels")
 async def api_channels():
-    """Which channels are wired up. Booleans only — never exposes a secret."""
-    return {
+    """Which channels are wired up. Never exposes a secret — only status
+    and the bot's public @username so users know where to message."""
+    out = {
         "web":      True,
         "api":      True,
         "mcp":      True,
@@ -1622,6 +1623,23 @@ async def api_channels():
         "whatsapp_cloud": USE_CLOUD_API,
         "whatsapp_legacy": bool(GREEN_INSTANCE_ID and GREEN_TOKEN),
     }
+    if TELEGRAM_TOKEN:
+        try:
+            me = httpx.get(f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getMe", timeout=10).json()
+            if me.get("ok"):
+                out["telegram_bot"] = "@" + me["result"].get("username", "")
+                out["telegram_link"] = f"https://t.me/{me['result'].get('username','')}"
+            else:
+                out["telegram_error"] = "token rejected by Telegram"
+            wh = httpx.get(f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getWebhookInfo", timeout=10).json()
+            if wh.get("ok"):
+                info = wh["result"]
+                out["telegram_webhook"] = info.get("url") or "(none)"
+                if info.get("last_error_message"):
+                    out["telegram_last_error"] = info["last_error_message"]
+        except Exception as e:
+            out["telegram_error"] = str(e)[:120]
+    return out
 
 @app.get("/api/stats")
 async def api_stats():
