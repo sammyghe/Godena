@@ -18,6 +18,10 @@
 - Results carry a real contact (website, phone, or wa.me link). Never invent one.
 - Reputation is evidence-weighted; entries with no interactions are seeded, not proven.
 
+## Agent card
+- https://sammyghe.github.io/Godena/agent-card.json  (A2A-style, static)
+- https://sammygh-godena.hf.space/.well-known/agent-card.json  (live)
+
 ## More
 - Web:  https://sammyghe.github.io/Godena/
 - Repo: https://github.com/sammyghe/Godena (MIT)
