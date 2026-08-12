@@ -678,6 +678,7 @@ def search_agents(query, limit=3):
             continue
         if skill_words and not skill_matches(agent, skill_kws):
             continue
+        agent = apply_ratings(agent)   # earned ratings move ranking
         rep   = compute_reputation(agent)
         loc   = location_score(agent, loc_words)
         # Relevance: reward agents that literally carry the user's specific
@@ -1038,29 +1039,67 @@ def registration_step(state, text):
 # Without this loop the reputation engine only ever sees seed points.
 last_results = {}   # uid -> [slugs shown in their most recent search]
 
+# ── RATINGS STORE — git-native, no external database ──────────────
+# The trust flywheel must work without Supabase. Ratings live in a local
+# JSON store, are merged into agents at search time so they actually move
+# ranking, and survive process restarts. (They reset on a Space rebuild —
+# fine at current volume; the durability upgrade is committing this file
+# back to the repo via the GitHub API once ratings are worth persisting.)
+RATINGS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "ratings.json")
+RATINGS = {}
+try:
+    with open(RATINGS_PATH, "r", encoding="utf-8") as _rf:
+        RATINGS = json.load(_rf)
+    print(f"Ratings loaded: {len(RATINGS)} rated agents")
+except Exception:
+    RATINGS = {}
+
+def _save_ratings():
+    try:
+        os.makedirs(os.path.dirname(RATINGS_PATH), exist_ok=True)
+        with open(RATINGS_PATH, "w", encoding="utf-8") as f:
+            json.dump(RATINGS, f)
+    except Exception as e:
+        print(f"ratings save error: {e}")
+
+def apply_ratings(agent):
+    """Overlay earned ratings onto an agent so compute_reputation sees them."""
+    r = RATINGS.get(agent.get("slug"))
+    if r and r.get("count"):
+        agent = dict(agent)
+        agent["avg_rating"] = round(r["sum"] / r["count"], 2)
+        agent["interactions_count"] = int(agent.get("interactions_count") or 0) + r["count"]
+    return agent
+
 def record_rating(uid, rating, slug):
-    """Running-average rating update, same math as /api/rate. Fail-safe."""
+    """Record a 1-5 rating. Git-native store; Supabase not required."""
     try:
         if is_burst_rating(uid):
             return "⏳ Too many ratings too fast — try again in a few minutes."
-        res = sb.table("agents").select(
-            "name,avg_rating,interactions_count"
-        ).eq("slug", slug).execute()
-        if not res.data:
-            return "Couldn't find that agent — search again and then RATE 1-5."
-        agent   = res.data[0]
-        cur_avg = float(agent.get("avg_rating") or 0)
-        cur_n   = int(agent.get("interactions_count") or 0)
-        new_avg = round((cur_avg * cur_n + rating) / (cur_n + 1), 2) if cur_n > 0 else float(rating)
-        sb.table("agents").update({
-            "avg_rating":         new_avg,
-            "interactions_count": cur_n + 1,
-        }).eq("slug", slug).execute()
+        # Confirm the agent exists in the live index (snapshot or DB)
+        agent = next((a for a in SNAPSHOT_AGENTS if a.get("slug") == slug), None)
+        if agent is None and USE_DB:
+            try:
+                res = sb.table("agents").select("name").eq("slug", slug).execute()
+                agent = (res.data or [None])[0]
+            except Exception:
+                agent = None
+        if agent is None:
+            return "Couldn't find that agent — search again, then reply RATE 1-5."
+
+        entry = RATINGS.setdefault(slug, {"sum": 0.0, "count": 0})
+        entry["sum"]  += float(rating)
+        entry["count"] = int(entry["count"]) + 1
+        _save_ratings()
+
+        new_avg = round(entry["sum"] / entry["count"], 2)
         name = (agent.get("name") or slug).replace("_", " ")
         return (
             f"⭐ Thanks — {rating}/5 recorded for {name}.\n"
-            f"Ratings decide who ranks first on Godena.\n\n"
-            "1 — Search again"
+            f"Now rated {new_avg}/5 from {entry['count']} "
+            f"{'person' if entry['count'] == 1 else 'people'}.\n"
+            "Ratings decide who ranks first on Godena.\n\n"
+            "1 — Search again   ·   3 — Share Godena"
         )
     except Exception as e:
         print(f"rate error: {e}")

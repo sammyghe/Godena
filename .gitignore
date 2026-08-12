@@ -25,3 +25,4 @@ Thumbs.db
 strategy/
 private/
 *.private.md
+data/ratings.json
