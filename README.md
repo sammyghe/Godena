@@ -10,31 +10,32 @@ pinned: false
 
 # Godena
 
-**The open agent network — a search engine for AI agents and real-world services.** Type what you need, get the top matches ranked by reputation, with a real link.
+**AI agents can't reach — or get paid by — most of the world.**
+Godena is the discovery, trust, and access rail for AI agents and real services on messaging.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Live search](https://img.shields.io/badge/try%20it-sammyghe.github.io%2FGodena-1d9e75.svg)](https://sammyghe.github.io/Godena/)
+[![Read the thesis](https://img.shields.io/badge/read-THESIS.md-blue.svg)](THESIS.md)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-1d9e75.svg)](CONTRIBUTING.md)
 
-### ▶ Try it now — no app, no login, no number
+### ▶ Try it now — no app, no login, no account
 - **Web:** **[sammyghe.github.io/Godena](https://sammyghe.github.io/Godena/)** ← live, works today
 - **API:** `GET` [sammygh-godena.hf.space/api/search?q=lawyer+kampala](https://sammygh-godena.hf.space/api/search?q=lawyer+kampala)
+- **From an AI agent:** MCP server in [`mcp/`](mcp/) · [`/llms.txt`](https://sammygh-godena.hf.space/llms.txt) · [agent card](https://sammygh-godena.hf.space/.well-known/agent-card.json)
 
-### Channels
-- **Web + API** — live now.
-- **Telegram** — [@GodenaBot](https://t.me/GodenaBot) *(messaging channel; needs no phone number — set up via @BotFather)*.
-- **WhatsApp** — the scale channel, activated with first funding (needs a verified business number).
-- **Vision:** [docs/VISION.md](docs/VISION.md) · **Roadmap:** [docs/ROADMAP.md](docs/ROADMAP.md) · **Why not just Supabase:** [docs/DATABASE.md](docs/DATABASE.md)
+**→ [Read the thesis](THESIS.md)** — why the agent economy has no last mile, and what that's worth building.
 
 ---
 
 ## What it is
 
-Most of the world's commerce still runs on one question: *"do you know a guy?"*
+Every AI agent shipped in the last two years assumes the same stack: **a browser, an app store, an API key, a credit card.** That's the stack of about a billion people. The next three billion have a different one: **WhatsApp, a phone number, and mobile money.**
 
-Godena answers it. You type what you need — a lawyer, a mechanic, a flight, a sourcing agent in China, an AI coding tool — and Godena returns the best matches, ranked by reputation, with a real link. Then it steps back. Your conversation, your business. Godena just made the introduction.
+The industry is racing to make agents smarter. Almost nobody is building the rail that lets them **reach**, be **trusted by**, or be **paid by** most of humanity.
 
-It's messaging-native by design — no app to install, no login, no data bundle to burn — so it meets the next billion people where they already are. It runs on the web today; Telegram and WhatsApp are the same engine over chat.
+Godena is that rail. You type what you need — a lawyer, a mechanic, a pharmacy, a video model, a sourcing agent — and Godena returns the best matches ranked by earned reputation, each with a real link. Then it steps back. No middleman, no commission, no data sold.
+
+**Why a Kampala pharmacy and a Hugging Face model sit in the same index:** to a person with a need, an agent is *anything that can do the job*. That distinction is an artifact of how software people organize the world, not how a person with a problem experiences it. Godena's unit is **"a thing that can do a job for you — reachable, and rated."**
 
 ```
 lawyer kampala      →  Uganda Law Society + real WhatsApp contact
@@ -43,6 +44,20 @@ send money africa   →  Wise + Chipper Cash + WorldRemit
 ai coding           →  Claude + Cursor + Groq
 china sourcing      →  Alibaba + Yiwu sourcing agents
 ```
+
+## The three layers
+
+| Layer | What it does | State |
+|---|---|---|
+| **Find** | Search 8,300+ AI agents and real services in one index | **Live** — web, API, MCP |
+| **Trust** | Reputation earned through real interactions, not self-declaration | **Built**, accumulating |
+| **Reach + Pay** | Messaging access + mobile-money payment intent | **In progress** — the defensible piece |
+
+## Channels
+
+- **Web + API + MCP** — live now. Any LLM can call Godena to find and verify real-world capacity.
+- **WhatsApp** — reply-only on Meta's official Cloud API. Godena never messages first, so it needs no templates and cannot spam. Free to run today. → [docs/SETUP_WHATSAPP.md](docs/SETUP_WHATSAPP.md) (works with Meta's free test number — no phone number to buy).
+- **Telegram** — [@GodenaBot](https://t.me/GodenaBot).
 
 ## Why this is a network, not an app
 

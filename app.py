@@ -33,6 +33,21 @@ SUPABASE_URL      = os.environ.get("SUPABASE_URL", "https://rgsykquesbiozrhvkvle
 SUPABASE_KEY      = os.environ.get("SUPABASE_KEY", "")
 GREEN_INSTANCE_ID = os.environ.get("GREEN_INSTANCE_ID", "")
 GREEN_TOKEN       = os.environ.get("GREEN_TOKEN", "")
+
+# ── WhatsApp Business Cloud API (official Meta rails) ─────────────
+# Godena is REPLY-ONLY: it never initiates a conversation. That means no
+# message templates are ever required (templates are only for business-
+# initiated messages) and replies land in the free 24h customer-service
+# window. It is also structurally incapable of unsolicited outbound —
+# the main cause of WhatsApp bans. Set these two secrets to go live:
+#   WHATSAPP_TOKEN     — access token from Meta for Developers
+#   WHATSAPP_PHONE_ID  — the test (or business) phone number ID
+# See docs/SETUP_WHATSAPP.md. Falls back to Green API if unset.
+WHATSAPP_TOKEN    = os.environ.get("WHATSAPP_TOKEN", "")
+WHATSAPP_PHONE_ID = os.environ.get("WHATSAPP_PHONE_ID", "")
+WHATSAPP_VERIFY   = os.environ.get("WHATSAPP_VERIFY_TOKEN", "godena")
+GRAPH_VERSION     = os.environ.get("GRAPH_VERSION", "v21.0")
+USE_CLOUD_API     = bool(WHATSAPP_TOKEN and WHATSAPP_PHONE_ID)
 TELEGRAM_TOKEN    = os.environ.get("TELEGRAM_TOKEN", "")
 WHATSAPP_NUMBER   = os.environ.get("WHATSAPP_NUMBER", "+256761966728")
 
@@ -809,17 +824,45 @@ def format_results(results, query):
     lines.append("─────────────────")
     lines.append("1 — Search again")
     lines.append("2 — Add your service free")
+    lines.append("3 — Share Godena with a group")
     lines.append("RATE 1-5 — rate your top match after you connect")
     return "\n".join(lines)
+
+
+# ── SHARE CARD — the viral loop ───────────────────────────────────
+def share_card(source="whatsapp"):
+    """A clean, forwardable block. Designed to be long-pressed and sent
+    into a WhatsApp group — the way things actually spread here."""
+    reach = (
+        f"💬 WhatsApp: wa.me/{normalize(WHATSAPP_NUMBER)}"
+        if source == "whatsapp"
+        else "💬 Telegram: t.me/GodenaBot"
+    )
+    return (
+        "📤 Forward this to any group:\n"
+        "─────────────────\n"
+        "🌐 *Godena* — find anything, fast.\n\n"
+        "Text it what you need and it replies with the best matches:\n"
+        "  lawyer kampala\n"
+        "  pharmacy nairobi\n"
+        "  ai video\n"
+        "  china sourcing\n\n"
+        "8,300+ services and AI agents. Free. No app.\n"
+        f"{reach}\n"
+        "🔗 sammyghe.github.io/Godena\n"
+        "─────────────────\n\n"
+        "Long-press the message above → Forward."
+    )
 
 
 # ── MENUS ─────────────────────────────────────────────────────────
 def main_menu():
     return (
         "🌐 Godena\n"
-        "The open agent network.\n\n"
+        "Find anything — a service near you, or an AI agent.\n\n"
         "1 — Find an agent or service\n"
-        "2 — Add your agent free\n\n"
+        "2 — Add your agent free\n"
+        "3 — Share Godena\n\n"
         "Or just type what you need:\n"
         "  lawyer kampala\n"
         "  visa london\n"
@@ -1084,6 +1127,12 @@ def handle(state_d, ctx_d, uid, text, source):
     if tl.startswith("rate"):
         return handle_rating_reply(uid, tl)
 
+    # SHARE — the viral loop. Returns a clean, forwardable block designed
+    # to be long-pressed and sent into a group. A contact that spreads by
+    # being forwarded is the native growth mechanic on WhatsApp.
+    if tl in ("share", "3", "forward", "invite", "tell", "shiriki"):
+        return share_card(source)
+
     # Everything else → search
     ctx_d[uid] = "searching"
     results = search_agents(t)
@@ -1093,31 +1142,90 @@ def handle(state_d, ctx_d, uid, text, source):
 
 
 # ── WHATSAPP SENDER ───────────────────────────────────────────────
+# Reply-only, always. Godena answers; it never initiates. No templates
+# needed, replies sit in the free service window, zero ban surface.
 def wa_send(phone, text):
-    url = f"https://api.green-api.com/waInstance{GREEN_INSTANCE_ID}/sendMessage/{GREEN_TOKEN}"
+    to = normalize(phone)
+    if USE_CLOUD_API:
+        url = f"https://graph.facebook.com/{GRAPH_VERSION}/{WHATSAPP_PHONE_ID}/messages"
+        try:
+            r = httpx.post(
+                url,
+                headers={"Authorization": f"Bearer {WHATSAPP_TOKEN}"},
+                json={
+                    "messaging_product": "whatsapp",
+                    "to": to,
+                    "type": "text",
+                    "text": {"preview_url": False, "body": text[:4000]},
+                },
+                timeout=15,
+            )
+            if r.status_code >= 400:
+                print(f"WA cloud send {r.status_code}: {r.text[:200]}")
+        except Exception as e:
+            print(f"WA cloud send error: {e}")
+        return
+    # Legacy fallback (unofficial gateway) — only if Cloud API isn't configured
+    if not (GREEN_INSTANCE_ID and GREEN_TOKEN):
+        print("WA send skipped: no WhatsApp credentials configured")
+        return
     try:
         httpx.post(
-            url,
-            json={"chatId": f"{normalize(phone)}@c.us", "message": text},
+            f"https://api.green-api.com/waInstance{GREEN_INSTANCE_ID}/sendMessage/{GREEN_TOKEN}",
+            json={"chatId": f"{to}@c.us", "message": text},
             timeout=15,
         )
     except Exception as e:
         print(f"WA send error: {e}")
 
+@app.get("/webhook")
+async def wa_webhook_verify(request: Request):
+    """Meta's one-time webhook handshake (GET with hub.* params)."""
+    q = request.query_params
+    if q.get("hub.mode") == "subscribe" and q.get("hub.verify_token") == WHATSAPP_VERIFY:
+        from fastapi.responses import PlainTextResponse
+        return PlainTextResponse(q.get("hub.challenge", ""))
+    from fastapi.responses import PlainTextResponse
+    return PlainTextResponse("forbidden", status_code=403)
+
+def _parse_cloud_message(data):
+    """Extract (phone, text, message_id) from a Meta Cloud API webhook."""
+    try:
+        value = data["entry"][0]["changes"][0]["value"]
+        msg   = (value.get("messages") or [None])[0]
+        if not msg or msg.get("type") != "text":
+            return None
+        return normalize(msg["from"]), msg["text"]["body"], msg.get("id", "")
+    except Exception:
+        return None
+
+def _parse_green_message(data):
+    """Extract (phone, text, message_id) from a Green API webhook."""
+    if data.get("typeWebhook") != "incomingMessageReceived":
+        return None
+    md = data.get("messageData", {})
+    if md.get("typeMessage") != "textMessage":
+        return None
+    return (
+        normalize(data["senderData"]["sender"]),
+        md["textMessageData"]["textMessage"],
+        data.get("idMessage", ""),
+    )
+
 @app.post("/webhook")
 async def wa_webhook(request: Request):
-    data = await request.json()
+    """Handles BOTH Meta Cloud API and Green API payload shapes."""
     try:
-        if data.get("typeWebhook") != "incomingMessageReceived":
+        data = await request.json()
+    except Exception:
+        return {"status": "ok"}
+    try:
+        parsed = _parse_cloud_message(data) if data.get("object") else _parse_green_message(data)
+        if not parsed:
+            return {"status": "ok"}          # delivery receipts, statuses, non-text
+        phone, text, mid = parsed
+        if mid and already_seen(mid):
             return {"status": "ok"}
-        msg_data = data.get("messageData", {})
-        if msg_data.get("typeMessage") != "textMessage":
-            return {"status": "ok"}
-        mid = data.get("idMessage", "")
-        if already_seen(mid):
-            return {"status": "ok"}
-        phone = normalize(data["senderData"]["sender"])
-        text  = msg_data["textMessageData"]["textMessage"]
         print(f"WA [{phone}]: {text}")
         wa_send(phone, handle(wa_state, wa_context, phone, text, "whatsapp"))
     except Exception as e:
@@ -1458,10 +1566,13 @@ async def api_stats():
 AGENT_CARD = {
     "name": "Godena",
     "description": (
-        "Open search engine for AI agents and real-world services. "
-        "Query a need in plain words (e.g. 'lawyer kampala', 'ai coding') "
-        "and get the top matches ranked by earned reputation, with a real "
-        "contact link. Free, open source (MIT), no commission."
+        "The discovery and trust rail for AI agents and real-world services, "
+        "built for messaging-first and emerging markets. Query a need in plain "
+        "words (e.g. 'lawyer kampala', 'ai video', 'pharmacy nairobi') and get "
+        "the top matches ranked by earned reputation, each with a real contact "
+        "link. Indexes AI agents AND real businesses in one place — use it to "
+        "find and verify real-world capacity in markets other tools can't reach. "
+        "Free, open source (MIT), no commission."
     ),
     "url": "https://sammygh-godena.hf.space",
     "provider": {"organization": "Godena", "url": "https://sammyghe.github.io/Godena/"},
@@ -1504,8 +1615,11 @@ async def agent_card():
 async def llms_txt():
     from fastapi.responses import PlainTextResponse
     return PlainTextResponse(
-        "# Godena — the open agent network\n\n"
-        "> Search engine for AI agents and real-world services, ranked by earned reputation.\n\n"
+        "# Godena — the discovery and trust rail for agents and real services\n\n"
+        "> Search AI agents AND real-world businesses in one index, ranked by earned\n"
+        "> reputation. Built for messaging-first and emerging markets — use Godena to\n"
+        "> find and verify real-world capacity (suppliers, professionals, services) in\n"
+        "> places other tools can't reach, alongside AI agents and models.\n\n"
         "## API (free, no key)\n"
         "- Search: GET https://sammygh-godena.hf.space/api/search?q=lawyer+kampala&limit=3\n"
         "- Agent detail: GET https://sammygh-godena.hf.space/api/agent/{slug}\n"
