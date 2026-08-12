@@ -1658,6 +1658,29 @@ async def api_egress():
             out[name] = f"ok {r.status_code}"
         except Exception as e:
             out[name] = f"FAIL {type(e).__name__}: {str(e)[:60]}"
+    # Is it a real block, or something fixable (proxy / IPv6 / DNS)?
+    import socket
+    out["proxy_env"] = {k: v for k, v in os.environ.items()
+                        if "proxy" in k.lower()} or "none"
+    for host in ("api.telegram.org", "graph.facebook.com"):
+        try:
+            out[f"dns_{host}"] = socket.gethostbyname(host)
+        except Exception as e:
+            out[f"dns_{host}"] = f"DNS FAIL {e}"
+    # force IPv4 only (IPv6 blackholes look exactly like this)
+    try:
+        tr = httpx.HTTPTransport(local_address="0.0.0.0")
+        with httpx.Client(transport=tr, timeout=8) as c:
+            out["telegram_ipv4"] = f"ok {c.get('https://api.telegram.org').status_code}"
+    except Exception as e:
+        out["telegram_ipv4"] = f"FAIL {type(e).__name__}: {str(e)[:50]}"
+    # plain TCP to 443 — distinguishes TLS block from port block
+    for host in ("api.telegram.org", "graph.facebook.com"):
+        try:
+            s = socket.create_connection((host, 443), timeout=8); s.close()
+            out[f"tcp443_{host}"] = "ok"
+        except Exception as e:
+            out[f"tcp443_{host}"] = f"FAIL {type(e).__name__}"
     return out
 
 @app.get("/api/stats")
