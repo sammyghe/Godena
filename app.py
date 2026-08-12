@@ -57,28 +57,56 @@ USE_CLOUD_API     = bool(WHATSAPP_TOKEN and WHATSAPP_PHONE_ID)
 # failure, retry through a CORS relay. Verified working from the Space.
 # Set CORS_RELAY="" to disable, or point it at your own relay.
 CORS_RELAY = os.environ.get("CORS_RELAY", "https://proxy.cors.sh/")
+# Ordered fallbacks — first that answers wins. Verified live from the Space.
+RELAYS = [r for r in [CORS_RELAY, "https://api.allorigins.win/raw?url=",
+                      "https://cors.eu.org/"] if r]
 
-def egress_get(url, **kw):
+def _relayed(url, relay):
+    """Build the proxied URL for a given relay style."""
+    if relay.endswith("url="):
+        import urllib.parse as up
+        return relay + up.quote(url, safe="")
+    return relay + url
+
+def egress_request(method, url, **kw):
+    """Direct first (fast, private); on failure walk the relay list.
+    Telegram accepts POST params as a query string, so POSTs survive
+    relays that only forward GET."""
     kw.setdefault("timeout", 12)
     try:
-        return httpx.get(url, **kw)
+        return httpx.request(method, url, **kw)
     except Exception as e:
-        if not CORS_RELAY:
-            raise
-        print(f"egress: direct GET failed ({type(e).__name__}), relaying")
+        last = e
+        print(f"egress: direct {method} failed ({type(e).__name__}), relaying")
+        payload = kw.pop("json", None)
         kw["timeout"] = 25
-        return httpx.get(CORS_RELAY + url, **kw)
+        for relay in RELAYS:
+            try:
+                r = httpx.request(method, _relayed(url, relay), json=payload, **kw)
+                if r.status_code < 500:
+                    return r
+                last = Exception(f"relay {relay} -> {r.status_code}")
+            except Exception as ex:
+                last = ex
+                continue
+            # GET-only relays: retry as a query-string GET
+        if payload and method.upper() == "POST":
+            import urllib.parse as up
+            qs = up.urlencode({k: v for k, v in payload.items() if isinstance(v, (str, int))})
+            for relay in RELAYS:
+                try:
+                    r = httpx.get(_relayed(f"{url}?{qs}", relay), timeout=25)
+                    if r.status_code < 500:
+                        return r
+                except Exception as ex:
+                    last = ex
+        raise last
+
+def egress_get(url, **kw):
+    return egress_request("GET", url, **kw)
 
 def egress_post(url, **kw):
-    kw.setdefault("timeout", 15)
-    try:
-        return httpx.post(url, **kw)
-    except Exception as e:
-        if not CORS_RELAY:
-            raise
-        print(f"egress: direct POST failed ({type(e).__name__}), relaying")
-        kw["timeout"] = 30
-        return httpx.post(CORS_RELAY + url, **kw)
+    return egress_request("POST", url, **kw)
 TELEGRAM_TOKEN    = os.environ.get("TELEGRAM_TOKEN", "")
 WHATSAPP_NUMBER   = os.environ.get("WHATSAPP_NUMBER", "+256761966728")
 
@@ -1744,6 +1772,24 @@ async def api_relaytest():
         except Exception as e:
             out[name] = {"error": f"{type(e).__name__}: {str(e)[:60]}"}
     return out
+
+@app.get("/api/sendtest")
+async def api_sendtest():
+    """Prove the REPLY path works — replies are POSTs, and a relay that only
+    forwards GET would leave the bot silent. Sends to a deliberately invalid
+    chat; Telegram answering 'chat not found' proves the call arrived."""
+    if not TELEGRAM_TOKEN:
+        return {"error": "no telegram token"}
+    try:
+        r = egress_post(
+            f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
+            json={"chat_id": 1, "text": "godena reply-path probe"},
+        )
+        body = r.text[:220]
+        reached = ("chat not found" in body.lower()) or ('"ok"' in body)
+        return {"reply_path_reaches_telegram": reached, "status": r.status_code, "body": body}
+    except Exception as e:
+        return {"reply_path_reaches_telegram": False, "error": f"{type(e).__name__}: {str(e)[:120]}"}
 
 @app.get("/api/stats")
 async def api_stats():
