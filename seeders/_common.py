@@ -23,7 +23,11 @@ def merge(new, snap=None):
     have = {a.get("slug") for a in snap}
     added = 0
     for a in new:
-        if not a.get("website") or not a.get("slug"):
+        # Must have a slug and at least ONE real, verifiable contact.
+        # A phone counts: most real African businesses have a number long
+        # before a website. Never accept an entry with no way to reach it.
+        has_contact = a.get("website") or a.get("phone") or a.get("whatsapp") or a.get("contact_link")
+        if not a.get("slug") or not has_contact:
             continue
         if a["slug"] in have:
             continue
