@@ -1,3 +1,5 @@
+> **⚠️ Hugging Face blocks `api.telegram.org`** (verified via `/api/egress`) — a bot hosted only on the Space cannot reply on Telegram, whatever token is set. Host `app.py` where egress is open (see [HOSTING.md](HOSTING.md)); Godena then registers its own Telegram webhook on boot.
+
 # Go live on Telegram in 5 minutes (no phone number needed)
 
 Telegram bots need **zero** phone number and cost **nothing**. This is Godena's fastest real messaging channel.

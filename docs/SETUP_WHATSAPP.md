@@ -1,5 +1,7 @@
 # Go live on WhatsApp — free, without owning a phone number
 
+> **⚠️ READ FIRST — host check.** Hugging Face Spaces **block `graph.facebook.com`** (verified via `/api/egress`), so a bot hosted there will never reply on WhatsApp no matter how the Meta app is configured. Deploy `app.py` to a host with open egress first (Render/Koyeb/Fly — see [HOSTING.md](HOSTING.md)), then follow these steps and point the webhook at *that* host. Doing the Meta setup while hosted only on the Space is wasted effort.
+
 Meta gives you a **free test business phone number** the moment you create a WhatsApp app. You don't buy a number, you don't verify a business, and you don't need a SIM. ~10 minutes, all clicks, no code.
 
 Godena is **reply-only** — it never messages anyone first. That means no message templates, no approval process, and replies land in WhatsApp's free service window.
