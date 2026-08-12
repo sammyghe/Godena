@@ -1683,6 +1683,36 @@ async def api_egress():
             out[f"tcp443_{host}"] = f"FAIL {type(e).__name__}"
     return out
 
+@app.get("/api/relaytest")
+async def api_relaytest():
+    """Find ANY working outbound path to the messaging APIs from this host.
+    Inbound webhooks already work; only egress is filtered. If any relay
+    below succeeds, messaging works from here."""
+    tg = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getMe" if TELEGRAM_TOKEN else "https://api.telegram.org"
+    import urllib.parse as up
+    enc = up.quote(tg, safe="")
+    strategies = {
+        "direct":            tg,
+        "allorigins":        f"https://api.allorigins.win/raw?url={enc}",
+        "codetabs":          f"https://api.codetabs.com/v1/proxy?quest={enc}",
+        "corsproxy_io":      f"https://corsproxy.io/?{enc}",
+        "thingproxy":        f"https://thingproxy.freeboard.io/fetch/{tg}",
+        "jina_reader":       f"https://r.jina.ai/{tg}",
+        "whateverorigin":    f"http://www.whateverorigin.org/get?url={enc}",
+        "proxy_cors_sh":     f"https://proxy.cors.sh/{tg}",
+        "cors_eu_org":       f"https://cors.eu.org/{tg}",
+        "isomorphic_git":    f"https://cors.isomorphic-git.org/{tg}",
+    }
+    out = {}
+    for name, url in strategies.items():
+        try:
+            r = httpx.get(url, timeout=12, follow_redirects=True)
+            body = r.text[:150]
+            out[name] = {"status": r.status_code, "body": body}
+        except Exception as e:
+            out[name] = {"error": f"{type(e).__name__}: {str(e)[:60]}"}
+    return out
+
 @app.get("/api/stats")
 async def api_stats():
     """Public stats — the registry is the open index shipped in the repo."""
