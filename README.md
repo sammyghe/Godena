@@ -10,8 +10,8 @@ pinned: false
 
 # Godena
 
-**AI agents can't reach — or get paid by — most of the world.**
-Godena is the discovery, trust, and access rail for AI agents and real services on messaging.
+**An open business directory and discovery index for Africa.**
+10,000+ real businesses and services — verified, searchable, machine-callable. Type what you need, get the best matches with a real contact.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Live search](https://img.shields.io/badge/try%20it-sammyghe.github.io%2FGodena-1d9e75.svg)](https://sammyghe.github.io/Godena/)
@@ -29,13 +29,11 @@ Godena is the discovery, trust, and access rail for AI agents and real services 
 
 ## What it is
 
-Every AI agent shipped in the last two years assumes the same stack: **a browser, an app store, an API key, a credit card.** That's the stack of about a billion people. The next three billion have a different one: **WhatsApp, a phone number, and mobile money.**
+Most of Africa's commerce still runs on one question: *"do you know a guy?"* Trust lives in private contacts, dies when you move city, and can't be searched.
 
-The industry is racing to make agents smarter. Almost nobody is building the rail that lets them **reach**, be **trusted by**, or be **paid by** most of humanity.
+Godena answers it. You type what you need — a pharmacy in Nairobi, a lawyer in Kampala, KRA tax services, a hotel in Mombasa — and get the best matches ranked by earned reputation, each with a real contact. Then it steps back. No middleman, no commission, no data sold.
 
-Godena is that rail. You type what you need — a lawyer, a mechanic, a pharmacy, a video model, a sourcing agent — and Godena returns the best matches ranked by earned reputation, each with a real link. Then it steps back. No middleman, no commission, no data sold.
-
-**Why a Kampala pharmacy and a Hugging Face model sit in the same index:** to a person with a need, an agent is *anything that can do the job*. That distinction is an artifact of how software people organize the world, not how a person with a problem experiences it. Godena's unit is **"a thing that can do a job for you — reachable, and rated."**
+**What makes it different:** every entry carries a real, verifiable contact and an `entity_type` — `service` (a real business you can call) or `agent` (a software tool). Real services lead every search. It's open source, machine-callable via a free API and MCP, and the whole index is downloadable — none of which any existing African directory offers.
 
 ```
 lawyer kampala      →  Uganda Law Society + real WhatsApp contact
