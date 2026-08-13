@@ -16,12 +16,19 @@ def load():
 def save(snap):
     json.dump(snap, open(SNAP, "w", encoding="utf-8"), indent=0)
 
+# Fields that are POINTERS or freshness stamps — always refreshed on re-harvest.
+# Facts (phone/website/hours) may change too, but pointers are what let us
+# re-resolve later, so they must never be lost on a duplicate.
+POINTER_FIELDS = ("osm_id", "lat", "lon", "last_verified", "verification")
+
+
 def merge(new, snap=None):
     """Add candidates (each a dict with a real website) deduped by slug, up to CAP."""
     if snap is None:
         snap = load()
-    have = {a.get("slug") for a in snap}
-    added = 0
+    by_slug = {a.get("slug"): a for a in snap}
+    have = set(by_slug)
+    added = refreshed = 0
     for a in new:
         # Must have a slug and at least ONE real, verifiable contact.
         # A phone counts: most real African businesses have a number long
@@ -30,6 +37,15 @@ def merge(new, snap=None):
         if not a.get("slug") or not has_contact:
             continue
         if a["slug"] in have:
+            # Re-harvest = refresh, not skip. Backfill pointers and the
+            # freshness stamp onto entries that predate them.
+            cur = by_slug[a["slug"]]
+            touched = False
+            for f in POINTER_FIELDS:
+                if a.get(f) is not None and cur.get(f) != a.get(f):
+                    cur[f] = a[f]
+                    touched = True
+            refreshed += touched
             continue
         if len(snap) >= CAP:
             break
@@ -40,6 +56,7 @@ def merge(new, snap=None):
         a.setdefault("skill_tags", ["ai"])
         a.setdefault("reputation_score", 8)
         # service = a real business/person; agent = an AI tool/model
+        a.setdefault("verification", "listed")   # listed | licensed | claimed
         a.setdefault("entity_type",
                      "service" if a.get("source") in
                      {"osm_scraped", "verified_global", "claimed"} else "agent")
@@ -47,6 +64,8 @@ def merge(new, snap=None):
         have.add(a["slug"])
         added += 1
     save(snap)
+    if refreshed:
+        print(f"  refreshed pointers on {refreshed} existing entries")
     # integrity
     slugs = [x["slug"] for x in snap]
     assert len(slugs) == len(set(slugs)), "duplicate slugs after merge"

@@ -1,0 +1,110 @@
+name: Curate index
+
+# Godena's index is git-native, so curation is just a scheduled commit.
+# This job needs NO API key and NO model: the harvesters and builders are
+# deterministic. It refreshes pointers, adds newly-tagged businesses,
+# rebuilds the static pages and the SQLite index, and commits the diff.
+#
+# GitHub Actions runners have open egress (unlike the HF Space, which
+# TLS-blocks messaging APIs), so this is also the right place for any
+# fetching that the app itself cannot do.
+#
+# Judgment work — filling demand gaps, vetting new sources — is done by
+# .claude/agents/godena-curator.md when a model session runs it.
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"      # Mondays 03:17 UTC
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "Also re-run the brand + registry harvesters"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: curate
+  cancel-in-progress: false
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Snapshot before
+        id: before
+        run: |
+          python - <<'PY' >> $GITHUB_OUTPUT
+          import json
+          d = json.load(open('data/agents_snapshot.json', encoding='utf-8'))
+          svc = [a for a in d if a.get('entity_type') == 'service']
+          print(f"total={len(d)}")
+          print(f"services={len(svc)}")
+          print(f"pointers={sum(1 for a in svc if a.get('osm_id'))}")
+          PY
+
+      - name: Harvest OpenStreetMap (refreshes pointers + adds new)
+        continue-on-error: true
+        working-directory: seeders
+        run: python -u harvest_osm.py
+
+      - name: Harvest verified institutions
+        if: github.event.inputs.full == 'true'
+        continue-on-error: true
+        working-directory: seeders
+        run: python -u harvest_kenya_brands.py
+
+      - name: Harvest licence registries
+        if: github.event.inputs.full == 'true'
+        continue-on-error: true
+        working-directory: seeders
+        run: |
+          test -f harvest_registries.py && python -u harvest_registries.py || echo "no registry harvester yet"
+
+      - name: Rebuild static pages + sitemap
+        run: python -u seeders/build_pages.py
+
+      - name: Rebuild SQLite index
+        continue-on-error: true
+        run: python -u seeders/build_db.py
+
+      - name: Integrity check (never commit a broken or dishonest index)
+        run: |
+          python - <<'PY'
+          import json, sys
+          d = json.load(open('data/agents_snapshot.json', encoding='utf-8'))
+          slugs = [a['slug'] for a in d]
+          assert len(slugs) == len(set(slugs)), "duplicate slugs"
+          bad = [a for a in d if not (a.get('website') or a.get('phone')
+                                      or a.get('whatsapp') or a.get('contact_link'))]
+          assert not bad, f"{len(bad)} entries have NO contact"
+          assert len(d) >= 9000, f"index shrank unexpectedly to {len(d)}"
+          print(f"OK: {len(d)} entries, all with a real contact, slugs unique")
+          PY
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name  "godena-curator"
+          git config user.email "actions@github.com"
+          if git diff --quiet; then
+            echo "nothing changed"; exit 0
+          fi
+          AFTER=$(python -c "import json;print(len(json.load(open('data/agents_snapshot.json',encoding='utf-8'))))")
+          PTR=$(python -c "import json;d=json.load(open('data/agents_snapshot.json',encoding='utf-8'));print(sum(1 for a in d if a.get('osm_id')))")
+          git add -A
+          git commit -m "curate: index at ${AFTER} entries, ${PTR} with pointers
+
+          Automated weekly curation — refreshed OSM pointers and last_verified,
+          added newly-tagged businesses, rebuilt static pages, sitemap and the
+          SQLite index. Before: ${{ steps.before.outputs.total }} entries,
+          ${{ steps.before.outputs.pointers }} with pointers."
+          git push

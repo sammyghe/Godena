@@ -1,7 +1,9 @@
 """Harvest REAL human businesses/services from OpenStreetMap (free Overpass API).
 Only imports entries that carry a real website tag -> no fabricated contacts.
 This is the human-services side of the index. Run: python seeders/harvest_osm.py"""
-import json, time, urllib.request, urllib.parse
+import datetime, json, time, urllib.request, urllib.parse
+
+TODAY = datetime.date.today().isoformat()
 from _common import slugify, merge
 
 OVERPASS = "https://overpass-api.de/api/interpreter"
@@ -125,6 +127,10 @@ def harvest():
             skill = SKILL.get(cat, "")
             if not skill:
                 continue
+            # POINTER, not just facts. osm_id lets us re-resolve this entry
+            # forever without re-scraping the whole city — and it means the
+            # volatile fields (phone/hours) can be refreshed instead of rotting.
+            osm_id = f"{el.get('type','node')}/{el.get('id')}" if el.get("id") else None
             entry = {
                 "name": name.replace(" ", "_")[:60],
                 "slug": slugify(f"{name}-{label}"),
@@ -133,7 +139,13 @@ def harvest():
                 "location": label, "country": country,
                 "source": "osm_scraped",
                 "reputation_score": 9 if web else 8,
+                "osm_id": osm_id,
+                "last_verified": TODAY,
+                "verification": "listed",   # listed | licensed | claimed
             }
+            if el.get("lat") or (el.get("center") or {}).get("lat"):
+                c = el.get("center") or el
+                entry["lat"], entry["lon"] = c.get("lat"), c.get("lon")
             if web:
                 entry["website"] = web
             if phone:
