@@ -1851,6 +1851,196 @@ AGENT_CARD = {
     },
 }
 
+# ══════════════════════════════════════════════════════════════════
+# REMOTE MCP SERVER — stateless, no install, one URL
+# ──────────────────────────────────────────────────────────────────
+# The 2026-07-28 MCP spec dropped session IDs and the initialize
+# handshake, so a server needs no shared state: any request can hit any
+# replica. That means Godena's MCP interface is just an endpoint on this
+# app — no separate process, no stdio, no infrastructure.
+#
+# Point any MCP client at:  https://sammygh-godena.hf.space/mcp
+#
+# This is the durable asset: when an agent needs to find, book or contact
+# something real in Africa, this is the index it can call.
+# ══════════════════════════════════════════════════════════════════
+MCP_PROTOCOL = "2026-07-28"
+
+MCP_TOOLS = [
+    {
+        "name": "godena_search",
+        "description": (
+            "Search a curated index of real African businesses and services "
+            "(Kenya, Uganda, East Africa) plus software/AI tools. Use when you need "
+            "to find, contact, verify or book something real — a pharmacy in Nairobi, "
+            "a lawyer in Kampala, tax services, a hotel in Mombasa, a courier, a bank. "
+            "Returns real contacts (website / phone / WhatsApp link). Real businesses "
+            "rank ahead of software tools unless the query asks for AI."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "query": {"type": "string", "description": "What is needed, e.g. 'pharmacy nairobi', 'kra tax', 'hotel mombasa'."},
+                "limit": {"type": "integer", "description": "Max results (default 5, max 20).", "default": 5},
+                "entity_type": {"type": "string", "enum": ["service", "agent", "any"],
+                                "description": "'service' = a real business you can contact; 'agent' = a software/AI tool; 'any' = both."},
+            },
+            "required": ["query"],
+        },
+    },
+    {
+        "name": "godena_get",
+        "description": "Fetch one indexed entry in full by its slug, including every contact detail and reputation evidence.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {"slug": {"type": "string", "description": "The entry's slug, as returned by godena_search."}},
+            "required": ["slug"],
+        },
+    },
+    {
+        "name": "godena_coverage",
+        "description": "Report what the index actually covers — totals by country, city and category. Use to check whether Godena can answer for a given place before searching.",
+        "inputSchema": {"type": "object", "properties": {
+            "country": {"type": "string", "description": "Optional ISO-ish country name, e.g. 'kenya'."}}},
+    },
+]
+
+
+def _mcp_text(payload):
+    """MCP content block. Agents parse text; keep it compact and factual."""
+    return {"content": [{"type": "text", "text": payload}], "isError": False}
+
+
+def _mcp_call(name, args):
+    if name == "godena_search":
+        q = (args.get("query") or "").strip()
+        if not q:
+            return {"content": [{"type": "text", "text": "query is required"}], "isError": True}
+        limit = max(1, min(int(args.get("limit") or 5), 20))
+        want = (args.get("entity_type") or "any").lower()
+        rows = search_agents(q, limit * 3 if want != "any" else limit)
+        if want in ("service", "agent"):
+            rows = [r for r in rows if (r.get("entity_type") or "agent") == want][:limit]
+        else:
+            rows = rows[:limit]
+        if not rows:
+            return _mcp_text(f"No matches in the Godena index for '{q}'. "
+                             "Try a broader term or a nearby city. Coverage is strongest in "
+                             "Kenya and Uganda; call godena_coverage to check a place.")
+        out = []
+        for a in rows:
+            contact = a.get("website") or a.get("whatsapp") or a.get("phone") or a.get("contact_link") or ""
+            loc = ", ".join(x.title() for x in [a.get("location"), a.get("country")]
+                            if x and x not in ("global", "unknown"))
+            rated = int(a.get("interactions_count") or 0)
+            out.append({
+                "name": (a.get("name") or "").replace("_", " "),
+                "slug": a.get("slug"),
+                "type": a.get("entity_type") or "agent",
+                "category": a.get("skill_primary"),
+                "location": loc or "Global",
+                "contact": contact,
+                "phone": a.get("phone") or None,
+                "reputation": int(compute_reputation(a)),
+                "evidence": f"{rated} recorded interaction(s)" if rated else "unverified — listed from public data, no ratings yet",
+                "page": f"https://sammyghe.github.io/Godena/a/{a.get('slug')}/",
+            })
+        return _mcp_text(json.dumps({"query": q, "count": len(out), "results": out}, ensure_ascii=False, indent=2))
+
+    if name == "godena_get":
+        slug = (args.get("slug") or "").strip()
+        row = next((a for a in SNAPSHOT_AGENTS if a.get("slug") == slug), None)
+        if not row:
+            return {"content": [{"type": "text", "text": f"No entry with slug '{slug}'."}], "isError": True}
+        row = apply_ratings(dict(row))
+        row["computed_reputation"] = compute_reputation(row)
+        row["page"] = f"https://sammyghe.github.io/Godena/a/{slug}/"
+        return _mcp_text(json.dumps(row, ensure_ascii=False, indent=2))
+
+    if name == "godena_coverage":
+        from collections import Counter
+        rows = SNAPSHOT_AGENTS
+        country = (args.get("country") or "").lower().strip()
+        if country:
+            rows = [a for a in rows if (a.get("country") or "").lower() == country]
+        services = [a for a in rows if a.get("entity_type") == "service"]
+        cov = {
+            "scope": country or "all",
+            "total_entries": len(rows),
+            "real_services": len(services),
+            "software_tools": len(rows) - len(services),
+            "top_cities": dict(Counter(a.get("location") for a in services if a.get("location")).most_common(12)),
+            "top_categories": dict(Counter(a.get("skill_primary") for a in services if a.get("skill_primary")).most_common(12)),
+            "note": "Coverage is strongest in Kenya and Uganda. Every entry carries a real, verifiable contact; nothing is invented.",
+        }
+        return _mcp_text(json.dumps(cov, ensure_ascii=False, indent=2))
+
+    return {"content": [{"type": "text", "text": f"Unknown tool: {name}"}], "isError": True}
+
+
+@app.post("/mcp")
+async def mcp_endpoint(request: Request):
+    """Stateless MCP over HTTP (JSON-RPC 2.0). No session, no handshake state."""
+    try:
+        msg = await request.json()
+    except Exception:
+        return {"jsonrpc": "2.0", "id": None,
+                "error": {"code": -32700, "message": "Parse error"}}
+
+    def ok(mid, result):
+        return {"jsonrpc": "2.0", "id": mid, "result": result}
+
+    mid = msg.get("id")
+    method = msg.get("method") or ""
+    params = msg.get("params") or {}
+
+    if method == "initialize":
+        return ok(mid, {
+            "protocolVersion": MCP_PROTOCOL,
+            "capabilities": {"tools": {"listChanged": False}},
+            "serverInfo": {"name": "godena", "version": "1.2.0",
+                           "title": "Godena — African services index"},
+            "instructions": (
+                "Godena indexes real African businesses and services with verifiable "
+                "contacts. Use godena_search to find something real to contact or book; "
+                "godena_coverage to check whether a place is covered."),
+        })
+    if method in ("notifications/initialized", "notifications/cancelled"):
+        return {"jsonrpc": "2.0", "id": mid, "result": {}}
+    if method == "ping":
+        return ok(mid, {})
+    if method == "tools/list":
+        return ok(mid, {"tools": MCP_TOOLS})
+    if method == "tools/call":
+        try:
+            return ok(mid, _mcp_call(params.get("name") or "", params.get("arguments") or {}))
+        except Exception as e:
+            print(f"mcp tool error: {e}")
+            return ok(mid, {"content": [{"type": "text", "text": f"Tool failed: {e}"}], "isError": True})
+
+    return {"jsonrpc": "2.0", "id": mid,
+            "error": {"code": -32601, "message": f"Method not found: {method}"}}
+
+
+@app.get("/mcp")
+async def mcp_info():
+    """Humans and crawlers hitting /mcp in a browser get told how to use it."""
+    return {
+        "name": "godena",
+        "protocol": "mcp",
+        "protocolVersion": MCP_PROTOCOL,
+        "transport": "streamable-http (stateless)",
+        "endpoint": "https://sammygh-godena.hf.space/mcp",
+        "tools": [t["name"] for t in MCP_TOOLS],
+        "description": "When an agent needs to find, book or contact something real in Africa, this is the index it can call.",
+        "install": {
+            "claude_code": "claude mcp add --transport http godena https://sammygh-godena.hf.space/mcp",
+            "generic": {"mcpServers": {"godena": {"type": "http", "url": "https://sammygh-godena.hf.space/mcp"}}},
+        },
+        "docs": "https://github.com/sammyghe/Godena/tree/main/mcp",
+    }
+
+
 @app.get("/.well-known/agent-card.json")
 @app.get("/.well-known/agent.json")
 async def agent_card():

@@ -21,7 +21,13 @@ pinned: false
 ### ▶ Try it now — no app, no login, no account
 - **Web:** **[sammyghe.github.io/Godena](https://sammyghe.github.io/Godena/)** ← live, works today
 - **API:** `GET` [sammygh-godena.hf.space/api/search?q=lawyer+kampala](https://sammygh-godena.hf.space/api/search?q=lawyer+kampala)
-- **From an AI agent:** MCP server in [`mcp/`](mcp/) · [`/llms.txt`](https://sammygh-godena.hf.space/llms.txt) · [agent card](https://sammygh-godena.hf.space/.well-known/agent-card.json)
+- **From any AI agent — one URL, nothing to install:**
+  ```bash
+  claude mcp add --transport http godena https://sammygh-godena.hf.space/mcp
+  ```
+  Also: [`/llms.txt`](https://sammygh-godena.hf.space/llms.txt) · [agent card](https://sammygh-godena.hf.space/.well-known/agent-card.json) · [Agent Skill](skills/godena/) · [`server.json`](server.json)
+
+> **When an agent needs to find, book or contact something real in Africa, there is no index it can call. Godena is that index.**
 
 **→ [Read the thesis](THESIS.md)** — why the agent economy has no last mile, and what that's worth building.
 

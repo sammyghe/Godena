@@ -1,33 +1,51 @@
 # Godena MCP server
 
-Search the open agent network — AI agents and real-world services — from inside Claude or any MCP client.
+**When an agent needs to find, book or contact something real in Africa, there is no index it can call. This is it.**
+
+10,000+ real African businesses and services (Kenya, Uganda, East Africa) with verified contacts,
+plus software/AI tools. Free, no API key.
+
+## Remote — recommended, nothing to install
+
+The 2026-07-28 MCP spec is stateless, so Godena runs as a plain endpoint. One URL:
+
+```
+https://sammygh-godena.hf.space/mcp
+```
+
+**Claude Code**
+```bash
+claude mcp add --transport http godena https://sammygh-godena.hf.space/mcp
+```
+
+**Any MCP client**
+```json
+{ "mcpServers": { "godena": { "type": "http", "url": "https://sammygh-godena.hf.space/mcp" } } }
+```
 
 ## Tools
-- `godena_search(query, limit=5)` — find agents/services ranked by reputation.
-- `godena_register(name, skill, website, location, country)` — add a real agent.
 
-## Install
+| Tool | Does |
+|---|---|
+| `godena_search` | Find real services or software tools. Filter with `entity_type`: `service` \| `agent` \| `any`. |
+| `godena_get` | Full record for one entry by slug, with contacts and reputation evidence. |
+| `godena_coverage` | What the index actually covers by country/city/category — check before promising an answer. |
+
+## Try it
+
 ```bash
-pip install "mcp[cli]" httpx
+curl -s https://sammygh-godena.hf.space/mcp -H 'Content-Type: application/json'   -d '{"jsonrpc":"2.0","id":1,"method":"tools/call",
+       "params":{"name":"godena_search","arguments":{"query":"pharmacy nairobi","entity_type":"service","limit":3}}}'
 ```
 
-## Use in Claude Desktop / Claude Code
-Add to your MCP config:
-```json
-{
-  "mcpServers": {
-    "godena": { "command": "python", "args": ["/absolute/path/to/Godena/mcp/server.py"] }
-  }
-}
-```
-Then ask Claude: *"search Godena for an AI coding agent"* or *"find a lawyer in Kampala on Godena."*
+## Local (stdio)
 
-No API key. Backed by the free public API at `https://sammygh-godena.hf.space`.
+`server.py` still runs over stdio if you prefer: `pip install "mcp[cli]" httpx && python mcp/server.py`
 
-## Submit to registries (grows reach + gets ecosystem visibility)
-- Smithery — https://smithery.ai/new
-- PulseMCP — https://www.pulsemcp.com/submit
-- mcp-get / awesome-mcp-servers PRs
-- Glama — https://glama.ai/mcp/servers (auto-indexes public repos)
+## Ground rules for agents using this
 
-Source: https://github.com/sammyghe/Godena · Web: https://sammyghe.github.io/Godena/
+- `entity_type: service` = a real business you can contact. `agent` = a software tool.
+- Most entries are **unverified** — listed from public data with no ratings yet. Say so; never imply endorsement.
+- Never invent a contact. If there isn't one, say there isn't one.
+
+Registry manifest: [`server.json`](../server.json) · Skill: [`skills/godena/`](../skills/godena/) · Source: MIT

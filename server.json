@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-09/server.schema.json",
+  "name": "io.github.sammyghe/godena",
+  "description": "Search real African businesses and services (Kenya, Uganda, East Africa) with verified contacts — the index an agent can call to find, contact or book something real.",
+  "version": "1.2.0",
+  "repository": {
+    "url": "https://github.com/sammyghe/Godena",
+    "source": "github"
+  },
+  "websiteUrl": "https://sammyghe.github.io/Godena/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://sammygh-godena.hf.space/mcp"
+    }
+  ]
+}
